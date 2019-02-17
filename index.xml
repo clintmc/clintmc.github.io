@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Website of Clint McGuire</title>
+    <link>http://www.clintmcguire.com/</link>
+    <description>Recent content in Home on Website of Clint McGuire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Clint McGuire 2018</copyright>
+    <lastBuildDate>Tue, 05 Sep 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.clintmcguire.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Compare file hash with PowerShell</title>
+      <link>http://www.clintmcguire.com/blog/compare_file_hash_with_powershell/</link>
+      <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.clintmcguire.com/blog/compare_file_hash_with_powershell/</guid>
+      <description>Once you&amp;rsquo;ve downloaded the file use Get-FileHash to calculate the SAH256 hash. $hash = (Get-FileHash .\filename.exe).hash
+Set the copy the hash valie from the website and assign it to a variable to compare.
+$webhash = &amp;ldquo;3&amp;hellip;f&amp;rsquo; [Paste the full SHA256 hash in the quotes]
+Then use PowerShell to compare this to the published hash.
+if ($hash -eq $webhash){$true}
+If this returns &amp;ldquo;True&amp;rdquo; then the hashes match.
+Or if you want to do it in one line: If ((Get-FileHash .</description>
+    </item>
+    
+    <item>
+      <title>Resolve all Remote Hosts that you are Connected</title>
+      <link>http://www.clintmcguire.com/blog/resolve_all_remote_hosts_that_you_are_connected/</link>
+      <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.clintmcguire.com/blog/resolve_all_remote_hosts_that_you_are_connected/</guid>
+      <description>I was looking into an certificate issue a client was having with their web proxy and in testing I thought it might be helpful to resolve the DNS names for all the open connections on ports 80 and 443.
+A quick netstat -anop tcp shows too many connections to bother doing manually and scraping the output with PowerShell would be possible, but isn&amp;rsquo;t my first choice.
+Thankfully Get-NetTCPConnections will show very similar details to the netstat above, so I started there.</description>
+    </item>
+    
+    <item>
+      <title>Stop all processes with the same name</title>
+      <link>http://www.clintmcguire.com/blog/stop_all_processes_with_the_same_name/</link>
+      <pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.clintmcguire.com/blog/stop_all_processes_with_the_same_name/</guid>
+      <description>I have a utility server that I connect to frequently and for some reason or other, that I haven&amp;rsquo;t had time to investigate yet, a certain Citrix related process launches and re-launches. Over the course of weeks there can be 30+ instances of this process running under my user account.
+The specific process doesn&amp;rsquo;t take up much CPU or RAM, but it is annoying and if I someone else is using the server for real work, then those resources could be better allocated.</description>
+    </item>
+    
+    <item>
+      <title>Red Hat Enterprise Linux Training - Notes</title>
+      <link>http://www.clintmcguire.com/blog/redhat_enterprise_linux_training_notes/</link>
+      <pubDate>Wed, 05 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.clintmcguire.com/blog/redhat_enterprise_linux_training_notes/</guid>
+      <description>Notes from RHEL 7 Partner Training&amp;hellip;
+You can access Red Hat Support via the CLI tool redhat-support-tool The tool gives you access to the KB, which you can search from the CLI and you can work with support tickets.
+Running sosreport will create an archive file with logs and other info that can be attached to a ticket.
+redhat-support-tool has options for attaching files, it will look for an sosreport when you first open the ticket.</description>
+    </item>
+    
+    <item>
+      <title>Use PowerShell to test connection to a port</title>
+      <link>http://www.clintmcguire.com/blog/use_powershell_to_test_connection_to_a_port/</link>
+      <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.clintmcguire.com/blog/use_powershell_to_test_connection_to_a_port/</guid>
+      <description>To quickly test if you can communicate with a server on a specific port use this command: Test-NetConnection (hostname/ip) -Port (tcp port number) You are looking for TcpTestSucceeded : True in the output.
+Example: PS C:\Users\Clint&amp;gt; Test-NetConnection www.google.com -port 80
+ComputerName : www.google.com RemoteAddress : 74.125.28.103 RemotePort : 80 InterfaceAlias : vEthernet (LAN) 2 SourceAddress : 192.168.0.5 TcpTestSucceeded : True
+This command is quite flexible, you can also have it test with ICMP like PING and Trace Route.</description>
+    </item>
+    
+    <item>
+      <title>Powershell script to get all computers last logon time</title>
+      <link>http://www.clintmcguire.com/blog/powershell_script_to_get_all_computers_last_logon_time/</link>
+      <pubDate>Sun, 29 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.clintmcguire.com/blog/powershell_script_to_get_all_computers_last_logon_time/</guid>
+      <description>Update I&amp;rsquo;ve posted an updated version of this script in a new section of my blog. Because all the comments below relate to the original version of the script I&amp;rsquo;m going to leave that version posted here. You can find the new version of the script here.
+I wrote a script to get the last time each computer logged into the domain.
+This script is very similar to my script that gets user last logon times, which you can find here.</description>
+    </item>
+    
+  </channel>
+</rss>
