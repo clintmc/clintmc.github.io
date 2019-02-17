@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Website of Clint McGuire</title>
+    <link>http://www.clintmcguire.com/categories/</link>
+    <description>Recent content in Categories on Website of Clint McGuire</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Clint McGuire 2018</copyright>
+    
+	<atom:link href="http://www.clintmcguire.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

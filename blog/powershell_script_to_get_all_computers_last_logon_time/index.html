@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="generator" content="Hugo 0.52" />
+  <meta name="author" content="Clint McGuire">
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400,700%7cOpen&#43;Sans:400,400italic,700%7cRoboto&#43;Mono%25!%28EXTRA%20*hugolib.PageOutput=Page%28/blog/Powershell_script_to_get_all_computers_last_logon_time.md%29%29">
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-12404931-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    <script async src="//cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
+  
+
+  
+  <link rel="alternate" href="http://www.clintmcguire.com/index.xml" type="application/rss+xml" title="Website of Clint McGuire">
+  <link rel="feed" href="http://www.clintmcguire.com/index.xml" type="application/rss+xml" title="Website of Clint McGuire">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="http://www.clintmcguire.com/blog/powershell_script_to_get_all_computers_last_logon_time/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="Website of Clint McGuire">
+  <meta property="og:url" content="http://www.clintmcguire.com/blog/powershell_script_to_get_all_computers_last_logon_time/">
+  <meta property="og:title" content="Powershell script to get all computers last logon time | Website of Clint McGuire">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2011-05-29T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2011-05-29T00:00:00&#43;00:00">
+  
+
+  <title>Powershell script to get all computers last logon time | Website of Clint McGuire</title>
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-12404931-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+</head>
+<body>
+
+<style type="text/css">
+
+.masthead-hero {
+  background-image: url("http://www.clintmcguire.com/img/hero.jpg");
+}
+</style>
+
+<div class="masthead-hero"></div>
+
+
+<div id="main" role="main">
+  <div class="sidebar sticky" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <div class="author-avatar">
+    <a href="/">
+      <img src="/img/ClintMcGuire.png" alt="Clint McGuire" itemprop="image">
+    </a>
+  </div>
+  <div class="author-content">
+    <h3 class="author-name" itemprop="name">Clint McGuire</h3>
+    <p class="author-bio" itemprop="description">IT Consultant</p>
+  </div>
+  <div class="author-urls-wrapper">
+    <ul class="author-urls social-icons" aria-hidden="true">
+      <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+        <span itemprop="name">Vancouver</span>
+      </li>
+      
+      <li>
+        <a itemprop="sameAs" href="//ca.linkedin.com/in/clintmcguire/" target="_blank" rel="noopener noreferrer">
+          <i class="fa fa-linkedin"></i>
+          LinkedIn
+        </a>
+      </li>
+      
+      <li>
+        <a itemprop="sameAs" href="//github.com/clintmc/" target="_blank" rel="noopener noreferrer">
+          <i class="fa fa-github"></i>
+          Github
+        </a>
+      </li>
+      
+    </ul>  
+  </div>
+</div>
+
+  <article class="page">
+		<div class="page_container">
+			<section class="page_content">
+				<div class="navbar-hero">
+	<nav>
+		<a href="/">Home</a>&nbsp&nbsp•&nbsp&nbsp
+		<a href="/blog">Blog</a>&nbsp&nbsp•&nbsp&nbsp
+		<a href="/contact">Contact</a>
+	</nav>
+</div>
+				<article class="post" itemscope itemtype="http://schema.org/Article">
+  <div class="post-container">
+    <h1 itemprop="name"><a href="http://www.clintmcguire.com/blog/powershell_script_to_get_all_computers_last_logon_time/">Powershell script to get all computers last logon time</a></h1>
+
+    
+      
+
+<div class="post-metadata">
+
+  <span class="post-date">
+    
+    <time datetime="2011-05-29 00:00:00 &#43;0000 UTC" itemprop="datePublished dateModified">
+      2011-05-29
+    </time>
+  </span>
+
+  
+
+</div>
+
+    
+
+    <div class="post-style" itemprop="articleBody">
+      PowerShell script that checks AD logs for last logon of all domain joined computers
+      
+
+<h1 id="update">Update</h1>
+
+<p>I&rsquo;ve posted an updated version of this script in a new section of my blog. Because all the comments below relate to the original version of the script I&rsquo;m going to leave that version posted here. You can find the new version of the script <a title="Get-ComputerLastLogon" href="http://www.clintmcguire.com/get-computerlastlogon/">here</a>.</p>
+
+<p>I wrote a script to get the last time each computer logged into the domain.</p>
+
+<p>This script is very similar to my script that gets user last logon times, which you can find <a title="Powershell Get All Users Last Logon Time" href="http://www.clintmcguire.com/2011/05/29/powershell-script-to-get-all-ad-users-last-logon-time/" target="_blank">here</a>.</p>
+
+<p>This script requires the Quest AD Cmdlets, which you can download <a title="Quest AD Cmdlets" href="http://www.quest.com/powershell/activeroles-server.aspx" target="_blank">here</a>. (Check the box agreeing to the terms to see the download options.)</p>
+
+<p><code>
+##==============================================================================
+##==============================================================================</p>
+
+<h2 id="script-get-allcomputerlastlogon">SCRIPT&hellip;&hellip;&hellip;: Get-AllComputerLastLogon</h2>
+
+<h2 id="author-clint-mcguire">AUTHOR&hellip;&hellip;&hellip;: Clint McGuire</h2>
+
+<h2 id="email">EMAIL&hellip;&hellip;&hellip;.:</h2>
+
+<h2 id="version-1">VERSION&hellip;&hellip;..: 1</h2>
+
+<h2 id="date-2011-05-26">DATE&hellip;&hellip;&hellip;..: 2011_05_26</h2>
+
+<h2 id="copyright-2011-clint-mcguire">COPYRIGHT&hellip;&hellip;: 2011, Clint McGuire</h2>
+
+<h2 id="license">LICENSE&hellip;&hellip;..:</h2>
+
+<h2 id="requirements-powershell-v2-0-quest-ad-cmdlets">REQUIREMENTS&hellip;: Powershell v2.0, Quest AD Cmdlets</h2>
+
+<h2 id="description-gets-all-computer-accounts-last-logon-times-and-exports-to-csv-file">DESCRIPTION&hellip;.: Gets all computer accounts&rsquo; last logon times and exports to CSV file.</h2>
+
+<h2 id="notes">NOTES&hellip;&hellip;&hellip;.:</h2>
+
+<h2 id="customize">CUSTOMIZE&hellip;&hellip;:</h2>
+
+<p>##==============================================================================</p>
+
+<h2 id="revised-by">REVISED BY&hellip;..:</h2>
+
+<h2 id="email-1">EMAIL&hellip;&hellip;&hellip;.:</h2>
+
+<h2 id="revision-date">REVISION DATE..:</h2>
+
+<h2 id="revision-notes">REVISION NOTES.:</h2>
+
+<p>##
+##==============================================================================
+##==============================================================================
+##==============================================================================</p>
+
+<h2 id="start-lt-code-gt">START &lt;code&gt;</h2>
+
+<p>##==============================================================================
+$DCs = Get-QADComputer -ComputerRole DomainController
+$LastLogon = @{}
+ForEach ($DC in $DCs) {
+$Computers = Get-QADcomputer -Service $dc.dnshostname -ip lastlogontimestamp
+ForEach ($Computer in $Computers)
+{
+If ($Computer.lastlogontimestamp -ne $null)
+{
+$Time = $Computer.lastlogontimestamp | Get-Date -format u
+}
+Else
+{
+$Time = $Computer.lastlogontimestamp
+}
+$ComputerName = $Computer.ComputerName
+If ($LastLogon.ContainsKey($ComputerName))
+{
+If ($LastLogon.Get_Item($ComputerName) -le $Time)
+{
+$LastLogon.Set_Item($ComputerName, $Time)
+}
+}
+Else
+{
+$LastLogon.Add($ComputerName, $Time)
+}
+}
+}
+$LastLogon.GetEnumerator() | Sort-Object Name |export-csv $home\ComputerLastLogon.csv -NoTypeInformation
+##==============================================================================</p>
+
+<h2 id="end-lt-code-gt">END &lt;code&gt;</h2>
+
+<p>##==============================================================================</code></p>
+
+    </div>
+
+    
+      
+
+    
+
+    
+      
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Powershell%20script%20to%20get%20all%20computers%20last%20logon%20time&amp;url=http%3a%2f%2fwww.clintmcguire.com%2fblog%2fpowershell_script_to_get_all_computers_last_logon_time%2f"
+         target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.clintmcguire.com%2fblog%2fpowershell_script_to_get_all_computers_last_logon_time%2f"
+         target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.clintmcguire.com%2fblog%2fpowershell_script_to_get_all_computers_last_logon_time%2f&amp;title=Powershell%20script%20to%20get%20all%20computers%20last%20logon%20time"
+         target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Powershell%20script%20to%20get%20all%20computers%20last%20logon%20time&amp;body=http%3a%2f%2fwww.clintmcguire.com%2fblog%2fpowershell_script_to_get_all_computers_last_logon_time%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+    
+
+    
+      
+<div class="disqus">
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "clintmcguire-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+
+    
+
+  </div>
+</article>
+			</section>
+		</div>
+	</article>
+</div> 
+
+<div class="page_footer">
+	<p>&copy; Clint McGuire 2018. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
+</div>
+    
+    
+    <script id="dsq-count-scr" src="//clintmcguire-com.disqus.com/count.js" async></script>
+    
+
+
+  </body>
+</html>
