@@ -6,11 +6,25 @@
     <description>Recent content in Home on Website of Clint McGuire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; Clint McGuire 2018</copyright>
-    <lastBuildDate>Tue, 05 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <copyright>&amp;copy; Clint McGuire 2009-2019</copyright>
+    <lastBuildDate>Sun, 17 Feb 2019 14:18:16 -0800</lastBuildDate>
     
 	<atom:link href="http://www.clintmcguire.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Find Azure Images by Publisher</title>
+      <link>http://www.clintmcguire.com/blog/find-az-images-by-publisher/</link>
+      <pubDate>Sun, 17 Feb 2019 14:18:16 -0800</pubDate>
+      
+      <guid>http://www.clintmcguire.com/blog/find-az-images-by-publisher/</guid>
+      <description>First install the PowerShell Az Module.
+On Windows, open an elevated PowerShell window and run: Install-Module -Name Az -AllowClobber
+On MacOS, use sudo to open pwsh, then run: Install-Module -Name Az -AllowClobber
+Once the Az module is installed, exit the elevated/sudo PowerShell session and open a regular PowerShell session.
+Connect to your Azure account - Connect-AzAccount and use the device login URL and Code to sign in.
+If you don&amp;rsquo;t know the exact Publisher Name, you can find it by looking at all the Publishers.</description>
+    </item>
     
     <item>
       <title>Compare file hash with PowerShell</title>
