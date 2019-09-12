@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Clint McGuire 2009-2019</copyright>
-    <lastBuildDate>Sat, 23 Feb 2019 17:56:25 -0800</lastBuildDate>
+    <lastBuildDate>Sat, 07 Sep 2019 10:27:41 -0700</lastBuildDate>
     
 	<atom:link href="http://www.clintmcguire.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>NTP</title>
+      <link>http://www.clintmcguire.com/blog/ntp/</link>
+      <pubDate>Sat, 07 Sep 2019 10:27:41 -0700</pubDate>
+      
+      <guid>http://www.clintmcguire.com/blog/ntp/</guid>
+      <description>Time in Windows - for Domains In a Windows Domain, the default config is for the PDC to get time from an external time source, the other DCs to get time from the PDC and the domain members to get time for a DC in their Site.
+So only the PDC should need to be modified.
+The commands to configure the PDC to get time from the NTP Pool servers:</description>
+    </item>
     
     <item>
       <title>Find Azure Market Place Image Offers from PowerShell</title>
