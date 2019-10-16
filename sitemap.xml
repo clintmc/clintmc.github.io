@@ -3,6 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://www.clintmcguire.com/blog/</loc>
+    <lastmod>2019-10-15T21:32:04-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.clintmcguire.com/</loc>
+    <lastmod>2019-10-15T21:32:04-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.clintmcguire.com/blog/how-dns-works/</loc>
+    <lastmod>2019-10-15T21:32:04-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.clintmcguire.com/blog/ntp/</loc>
+    <lastmod>2019-09-07T10:27:41-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.clintmcguire.com/blog/find-az-offers/</loc>
     <lastmod>2019-02-23T17:56:25-08:00</lastmod>
   </url>
@@ -43,13 +63,7 @@
   </url>
   
   <url>
-    <loc>http://www.clintmcguire.com/blog/</loc>
-    <lastmod>2019-02-23T17:56:25-08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.clintmcguire.com/categories/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -57,13 +71,7 @@
   </url>
   
   <url>
-    <loc>http://www.clintmcguire.com/</loc>
-    <lastmod>2019-02-23T17:56:25-08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://www.clintmcguire.com/tags/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>
