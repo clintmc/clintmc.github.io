@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="author" content="Clint McGuire">
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400,700%7cOpen&#43;Sans:400,400italic,700%7cRoboto&#43;Mono%25!%28EXTRA%20*hugolib.pageState=Page%28/blog/how-dns-really-works.md%29%29">
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-12404931-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    <script async src="//cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
+  
+
+  
+  <link rel="alternate" href="http://www.clintmcguire.com/index.xml" type="application/rss+xml" title="Website of Clint McGuire">
+  <link rel="feed" href="http://www.clintmcguire.com/index.xml" type="application/rss+xml" title="Website of Clint McGuire">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="http://www.clintmcguire.com/blog/how-dns-really-works/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="Website of Clint McGuire">
+  <meta property="og:url" content="http://www.clintmcguire.com/blog/how-dns-really-works/">
+  <meta property="og:title" content="How DNS Really Works | Website of Clint McGuire">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2019-10-16T19:01:53-07:00">
+  
+  <meta property="article:modified_time" content="2019-10-16T19:01:53-07:00">
+  
+
+  <title>How DNS Really Works | Website of Clint McGuire</title>
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-12404931-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+</head>
+<body>
+
+<style type="text/css">
+
+.masthead-hero {
+  background-image: url("http://www.clintmcguire.com/img/hero.jpg");
+}
+</style>
+
+<div class="masthead-hero"></div>
+
+
+<div id="main" role="main">
+  <div class="sidebar sticky" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <div class="author-avatar">
+    <a href="/">
+      <img src="/img/ClintMcGuire.png" alt="Clint McGuire" itemprop="image">
+    </a>
+  </div>
+  <div class="author-content">
+    <h3 class="author-name" itemprop="name">Clint McGuire</h3>
+    <p class="author-bio" itemprop="description">IT Consultant</p>
+  </div>
+  <div class="author-urls-wrapper">
+    <ul class="author-urls social-icons" aria-hidden="true">
+      <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+        <span itemprop="name">Vancouver</span>
+      </li>
+      
+      <li>
+        <a itemprop="sameAs" href="//ca.linkedin.com/in/clintmcguire/" target="_blank" rel="noopener noreferrer">
+          <i class="fa fa-linkedin"></i>
+          LinkedIn
+        </a>
+      </li>
+      
+      <li>
+        <a itemprop="sameAs" href="//github.com/clintmc/" target="_blank" rel="noopener noreferrer">
+          <i class="fa fa-github"></i>
+          Github
+        </a>
+      </li>
+      
+    </ul>  
+  </div>
+</div>
+
+  <article class="page">
+		<div class="page_container">
+			<section class="page_content">
+				<div class="navbar-hero">
+	<nav>
+		<a href="/">Home</a>&nbsp&nbsp•&nbsp&nbsp
+		<a href="/blog">Blog</a>&nbsp&nbsp•&nbsp&nbsp
+		<a href="/contact">Contact</a>
+	</nav>
+</div>
+				<article class="post" itemscope itemtype="http://schema.org/Article">
+  <div class="post-container">
+    <h1 itemprop="name"><a href="http://www.clintmcguire.com/blog/how-dns-really-works/">How DNS Really Works</a></h1>
+
+    
+      
+
+<div class="post-metadata">
+
+  <span class="post-date">
+    
+    <time datetime="2019-10-16 19:01:53 -0700 PDT" itemprop="datePublished dateModified">
+      2019-10-16
+    </time>
+  </span>
+
+  
+
+</div>
+
+    
+
+    <div class="post-style" itemprop="articleBody">
+      How the DNS Protocol Returns Data
+      
+
+<h2 id="view-from-the-client">View from the client</h2>
+
+<p>A client system - phone, dekstop, laptop, server - looking to find an IP address for a name, lets use www.clintmcguire.com as an example, sends a DNS request to its configured name resolvers.<br />
+Name resolvers are either statically assigned by a network administrator or handed out by DHCP.</p>
+
+<p>The client sends a request - typically via UDP - on port 53, to the name resolver. This is a question, asking for the Resource Record (RR) details that match a name/domain name.</p>
+
+<p>The name resolver will - eventually, ideally - return the data to the client.</p>
+
+<h2 id="how-does-the-name-resolver-get-the-answer-to-provide-to-the-client">How does the name resolver get the answer to provide to the client</h2>
+
+<p>The name resolver will first check its cache to see if it has recently answered this request. There are three possible outcomes from this.</p>
+
+<ol>
+<li>It does not have the answer.</li>
+<li>It has the answer, but the cache time limit has expired - so the answer is no longer good.</li>
+<li>It has the answer and the cache time limit has not expired - so the answer is still good.</li>
+</ol>
+
+<p>In the case of #3, the name resolver will respond to the client with the answer from the cache.<br />
+In the case of #1 or 2, the name resolver will have to find the answer for the client.</p>
+
+<p>Lets go back to our example - www.clintmcguire.com - this name requires an RR to lookup. If you are using a web browser to go this site, the request will contain either an <code>A</code> record or an <code>AAAA</code> (Quad-A) record.</p>
+
+<h3 id="resource-record-aside">Resource Record Aside</h3>
+
+<p>There are many types of RRs, here is a quick list - that is not definitive</p>
+
+<ul>
+<li><code>A</code> - IPv4 address for a name</li>
+<li><code>AAAA</code> - IPv6 address for a name</li>
+<li><code>CNAME</code> - Alias for a name</li>
+<li><code>TXT</code> - Text string, used by a bunch of things, like SFP to assist with mail filtering</li>
+<li><code>MX</code> - Mail Server for the domain</li>
+<li><code>PTR</code> - Pointer, for looking up a name from an IP address</li>
+</ul>
+
+<p>If you are interested in seeing a better list, check out: <a href="http://www.zytrax.com/books/dns/ch8/#types" target="_blank">http://www.zytrax.com/books/dns/ch8/#types</a></p>
+
+<h2 id="back-to-how-does-the-name-resolver-get-the-answer-to-provide-to-the-client">Back to how does the name resolver get the answer to provide to the client</h2>
+
+<p>With an RR type and domain or host name, the name resolver will start a search against the Root domain servers, looking for - in our example - the name servers for the .com domain.<br />
+It will then ask the .com servers for the name server for clintmcguire.com.<br />
+It will then ask the clintmcguire.com name servers for the A or AAAA record for www.clintmcguire.com.
+Once it gets this answer it will reply to the client with the details.</p>
+
+<p>This process descbribes a Recursive Query - where the name resolver does the leg work of tracking down the answer.<br />
+An alternate process would be an Iterative Query, the process is the similar.</p>
+
+<h2 id="how-does-an-interaive-query-work">How does an Interaive Query work</h2>
+
+<p>When a name server performs an Iterative Query, it responds to the client with the closest match it has, and leaves tracking down the answer to the client.<br />
+So asking for www.clintmcguire.com, a resolver might reply back with the .com name servers and a &ldquo;Good luck!&rdquo;, so the client then asks the .com servers for the name servers for clintmcguire.com. And so on.<br />
+The end result will be the same.</p>
+
+<h2 id="a-bit-more-on-the-technical-side">A bit more on the technical side</h2>
+
+<p>Currently, DNS traffic is sent to UDP port 53 on the server. The protocol allows for traffic to be sent via TCP, also on port 53, but because of the additional overhead of the TCP communications, UDP is preferred.<br />
+Unfortunately, this traffic is sent in the clear, so anyone that can see your network traffic can read your DNS queries. Additionally, this traffic is susceptible to manipulation - via Man in the Middle Attack.</p>
+
+<p>There are a two different approaches to securing this traffic being experimented with - DNS over HTTPS (DoH) and DNS over TLS (DoT).<br />
+DoH is supported in Firefox, with some configuration.<br />
+There is criticism to both of these approaches, so it is still unclear what the final verdict will be.<br />
+In the mean time you can test it out for yourself if you want to dig into this more.</p>
+
+<p>Also, DNS, as generally implemented, does not provide any data integrity, authenticaiton of data or have a way to assert a record does not exist. A solution to this is DNSSEC - DNS Security Extensions. DNSSEC addresses these shortcomings by signing responses with a certificate. This doesn&rsquo;t encrypt the data being sent, it just allows the client to confirm that the data is true, by comparing the signed result with the certificate that has been published as part of the zone details. The original DNSSEC RFCs were published in 2005 but DNSSEC has not yet seen widespread adoption. However, I&rsquo;ve been hearing more about it recenlty, as interest in &ldquo;securing all the things&rdquo; seems to be picking up. Hopefully this will start to gain wider adoption.</p>
+
+    </div>
+
+    
+      
+
+    
+
+    
+      
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=How%20DNS%20Really%20Works&amp;url=http%3a%2f%2fwww.clintmcguire.com%2fblog%2fhow-dns-really-works%2f"
+         target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fwww.clintmcguire.com%2fblog%2fhow-dns-really-works%2f"
+         target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fwww.clintmcguire.com%2fblog%2fhow-dns-really-works%2f&amp;title=How%20DNS%20Really%20Works"
+         target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=How%20DNS%20Really%20Works&amp;body=http%3a%2f%2fwww.clintmcguire.com%2fblog%2fhow-dns-really-works%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+    
+
+    
+      
+<div class="disqus">
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "clintmcguire-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+
+    
+
+  </div>
+</article>
+			</section>
+		</div>
+	</article>
+</div> 
+
+<div class="page_footer">
+	<p>&copy; Clint McGuire 2009-2019. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
+</div>
+    
+    
+    <script id="dsq-count-scr" src="//clintmcguire-com.disqus.com/count.js" async></script>
+    
+
+
+  </body>
+</html>

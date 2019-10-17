@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Clint McGuire 2009-2019</copyright>
-    <lastBuildDate>Tue, 15 Oct 2019 21:32:04 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 16 Oct 2019 19:01:53 -0700</lastBuildDate>
     
 	<atom:link href="http://www.clintmcguire.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How DNS Really Works</title>
+      <link>http://www.clintmcguire.com/blog/how-dns-really-works/</link>
+      <pubDate>Wed, 16 Oct 2019 19:01:53 -0700</pubDate>
+      
+      <guid>http://www.clintmcguire.com/blog/how-dns-really-works/</guid>
+      <description>View from the client A client system - phone, dekstop, laptop, server - looking to find an IP address for a name, lets use www.clintmcguire.com as an example, sends a DNS request to its configured name resolvers.
+Name resolvers are either statically assigned by a network administrator or handed out by DHCP.
+The client sends a request - typically via UDP - on port 53, to the name resolver. This is a question, asking for the Resource Record (RR) details that match a name/domain name.</description>
+    </item>
     
     <item>
       <title>How DNS Works</title>
