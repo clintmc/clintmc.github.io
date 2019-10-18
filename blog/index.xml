@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Clint McGuire 2009-2019</copyright>
-    <lastBuildDate>Wed, 16 Oct 2019 19:01:53 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 17 Oct 2019 19:24:10 -0700</lastBuildDate>
     
 	<atom:link href="http://www.clintmcguire.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>DNSSEC</title>
+      <link>http://www.clintmcguire.com/blog/dnssec/</link>
+      <pubDate>Thu, 17 Oct 2019 19:24:10 -0700</pubDate>
+      
+      <guid>http://www.clintmcguire.com/blog/dnssec/</guid>
+      <description>How it works with Cloudflare Cloudflare hosts my DNS. It provides me a simple interface for management, 2FA for login and acts as a CDN. So it was an easy choice years ago to move DNS there.
+Since I&amp;rsquo;ve been thinking about DNS a lot lately I decided to see if I could setup DNSSEC for my own domain.
+It took my about 5 minutes.
+In Cloudflare - under DNS, hit the button to Setup DNSSEC.</description>
+    </item>
     
     <item>
       <title>How DNS Really Works</title>
