@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Clint McGuire 2009-2019</copyright>
-    <lastBuildDate>Thu, 17 Oct 2019 19:24:10 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 18 Oct 2019 19:29:34 -0700</lastBuildDate>
     
 	<atom:link href="http://www.clintmcguire.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>DNS Tools</title>
+      <link>http://www.clintmcguire.com/blog/dns-tools/</link>
+      <pubDate>Fri, 18 Oct 2019 19:29:34 -0700</pubDate>
+      
+      <guid>http://www.clintmcguire.com/blog/dns-tools/</guid>
+      <description>General Tools  nslookup - standard tool, comes with most OSes http://MXToolbox.com - Very useful site for doing DNS things, generally focused on email related checks - as the name implies - but still includes more general DNS lookup options Test-Connection - in PowerShell 6, this is really more of a super charged ping - but throw -ResolveDestination at it and it will do a lookup for you dnssec-analyzer - for testing DNSSEC Whois Lookup - mxtoolbox&amp;rsquo;s whois lookup hasn&amp;rsquo;t worked for me the last number of times I&amp;rsquo;ve used it, this one does&amp;hellip;  I&amp;rsquo;m pretty sure I&amp;rsquo;m forgetting 1 or 2, so I will come back and add them when I remember&amp;hellip;</description>
+    </item>
     
     <item>
       <title>DNSSEC</title>
