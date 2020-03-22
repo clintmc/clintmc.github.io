@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on Website of Clint McGuire</title>
-    <link>http://www.clintmcguire.com/</link>
+    <link>https://www.clintmcguire.com/</link>
     <description>Recent content in Home on Website of Clint McGuire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; Clint McGuire 2009-2019</copyright>
+    <copyright>&amp;copy; Clint McGuire 2009-2020</copyright>
     <lastBuildDate>Fri, 18 Oct 2019 19:29:34 -0700</lastBuildDate>
     
-	<atom:link href="http://www.clintmcguire.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.clintmcguire.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>DNS Tools</title>
-      <link>http://www.clintmcguire.com/blog/dns-tools/</link>
+      <link>https://www.clintmcguire.com/blog/dns-tools/</link>
       <pubDate>Fri, 18 Oct 2019 19:29:34 -0700</pubDate>
       
-      <guid>http://www.clintmcguire.com/blog/dns-tools/</guid>
+      <guid>https://www.clintmcguire.com/blog/dns-tools/</guid>
       <description>General Tools  nslookup - standard tool, comes with most OSes http://MXToolbox.com - Very useful site for doing DNS things, generally focused on email related checks - as the name implies - but still includes more general DNS lookup options Test-Connection - in PowerShell 6, this is really more of a super charged ping - but throw -ResolveDestination at it and it will do a lookup for you dnssec-analyzer - for testing DNSSEC Whois Lookup - mxtoolbox&amp;rsquo;s whois lookup hasn&amp;rsquo;t worked for me the last number of times I&amp;rsquo;ve used it, this one does&amp;hellip;  I&amp;rsquo;m pretty sure I&amp;rsquo;m forgetting 1 or 2, so I will come back and add them when I remember&amp;hellip;</description>
     </item>
     
     <item>
       <title>DNSSEC</title>
-      <link>http://www.clintmcguire.com/blog/dnssec/</link>
+      <link>https://www.clintmcguire.com/blog/dnssec/</link>
       <pubDate>Thu, 17 Oct 2019 19:24:10 -0700</pubDate>
       
-      <guid>http://www.clintmcguire.com/blog/dnssec/</guid>
+      <guid>https://www.clintmcguire.com/blog/dnssec/</guid>
       <description>How it works with Cloudflare Cloudflare hosts my DNS. It provides me a simple interface for management, 2FA for login and acts as a CDN. So it was an easy choice years ago to move DNS there.
 Since I&amp;rsquo;ve been thinking about DNS a lot lately I decided to see if I could setup DNSSEC for my own domain.
 It took my about 5 minutes.
@@ -35,10 +35,10 @@ In Cloudflare - under DNS, hit the button to Setup DNSSEC.</description>
     
     <item>
       <title>How DNS Really Works</title>
-      <link>http://www.clintmcguire.com/blog/how-dns-really-works/</link>
+      <link>https://www.clintmcguire.com/blog/how-dns-really-works/</link>
       <pubDate>Wed, 16 Oct 2019 19:01:53 -0700</pubDate>
       
-      <guid>http://www.clintmcguire.com/blog/how-dns-really-works/</guid>
+      <guid>https://www.clintmcguire.com/blog/how-dns-really-works/</guid>
       <description>View from the client A client system - phone, dekstop, laptop, server - looking to find an IP address for a name, lets use www.clintmcguire.com as an example, sends a DNS request to its configured name resolvers.
 Name resolvers are either statically assigned by a network administrator or handed out by DHCP.
 The client sends a request - typically via UDP - on port 53, to the name resolver. This is a question, asking for the Resource Record (RR) details that match a name/domain name.</description>
@@ -46,20 +46,20 @@ The client sends a request - typically via UDP - on port 53, to the name resolve
     
     <item>
       <title>How DNS Works</title>
-      <link>http://www.clintmcguire.com/blog/how-dns-works/</link>
+      <link>https://www.clintmcguire.com/blog/how-dns-works/</link>
       <pubDate>Tue, 15 Oct 2019 21:32:04 -0700</pubDate>
       
-      <guid>http://www.clintmcguire.com/blog/how-dns-works/</guid>
+      <guid>https://www.clintmcguire.com/blog/how-dns-works/</guid>
       <description>DNS Analogy The analogy typically used to explain what DNS does is to compare it to a Phone Book. Which isn&amp;rsquo;t a great analogy, when you look at how DNS works.
 I think I have a better analogy. The downside of my proposed analogy, is that it requires some additional explaining - although I suspect people coming out of school today aren&amp;rsquo;t very familiar with phone books anymore either&amp;hellip;</description>
     </item>
     
     <item>
       <title>NTP</title>
-      <link>http://www.clintmcguire.com/blog/ntp/</link>
+      <link>https://www.clintmcguire.com/blog/ntp/</link>
       <pubDate>Sat, 07 Sep 2019 10:27:41 -0700</pubDate>
       
-      <guid>http://www.clintmcguire.com/blog/ntp/</guid>
+      <guid>https://www.clintmcguire.com/blog/ntp/</guid>
       <description>Time in Windows - for Domains In a Windows Domain, the default config is for the PDC to get time from an external time source, the other DCs to get time from the PDC and the domain members to get time for a DC in their Site.
 So only the PDC should need to be modified.
 The commands to configure the PDC to get time from the NTP Pool servers:</description>
@@ -67,10 +67,10 @@ The commands to configure the PDC to get time from the NTP Pool servers:</descri
     
     <item>
       <title>Find Azure Market Place Image Offers from PowerShell</title>
-      <link>http://www.clintmcguire.com/blog/find-az-offers/</link>
+      <link>https://www.clintmcguire.com/blog/find-az-offers/</link>
       <pubDate>Sat, 23 Feb 2019 17:56:25 -0800</pubDate>
       
-      <guid>http://www.clintmcguire.com/blog/find-az-offers/</guid>
+      <guid>https://www.clintmcguire.com/blog/find-az-offers/</guid>
       <description>Following up on my post about finding Azure Images by Publisher, here is how to get all the SKUs for the specific Offers.
 Get-AzVMImageSKu is the command to run.
 It requires Location, Publisher, and Offer.
@@ -81,10 +81,10 @@ You can take the SKUs and use those to deploy new VMs.</description>
     
     <item>
       <title>Find Azure Images by Publisher</title>
-      <link>http://www.clintmcguire.com/blog/find-az-images-by-publisher/</link>
+      <link>https://www.clintmcguire.com/blog/find-az-images-by-publisher/</link>
       <pubDate>Sun, 17 Feb 2019 14:18:16 -0800</pubDate>
       
-      <guid>http://www.clintmcguire.com/blog/find-az-images-by-publisher/</guid>
+      <guid>https://www.clintmcguire.com/blog/find-az-images-by-publisher/</guid>
       <description>First install the PowerShell Az Module.
 On Windows, open an elevated PowerShell window and run: Install-Module -Name Az -AllowClobber
 On MacOS, use sudo to open pwsh, then run: Install-Module -Name Az -AllowClobber
@@ -95,10 +95,10 @@ If you don&amp;rsquo;t know the exact Publisher Name, you can find it by looking
     
     <item>
       <title>Compare file hash with PowerShell</title>
-      <link>http://www.clintmcguire.com/blog/compare_file_hash_with_powershell/</link>
+      <link>https://www.clintmcguire.com/blog/compare_file_hash_with_powershell/</link>
       <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://www.clintmcguire.com/blog/compare_file_hash_with_powershell/</guid>
+      <guid>https://www.clintmcguire.com/blog/compare_file_hash_with_powershell/</guid>
       <description>Once you&amp;rsquo;ve downloaded the file use Get-FileHash to calculate the SAH256 hash. $hash = (Get-FileHash .\filename.exe).hash
 Set the copy the hash valie from the website and assign it to a variable to compare.
 $webhash = &amp;ldquo;3&amp;hellip;f&amp;rsquo; [Paste the full SHA256 hash in the quotes]
@@ -110,10 +110,10 @@ Or if you want to do it in one line: If ((Get-FileHash .</description>
     
     <item>
       <title>Resolve all Remote Hosts that you are Connected</title>
-      <link>http://www.clintmcguire.com/blog/resolve_all_remote_hosts_that_you_are_connected/</link>
+      <link>https://www.clintmcguire.com/blog/resolve_all_remote_hosts_that_you_are_connected/</link>
       <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://www.clintmcguire.com/blog/resolve_all_remote_hosts_that_you_are_connected/</guid>
+      <guid>https://www.clintmcguire.com/blog/resolve_all_remote_hosts_that_you_are_connected/</guid>
       <description>I was looking into an certificate issue a client was having with their web proxy and in testing I thought it might be helpful to resolve the DNS names for all the open connections on ports 80 and 443.
 A quick netstat -anop tcp shows too many connections to bother doing manually and scraping the output with PowerShell would be possible, but isn&amp;rsquo;t my first choice.
 Thankfully Get-NetTCPConnections will show very similar details to the netstat above, so I started there.</description>
@@ -121,20 +121,20 @@ Thankfully Get-NetTCPConnections will show very similar details to the netstat a
     
     <item>
       <title>Stop all processes with the same name</title>
-      <link>http://www.clintmcguire.com/blog/stop_all_processes_with_the_same_name/</link>
+      <link>https://www.clintmcguire.com/blog/stop_all_processes_with_the_same_name/</link>
       <pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://www.clintmcguire.com/blog/stop_all_processes_with_the_same_name/</guid>
+      <guid>https://www.clintmcguire.com/blog/stop_all_processes_with_the_same_name/</guid>
       <description>I have a utility server that I connect to frequently and for some reason or other, that I haven&amp;rsquo;t had time to investigate yet, a certain Citrix related process launches and re-launches. Over the course of weeks there can be 30+ instances of this process running under my user account.
 The specific process doesn&amp;rsquo;t take up much CPU or RAM, but it is annoying and if I someone else is using the server for real work, then those resources could be better allocated.</description>
     </item>
     
     <item>
       <title>Red Hat Enterprise Linux Training - Notes</title>
-      <link>http://www.clintmcguire.com/blog/redhat_enterprise_linux_training_notes/</link>
+      <link>https://www.clintmcguire.com/blog/redhat_enterprise_linux_training_notes/</link>
       <pubDate>Wed, 05 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://www.clintmcguire.com/blog/redhat_enterprise_linux_training_notes/</guid>
+      <guid>https://www.clintmcguire.com/blog/redhat_enterprise_linux_training_notes/</guid>
       <description>Notes from RHEL 7 Partner Training&amp;hellip;
 You can access Red Hat Support via the CLI tool redhat-support-tool The tool gives you access to the KB, which you can search from the CLI and you can work with support tickets.
 Running sosreport will create an archive file with logs and other info that can be attached to a ticket.
@@ -143,10 +143,10 @@ redhat-support-tool has options for attaching files, it will look for an sosrepo
     
     <item>
       <title>Use PowerShell to test connection to a port</title>
-      <link>http://www.clintmcguire.com/blog/use_powershell_to_test_connection_to_a_port/</link>
+      <link>https://www.clintmcguire.com/blog/use_powershell_to_test_connection_to_a_port/</link>
       <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://www.clintmcguire.com/blog/use_powershell_to_test_connection_to_a_port/</guid>
+      <guid>https://www.clintmcguire.com/blog/use_powershell_to_test_connection_to_a_port/</guid>
       <description>To quickly test if you can communicate with a server on a specific port use this command: Test-NetConnection (hostname/ip) -Port (tcp port number) You are looking for TcpTestSucceeded : True in the output.
 Example: PS C:\Users\Clint&amp;gt; Test-NetConnection www.google.com -port 80
 ComputerName : www.google.com RemoteAddress : 74.125.28.103 RemotePort : 80 InterfaceAlias : vEthernet (LAN) 2 SourceAddress : 192.168.0.5 TcpTestSucceeded : True
@@ -155,10 +155,10 @@ This command is quite flexible, you can also have it test with ICMP like PING an
     
     <item>
       <title>Powershell script to get all computers last logon time</title>
-      <link>http://www.clintmcguire.com/blog/powershell_script_to_get_all_computers_last_logon_time/</link>
+      <link>https://www.clintmcguire.com/blog/powershell_script_to_get_all_computers_last_logon_time/</link>
       <pubDate>Sun, 29 May 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://www.clintmcguire.com/blog/powershell_script_to_get_all_computers_last_logon_time/</guid>
+      <guid>https://www.clintmcguire.com/blog/powershell_script_to_get_all_computers_last_logon_time/</guid>
       <description>Update I&amp;rsquo;ve posted an updated version of this script in a new section of my blog. Because all the comments below relate to the original version of the script I&amp;rsquo;m going to leave that version posted here. You can find the new version of the script here.
 I wrote a script to get the last time each computer logged into the domain.
 This script is very similar to my script that gets user last logon times, which you can find here.</description>
