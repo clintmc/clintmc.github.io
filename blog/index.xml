@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Clint McGuire 2009-2020</copyright>
-    <lastBuildDate>Sat, 28 Mar 2020 10:54:00 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 29 Mar 2020 11:26:57 -0700</lastBuildDate>
     
 	<atom:link href="https://www.clintmcguire.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Crypto Cipher Suite Comparison</title>
+      <link>https://www.clintmcguire.com/blog/crypto-cipher-suite-comparison/</link>
+      <pubDate>Sun, 29 Mar 2020 11:26:57 -0700</pubDate>
+      
+      <guid>https://www.clintmcguire.com/blog/crypto-cipher-suite-comparison/</guid>
+      <description>Components As detailed in my post on Cryptographic Cipher Suites each of the suites has a Protocol, a Key Exchange algorithm, a Signature Authentication algorithm, an Encryption algorithm, and a Message Authentication algorithm.
+Here we are going to compare these different components and highlight the cipher suites currently considered strong*.
+* currently only means at the time of this writting - a flaw could be found in the algorithm or in the implementation of the algorithm at any time, so do additional research to confirm the current strength of the cipher suite.</description>
+    </item>
     
     <item>
       <title>Cryptographic Cipher Suites</title>
