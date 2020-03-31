@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="author" content="Clint McGuire">
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400,700%7cOpen&#43;Sans:400,400italic,700%7cRoboto&#43;Mono%25!%28EXTRA%20*hugolib.pageState=Page%28/blog/Hashing.md%29%29">
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-12404931-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    <script async src="//cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js"></script>
+  
+
+  
+  <link rel="alternate" href="https://www.clintmcguire.com/index.xml" type="application/rss+xml" title="Website of Clint McGuire">
+  <link rel="feed" href="https://www.clintmcguire.com/index.xml" type="application/rss+xml" title="Website of Clint McGuire">
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="https://www.clintmcguire.com/blog/hashing/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="Website of Clint McGuire">
+  <meta property="og:url" content="https://www.clintmcguire.com/blog/hashing/">
+  <meta property="og:title" content="Hashing | Website of Clint McGuire">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2020-03-30T21:22:11-07:00">
+  
+  <meta property="article:modified_time" content="2020-03-30T21:22:11-07:00">
+  
+
+  <title>Hashing | Website of Clint McGuire</title>
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-12404931-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+</head>
+<body>
+
+<style type="text/css">
+
+.masthead-hero {
+  background-image: url("https://www.clintmcguire.com/img/hero.jpg");
+}
+</style>
+
+<div class="masthead-hero"></div>
+
+
+<div id="main" role="main">
+  <div class="sidebar sticky" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <div class="author-avatar">
+    <a href="/">
+      <img src="/img/ClintMcGuire.png" alt="Clint McGuire" itemprop="image">
+    </a>
+  </div>
+  <div class="author-content">
+    <h3 class="author-name" itemprop="name">Clint McGuire</h3>
+    <p class="author-bio" itemprop="description">IT Consultant</p>
+  </div>
+  <div class="author-urls-wrapper">
+    <ul class="author-urls social-icons" aria-hidden="true">
+      <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+        <span itemprop="name">Vancouver</span>
+      </li>
+      
+      <li>
+        <a itemprop="sameAs" href="//ca.linkedin.com/in/clintmcguire/" target="_blank" rel="noopener noreferrer">
+          <i class="fa fa-linkedin"></i>
+          LinkedIn
+        </a>
+      </li>
+      
+      <li>
+        <a itemprop="sameAs" href="//github.com/clintmc/" target="_blank" rel="noopener noreferrer">
+          <i class="fa fa-github"></i>
+          Github
+        </a>
+      </li>
+      
+    </ul>  
+  </div>
+</div>
+
+  <article class="page">
+		<div class="page_container">
+			<section class="page_content">
+				<div class="navbar-hero">
+	<nav>
+		<a href="/">Home</a>&nbsp&nbsp•&nbsp&nbsp
+		<a href="/blog">Blog</a>&nbsp&nbsp•&nbsp&nbsp
+		<a href="/contact">Contact</a>
+	</nav>
+</div>
+				<article class="post" itemscope itemtype="http://schema.org/Article">
+  <div class="post-container">
+    <h1 itemprop="name"><a href="https://www.clintmcguire.com/blog/hashing/">Hashing</a></h1>
+
+    
+      
+
+<div class="post-metadata">
+
+  <span class="post-date">
+    
+    <time datetime="2020-03-30 21:22:11 -0700 PDT" itemprop="datePublished dateModified">
+      2020-03-30
+    </time>
+  </span>
+
+  
+
+</div>
+
+    
+
+    <div class="post-style" itemprop="articleBody">
+      What are Hashes For?
+      
+
+<h2 id="what-is-hashing">What is Hashing</h2>
+
+<p>Very simplified: Hashing is a mathmatical operation used to take an Input and turn it into a different Output.</p>
+
+<p>More specifically: the hasning function will take an input of variable size and produce an output of a fixed size. The mathmatical process should not be reversible, the same input should always yield a constant output, a small change to the input should have a large change on the output, and two different inputs should never generate the same output.</p>
+
+<h2 id="why-we-hash">Why we Hash</h2>
+
+<p>There are few reason, but let&rsquo;s focus on two. Files and Secure Communications.</p>
+
+<ol>
+<li><p>Files:<br />
+If you download a file from a website, you want to make sure the file on your computer is the file as it was put onto the website - you don&rsquo;t want a file that was modified by a malicious actor and you don&rsquo;t want a file corrupted during download. Using a hash published on the original site you can see what hash the author said the file had, when they uploaded it to the site. Then you check the hash of the file on your computer and see if they match. <a href="https://www.clintmcguire.com/blog/compare_file_hash_with_powershell/" target="_blank">Here</a> I&rsquo;ve written up how to do this with PowerShell.</p></li>
+
+<li><p>Secure Communications:<br />
+As part of a TLS communication channel, the messages sent, after being encrypted are also hashed - this is a signature - so that they can validated. This is effectively the same thing as validating the file example above, but built into the protocol to happen automatically.</p></li>
+</ol>
+
+<h2 id="some-hash-functions">Some Hash Functions</h2>
+
+<p>There have been a lot of Hash Functions over the years - many have been discarded. The most commonly used today are MD5, SHA-1, and SHA-2. MD5 is considered cryptographically broken, but it&rsquo;s probably fine for checking to see if that EXE you downloaded was what the author said it was.  SHA-1 is considered insecure, and isn&rsquo;t recommended for Secure Communications, but is still fine for looking at files you grab off the internet. SHA-2 is the best option for Secure Communications, but actually isn&rsquo;t the newest. SHA-3 has been published for a while - NIST published it as a standard back in 2015&hellip;<br />
+I&rsquo;m not sure why this hasn&rsquo;t been adopted widely, yet. I see the OpenSSL has it listed in their <a href="https://www.openssl.org/docs/man1.1.1/man3/EVP_shake256.html" target="_blank">man</a> page. But looking around more it isn&rsquo;t mentioned much anywhere else&hellip;
+So, until SHA-3 gains wider traction use SHA-2 where you can.</p>
+
+    </div>
+
+    
+      
+
+    
+
+    
+      
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Hashing&amp;url=https%3a%2f%2fwww.clintmcguire.com%2fblog%2fhashing%2f"
+         target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.clintmcguire.com%2fblog%2fhashing%2f"
+         target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.clintmcguire.com%2fblog%2fhashing%2f&amp;title=Hashing"
+         target="_blank" rel="noopener noreferrer">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Hashing&amp;body=https%3a%2f%2fwww.clintmcguire.com%2fblog%2fhashing%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+    
+
+    
+      
+<div class="disqus">
+  <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "clintmcguire-com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+
+    
+
+  </div>
+</article>
+			</section>
+		</div>
+	</article>
+</div> 
+
+<div class="page_footer">
+	<p>&copy; Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
+</div>
+    
+    
+    <script id="dsq-count-scr" src="//clintmcguire-com.disqus.com/count.js" async></script>
+    
+
+
+  </body>
+</html>

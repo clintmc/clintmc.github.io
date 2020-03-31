@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Clint McGuire 2009-2020</copyright>
-    <lastBuildDate>Sun, 29 Mar 2020 11:26:57 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 30 Mar 2020 21:22:11 -0700</lastBuildDate>
     
 	<atom:link href="https://www.clintmcguire.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hashing</title>
+      <link>https://www.clintmcguire.com/blog/hashing/</link>
+      <pubDate>Mon, 30 Mar 2020 21:22:11 -0700</pubDate>
+      
+      <guid>https://www.clintmcguire.com/blog/hashing/</guid>
+      <description>What is Hashing Very simplified: Hashing is a mathmatical operation used to take an Input and turn it into a different Output.
+More specifically: the hasning function will take an input of variable size and produce an output of a fixed size. The mathmatical process should not be reversible, the same input should always yield a constant output, a small change to the input should have a large change on the output, and two different inputs should never generate the same output.</description>
+    </item>
     
     <item>
       <title>Crypto Cipher Suite Comparison</title>
