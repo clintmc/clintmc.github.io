@@ -7,10 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Clint McGuire 2009-2020</copyright>
-    <lastBuildDate>Wed, 01 Apr 2020 21:00:55 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 01 Apr 2020 21:35:39 -0700</lastBuildDate>
     
 	<atom:link href="https://www.clintmcguire.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>FortiGate SD-WAN Setup</title>
+      <link>https://www.clintmcguire.com/blog/fortigate-sdwan-setup/</link>
+      <pubDate>Wed, 01 Apr 2020 21:35:39 -0700</pubDate>
+      
+      <guid>https://www.clintmcguire.com/blog/fortigate-sdwan-setup/</guid>
+      <description>Minimal Requirements Here are the quick and dirty steps to get SD-WAN up and running on a FortiGate.
+I&amp;rsquo;m running FortiOS 6.2.3 on 60E.
+SD-WAN Interface Under Network -&amp;gt; SD-WAN:
+ Set the Status to Enabled
+ Add at least one available port to the SD-WAN Interface Members
+ Hit Apply  Perfomance Metrics Under Network -&amp;gt; Performance SLA:
+ Create a new SLA
+ Give it a Name</description>
+    </item>
     
     <item>
       <title>4 Segment Network</title>
