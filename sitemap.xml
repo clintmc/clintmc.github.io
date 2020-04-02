@@ -3,17 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.clintmcguire.com/blog/</loc>
-    <lastmod>2020-03-30T21:22:11-07:00</lastmod>
+    <loc>https://www.clintmcguire.com/blog/4-segment-network/</loc>
+    <lastmod>2020-04-01T21:00:55-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.clintmcguire.com/blog/hashing/</loc>
-    <lastmod>2020-03-30T21:22:11-07:00</lastmod>
+    <loc>https://www.clintmcguire.com/blog/</loc>
+    <lastmod>2020-04-01T21:00:55-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.clintmcguire.com/</loc>
+    <lastmod>2020-04-01T21:00:55-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.clintmcguire.com/blog/hashing/</loc>
     <lastmod>2020-03-30T21:22:11-07:00</lastmod>
   </url>
   
