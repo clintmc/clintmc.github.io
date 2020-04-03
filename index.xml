@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Clint McGuire 2009-2020</copyright>
-    <lastBuildDate>Wed, 01 Apr 2020 21:35:39 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 02 Apr 2020 22:40:20 -0700</lastBuildDate>
     
 	<atom:link href="https://www.clintmcguire.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Training in Isolation</title>
+      <link>https://www.clintmcguire.com/blog/training-in-isolation/</link>
+      <pubDate>Thu, 02 Apr 2020 22:40:20 -0700</pubDate>
+      
+      <guid>https://www.clintmcguire.com/blog/training-in-isolation/</guid>
+      <description>In the Before Time Before everybody had to stay home all the time, I would be at the local gym 3 days a week working out with barbells. I would squat, either bench or overhead press, deadlift and then do chin ups. Simple, effective, full body and as heavy as I could make it.
+My goal for 2020 was to deadlift 555 pounds for a set of 5 reps. I was deadlifting 380 pounds for 5 reps before the gym closed, so I am not likely to hit my goal this year.</description>
+    </item>
     
     <item>
       <title>FortiGate SD-WAN Setup</title>
