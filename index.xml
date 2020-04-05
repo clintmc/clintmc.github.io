@@ -7,10 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Clint McGuire 2009-2020</copyright>
-    <lastBuildDate>Fri, 03 Apr 2020 22:44:56 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 04 Apr 2020 22:43:54 -0700</lastBuildDate>
     
 	<atom:link href="https://www.clintmcguire.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Home Lab</title>
+      <link>https://www.clintmcguire.com/blog/homelab/</link>
+      <pubDate>Sat, 04 Apr 2020 22:43:54 -0700</pubDate>
+      
+      <guid>https://www.clintmcguire.com/blog/homelab/</guid>
+      <description>Home Lab Build This seems like good time to dust off the home lab gear. So I&amp;rsquo;ve pulled the hardware out and made sure everything has downloaded all the updates.
+My lab is pretty simple.
+The network is a FortiGate, FortiSwitch and FortiAP.
+The compute and storage is a desktop that I&amp;rsquo;ve jammed as many SSDs into as I can.
+I&amp;rsquo;m running Hyper-V on Windows 10, because it is simple and provides the features I need.</description>
+    </item>
     
     <item>
       <title>Training Report - Day 1</title>
