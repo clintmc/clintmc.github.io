@@ -10,7 +10,7 @@
 
   
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400,700%7cOpen&#43;Sans:400,400italic,700%7cRoboto&#43;Mono%25!%28EXTRA%20*hugolib.pageState=Page%28/blog/find-az-images-by-publisher.md%29%29">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400,700%7cOpen&#43;Sans:400,400italic,700%7cRoboto&#43;Mono%25!%28EXTRA%20*hugolib.pageState=Page%28/blog/optimization.md%29%29">
   <link rel="stylesheet" href="/styles.css">
   
 
@@ -45,21 +45,21 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://www.clintmcguire.com/blog/find-az-images-by-publisher/">
+  <link rel="canonical" href="https://www.clintmcguire.com/blog/optimization/">
 
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Website of Clint McGuire">
-  <meta property="og:url" content="https://www.clintmcguire.com/blog/find-az-images-by-publisher/">
-  <meta property="og:title" content="Find Azure Images by Publisher | Website of Clint McGuire">
+  <meta property="og:url" content="https://www.clintmcguire.com/blog/optimization/">
+  <meta property="og:title" content="Optimization | Website of Clint McGuire">
   <meta property="og:locale" content="en-us">
   
-  <meta property="article:published_time" content="2019-02-17T14:18:16-08:00">
+  <meta property="article:published_time" content="2020-04-05T23:42:24-07:00">
   
-  <meta property="article:modified_time" content="2019-02-17T14:18:16-08:00">
+  <meta property="article:modified_time" content="2020-04-05T23:42:24-07:00">
   
 
-  <title>Find Azure Images by Publisher | Website of Clint McGuire</title>
+  <title>Optimization | Website of Clint McGuire</title>
 
   
 <script type="application/javascript">
@@ -80,7 +80,7 @@ if (!doNotTrack) {
 <style type="text/css">
 
 .masthead-hero {
-  background-image: url("https://www.clintmcguire.com/img/hero.jpg");
+  background-image: url("https://www.clintmcguire.com/img/hero.webp");
 }
 </style>
 
@@ -134,7 +134,7 @@ if (!doNotTrack) {
 </div>
 				<article class="post" itemscope itemtype="http://schema.org/Article">
   <div class="post-container">
-    <h1 itemprop="name"><a href="https://www.clintmcguire.com/blog/find-az-images-by-publisher/">Find Azure Images by Publisher</a></h1>
+    <h1 itemprop="name"><a href="https://www.clintmcguire.com/blog/optimization/">Optimization</a></h1>
 
     
       
@@ -143,8 +143,8 @@ if (!doNotTrack) {
 
   <span class="post-date">
     
-    <time datetime="2019-02-17 14:18:16 -0800 PST" itemprop="datePublished dateModified">
-      2019-02-17
+    <time datetime="2020-04-05 23:42:24 -0700 PDT" itemprop="datePublished dateModified">
+      2020-04-05
     </time>
   </span>
 
@@ -155,30 +155,40 @@ if (!doNotTrack) {
     
 
     <div class="post-style" itemprop="articleBody">
-      Use AZ PowerShell module to find VM Images available by Publisher
-      <p>First install the PowerShell Az Module.</p>
+      Hugo Optimizations
+      
 
-<p>On Windows, open an elevated PowerShell window and run: <code>Install-Module -Name Az -AllowClobber</code></p>
+<h2 id="problems">Problems</h2>
 
-<p>On MacOS, use <code>sudo</code> to open <code>pwsh</code>, then run: <code>Install-Module -Name Az -AllowClobber</code></p>
+<ol>
+<li>My site was not available over HTTPS.<br /></li>
+<li>My site was slow to load.<br /></li>
+</ol>
 
-<p>Once the Az module is installed, exit the elevated/sudo PowerShell session and open a regular PowerShell session.</p>
+<h2 id="investigation-https">Investigation - HTTPS</h2>
 
-<p>Connect to your Azure account - <code>Connect-AzAccount</code> and use the device login URL and Code to sign in.</p>
+<p>This site is hosted on GitHub, so going through their documentation it looked like I should have been able to use a CDN and still have GitHub generate a cert for the site. However, it was not.</p>
 
-<p>If you don&rsquo;t know the exact Publisher Name, you can find it by looking at all the Publishers.</p>
+<h2 id="solution-https">Solution - HTTPS</h2>
 
-<p>Use <code>Get-AzVMImagePublisher -Location &lsquo;LocationName&rsquo;</code> to get a full list of the Publishers that have Images in that Location.</p>
+<p>As an experiment I disabled the CDN, to see if GitHub would be able to generate the certificate - this worked pretty quickly and in the end was pretty simple. I was trying to do something fancy and ended up in a situation where the CDN wasn&rsquo;t really doing everything it could, and neither was GitHub.</p>
 
-<p>Use <code>Get-AzVMImagePublisher -Location &lsquo;LocationName&rsquo; | where -Property PublisherName -match &ldquo;string with *&rdquo;</code> to narrow down the list.</p>
+<p>Unfortunately, not having the CDN meant that there was no caching to speed up the page loads. So I would notice how slow the page would load after posting updates. At first I thought it was just because the site would need to get re-cached in GitHub&rsquo;s CDN (I&rsquo;m pretty sure they use one, but I haven&rsquo;t investigated) and after I visited it the first time the cache would start to get updated on the CDN servers and everything would be fine.<br />
+I was wrong.</p>
 
-<p>Match will work with the * wildcard, in my testing this returned more matches than I was expecting. (I should point out I was using PowerShell 6.1, in case that makes a difference.)</p>
+<h2 id="investigation-slow-site">Investigation - Slow Site</h2>
 
-<p>LocationName can be &lsquo;eastus&rsquo; or &lsquo;westus&rsquo;, etc. It will also accept &lsquo;east us&rsquo;, in my testing.</p>
+<p>I noticed, after not making any changes, that the site was still slow.<br />
+So I found a couple tools that check page load speeds and I was informed that my &lsquo;avatar&rsquo; and &lsquo;hero&rsquo; images were too large and slowing down the page load.<br />
+So I went about resizing the avatar image, because it was actually a very large image - 1985 x 1383 - and tried to bring it down to the 110 x 77 that the image displays as. But I found that when I brought the image down that small, even without any compression - the image quality dropped off.  So I could get that image to the exact right size, to make the tool happy, but I wasn&rsquo;t happy with it anymore.<br />
+The hero image is the header image on the top of this page - it needs to resize dynamically with the screen size, which the tools understand, so they weren&rsquo;t so much complaining about the file size. They complained about the file format.  This one was pretty easy to fix.</p>
 
-<p>When you have the Publisher Name you can get the list of all their VM Images by using: <code>Get-AzVMImageOffer -Location &lsquo;LocationName&rsquo; -PublisherName &lsquo;PublisherName&rsquo;</code></p>
+<h2 id="solution-slow-site">Solution - Slow Site</h2>
 
-<p>This will return the Offer and Id, in addition to the PublisherName and Location.</p>
+<p>In the end I decided that scaling the avatar image down to 300 x 209 was about as small as I could make the image, but still keep the display quality high - perhaps I was doing something wrong with the scaling process, but this seemed like the best solution to me.<br />
+Although the tools are still grumpy about the image being larger than it&rsquo;s actual display size&hellip;<br />
+For the hero image, I just had the image converted to webp format.<br />
+I&rsquo;m not sure if this is a quirk of the theme I&rsquo;m using, but each of the static pages for this site have their own hero value, so to implement this solution across all pages would require me to update each of the page files.  I might get around to that in a few days - but I think I will take a look at the Hugo documentation to see if there is a way I can make this change in the main config file&hellip;</p>
 
     </div>
 
@@ -193,28 +203,28 @@ if (!doNotTrack) {
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Find%20Azure%20Images%20by%20Publisher&amp;url=https%3a%2f%2fwww.clintmcguire.com%2fblog%2ffind-az-images-by-publisher%2f"
+         href="https://twitter.com/intent/tweet?text=Optimization&amp;url=https%3a%2f%2fwww.clintmcguire.com%2fblog%2foptimization%2f"
          target="_blank" rel="noopener noreferrer">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.clintmcguire.com%2fblog%2ffind-az-images-by-publisher%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.clintmcguire.com%2fblog%2foptimization%2f"
          target="_blank" rel="noopener noreferrer">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.clintmcguire.com%2fblog%2ffind-az-images-by-publisher%2f&amp;title=Find%20Azure%20Images%20by%20Publisher"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fwww.clintmcguire.com%2fblog%2foptimization%2f&amp;title=Optimization"
          target="_blank" rel="noopener noreferrer">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Find%20Azure%20Images%20by%20Publisher&amp;body=https%3a%2f%2fwww.clintmcguire.com%2fblog%2ffind-az-images-by-publisher%2f">
+         href="mailto:?subject=Optimization&amp;body=https%3a%2f%2fwww.clintmcguire.com%2fblog%2foptimization%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>

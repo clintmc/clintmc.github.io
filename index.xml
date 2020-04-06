@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Clint McGuire 2009-2020</copyright>
-    <lastBuildDate>Sat, 04 Apr 2020 22:43:54 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 05 Apr 2020 23:42:24 -0700</lastBuildDate>
     
 	<atom:link href="https://www.clintmcguire.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Optimization</title>
+      <link>https://www.clintmcguire.com/blog/optimization/</link>
+      <pubDate>Sun, 05 Apr 2020 23:42:24 -0700</pubDate>
+      
+      <guid>https://www.clintmcguire.com/blog/optimization/</guid>
+      <description>Problems  My site was not available over HTTPS.
+ My site was slow to load.
+  Investigation - HTTPS This site is hosted on GitHub, so going through their documentation it looked like I should have been able to use a CDN and still have GitHub generate a cert for the site. However, it was not.
+Solution - HTTPS As an experiment I disabled the CDN, to see if GitHub would be able to generate the certificate - this worked pretty quickly and in the end was pretty simple.</description>
+    </item>
     
     <item>
       <title>Home Lab</title>
