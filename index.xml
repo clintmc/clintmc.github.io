@@ -7,10 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Clint McGuire 2009-2020</copyright>
-    <lastBuildDate>Tue, 26 May 2020 22:51:16 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2020 23:18:28 -0700</lastBuildDate>
     
 	<atom:link href="https://www.clintmcguire.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>FortiManager VPN Certificate</title>
+      <link>https://www.clintmcguire.com/blog/fortimanager-vpn-certificate/</link>
+      <pubDate>Wed, 27 May 2020 23:18:28 -0700</pubDate>
+      
+      <guid>https://www.clintmcguire.com/blog/fortimanager-vpn-certificate/</guid>
+      <description>Issue FortiManager, when it&amp;rsquo;s new - I think, will sometimes try to push a certificate to FortiGate devices.
+The error message in FortiManager is spread across four lines, they are:
+&amp;ldquo;Input is not a valid CA certificate.&amp;rdquo;
+&amp;ldquo;The field ca is empty!&amp;rdquo;
+&amp;ldquo;node_check_object fail! for ca&amp;rdquo;
+&amp;ldquo;Attribute &amp;lsquo;ca&amp;rsquo; MUST be set.&amp;rdquo;
+I&amp;rsquo;ve run into this in my lab, and I&amp;rsquo;m pretty sure I saw this in a production FortiManager.</description>
+    </item>
     
     <item>
       <title>FortiGate Scripting</title>
