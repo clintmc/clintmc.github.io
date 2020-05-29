@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Clint McGuire 2009-2020</copyright>
-    <lastBuildDate>Wed, 27 May 2020 23:18:28 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2020 10:15:14 -0700</lastBuildDate>
     
 	<atom:link href="https://www.clintmcguire.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ADVPN Overview</title>
+      <link>https://www.clintmcguire.com/blog/advpn-overview/</link>
+      <pubDate>Fri, 29 May 2020 10:15:14 -0700</pubDate>
+      
+      <guid>https://www.clintmcguire.com/blog/advpn-overview/</guid>
+      <description>High Level Overview To explain ADVPN it is useful to contrast it with the two main alternatives - Hub &amp;amp; Spoke and Full Mesh.
+In a Hub &amp;amp; Spoke network one site is deemed the Hub, with all other sites - Spokes - connecting directly to the Hub. In a Full Mesh all sites connect to all other sites.
+ADVPN starts as Hub &amp;amp; Spoke, with one site deemed the Hub - but all Spokes can directly connect by getting connection details from the Hub.</description>
+    </item>
     
     <item>
       <title>FortiManager VPN Certificate</title>

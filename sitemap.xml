@@ -3,17 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.clintmcguire.com/blog/</loc>
-    <lastmod>2020-05-27T23:18:28-07:00</lastmod>
+    <loc>https://www.clintmcguire.com/blog/advpn-overview/</loc>
+    <lastmod>2020-05-29T10:15:14-07:00</lastmod>
   </url>
   
   <url>
-    <loc>https://www.clintmcguire.com/blog/fortimanager-vpn-certificate/</loc>
-    <lastmod>2020-05-27T23:18:28-07:00</lastmod>
+    <loc>https://www.clintmcguire.com/blog/</loc>
+    <lastmod>2020-05-29T10:15:14-07:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.clintmcguire.com/</loc>
+    <lastmod>2020-05-29T10:15:14-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.clintmcguire.com/blog/fortimanager-vpn-certificate/</loc>
     <lastmod>2020-05-27T23:18:28-07:00</lastmod>
   </url>
   
