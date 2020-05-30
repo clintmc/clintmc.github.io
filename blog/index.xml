@@ -242,13 +242,14 @@ If you don&amp;rsquo;t know the exact Publisher Name, you can find it by looking
       <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://www.clintmcguire.com/blog/compare_file_hash_with_powershell/</guid>
-      <description>Once you&amp;rsquo;ve downloaded the file use Get-FileHash to calculate the SAH256 hash. $hash = (Get-FileHash .\filename.exe).hash
-Set the copy the hash valie from the website and assign it to a variable to compare.
-$webhash = &amp;ldquo;3&amp;hellip;f&amp;rsquo; [Paste the full SHA256 hash in the quotes]
+      <description>Once you&amp;rsquo;ve downloaded the file use Get-FileHash to calculate the SHA256 hash.
+$hash = (Get-FileHash .\filename.exe).hash
+Copy the hash value from the website and assign it to a variable to compare.
+$webhash = &amp;quot;3...f&#39;
+[Paste the full SHA256 hash in the quotes]
 Then use PowerShell to compare this to the published hash.
 if ($hash -eq $webhash){$true}
-If this returns &amp;ldquo;True&amp;rdquo; then the hashes match.
-Or if you want to do it in one line: If ((Get-FileHash .</description>
+This will return either &amp;ldquo;True&amp;rdquo; or nothing, if &amp;ldquo;True&amp;rdquo; then the hashes match.</description>
     </item>
     
     <item>
