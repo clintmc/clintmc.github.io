@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Clint McGuire 2009-2020</copyright>
-    <lastBuildDate>Fri, 29 May 2020 10:15:14 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jun 2020 21:49:42 -0700</lastBuildDate>
     
 	<atom:link href="https://www.clintmcguire.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>BGP Local Preference</title>
+      <link>https://www.clintmcguire.com/blog/bgplocpref/</link>
+      <pubDate>Mon, 01 Jun 2020 21:49:42 -0700</pubDate>
+      
+      <guid>https://www.clintmcguire.com/blog/bgplocpref/</guid>
+      <description>Local Preference I needed to use BGP to advertise the networks in a multi-site network, with FortiGates acting as routers at each site. Using iBGP we configured the Primary Subnet at the Primary Date Center to also be advertised by the DR Data Center. However, because the workload would only be active at the Primary DC - until an actual DR event happened - we needed to ensure that traffic for that subnet would only be routed to the Primary DC.</description>
+    </item>
     
     <item>
       <title>ADVPN Overview</title>
