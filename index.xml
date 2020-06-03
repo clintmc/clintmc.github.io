@@ -7,10 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Clint McGuire 2009-2020</copyright>
-    <lastBuildDate>Mon, 01 Jun 2020 21:49:42 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2020 23:04:11 -0700</lastBuildDate>
     
 	<atom:link href="https://www.clintmcguire.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>FortiGate SSL Inspection Exclusion</title>
+      <link>https://www.clintmcguire.com/blog/fortigatessldeepinspectionexclusion/</link>
+      <pubDate>Tue, 02 Jun 2020 23:04:11 -0700</pubDate>
+      
+      <guid>https://www.clintmcguire.com/blog/fortigatessldeepinspectionexclusion/</guid>
+      <description>Things weren&amp;rsquo;t working as expected I had recently enabled the SSL Deep Inspection policy on some of my web traffic - in part to try to block ads, maybe I&amp;rsquo;ll write a blog post about that another time - and I was noticing odd behaviour.
+A few of the odd things were around VPN connections and Citrix sessions.
+FortiClient VPN wasn&amp;rsquo;t able to connect - it was getting to 80% then throwing an error saying there was something wrong w/ my credentials or my account wasn&amp;rsquo;t setup for VPN access.</description>
+    </item>
     
     <item>
       <title>BGP Local Preference</title>
