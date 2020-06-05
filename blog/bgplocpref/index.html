@@ -176,10 +176,10 @@ Local Preference only modifies incoming data - so it needs to be applied via <co
 <p>Speaking of the BGP Table, on FortiGates you can see the table by running <code>get router info bgp networks</code>.</p>
 
 <p>As you make changes to the BGP config, you will need to refresh the table, you do that by clearing the neighbours:<br />
-<code>exe router clear bgp ip &lt;neighbour-ip&gt; soft out</code></p>
+<code>exe router clear bgp ip &lt;neighbour-ip&gt; soft</code></p>
 
 <p>If you can handle a network disruption you can run this command:<br />
-<code>exe router clear bgp ip &lt;neighbour-ip&gt; out</code><br />
+<code>exe router clear bgp ip &lt;neighbour-ip&gt;</code><br />
 This one isn’t recommended on production gear during business hours, but maybe you really do need to do it&hellip;</p>
 
     </div>
