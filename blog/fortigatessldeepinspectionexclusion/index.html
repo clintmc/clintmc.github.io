@@ -182,7 +182,7 @@ With Citrix, apps would look like they were launching from the StoreFront, but t
 To create a new address, click the &ldquo;+&rdquo; at the bottom of the addresses column, this will open the &ldquo;Select Entries&rdquo; panel, click the &ldquo;+ Create&rdquo; button to add a new entry.  From the options, I needed to select Wildcard FQDN for each of the client&rsquo;s URLs.<br />
 <img src="/CreateNewAddress.png" alt="Create new Address" /></p>
 
-<p>Give the new address entry a name, enter the URL and hit OK.  For the URL I used <code>*.example.com</code>, but I suspect it would accept <code>www.example.com</code>.</p>
+<p>Give the new address entry a name, enter the URL and hit OK.  For the URL I used <code>*.example.com</code>. This will not take <code>www.example.com</code>, it will only accept <code>*</code> on the version of FortiOS I was working on.</p>
 
 <p>Make sure to add the new address to the list of exclusions, then click Ok to update the policy.</p>
 
