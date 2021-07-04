@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.80.0" />
   <meta name="author" content="Clint McGuire">
 
   
@@ -156,35 +156,25 @@ if (!doNotTrack) {
 
     <div class="post-style" itemprop="articleBody">
       Use PowerShell to test connection to a port
-      
-
-<p>To quickly test if you can communicate with a server on a specific port use this command:
-<code>Test-NetConnection (hostname/ip) -Port (tcp port number)</code>
+      <p>To quickly test if you can communicate with a server on a specific port use this command:
+<!-- raw HTML omitted -->Test-NetConnection (hostname/ip) -Port (tcp port number)<!-- raw HTML omitted -->
 You are looking for TcpTestSucceeded : True in the output.</p>
-
 <p>Example:
-<code>PS C:\Users\Clint&gt; Test-NetConnection www.google.com -port 80</p>
-
-<p>ComputerName : www.google.com
+<!-- raw HTML omitted -->PS C:\Users\Clint&gt; Test-NetConnection <a href="http://www.google.com">www.google.com</a> -port 80</p>
+<p>ComputerName : <a href="http://www.google.com">www.google.com</a>
 RemoteAddress : 74.125.28.103
 RemotePort : 80
 InterfaceAlias : vEthernet (LAN) 2
 SourceAddress : 192.168.0.5
-TcpTestSucceeded : True</code></p>
-
+TcpTestSucceeded : True<!-- raw HTML omitted --></p>
 <p>This command is quite flexible, you can also have it test with ICMP like PING and Trace Route.</p>
-
-<p>For a simple ping test: Test-NetConnection www.google.com
-For a trace route test: Test-NetConnection www.google.com -TraceRoute</p>
-
+<p>For a simple ping test: Test-NetConnection <a href="http://www.google.com">www.google.com</a>
+For a trace route test: Test-NetConnection <a href="http://www.google.com">www.google.com</a> -TraceRoute</p>
 <p>Does not appear to support UDP test, in PowerShell 5&hellip;</p>
-
 <h2 id="update">Update:</h2>
-
-<p>This command doesn&rsquo;t appear to be in PowerShell Core/PowerShell 6. However, <code>Test-Connection</code> is.
+<p>This command doesn&rsquo;t appear to be in PowerShell Core/PowerShell 6. However, <!-- raw HTML omitted -->Test-Connection<!-- raw HTML omitted --> is.
 It has some different options, I haven&rsquo;t read all of them, but it appears to be more flexible, however, to get the same result as above run:
-<code>Test-Connection www.googgle.com -TCPPort 80</code></p>
-
+<!-- raw HTML omitted -->Test-Connection <a href="http://www.googgle.com">www.googgle.com</a> -TCPPort 80<!-- raw HTML omitted --></p>
 <p>When you check a specific port, it will return a True or False - in my testing it performs this check quickly</p>
 
     </div>
@@ -267,7 +257,7 @@ It has some different options, I haven&rsquo;t read all of them, but it appears 
 </div> 
 
 <div class="page_footer">
-	<p>&copy; Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
+	<p>© Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
 </div>
     
     

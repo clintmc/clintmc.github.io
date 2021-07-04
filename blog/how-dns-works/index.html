@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.80.0" />
   <meta name="author" content="Clint McGuire">
 
   
@@ -156,51 +156,34 @@ if (!doNotTrack) {
 
     <div class="post-style" itemprop="articleBody">
       A Better Analogy For Explaining DNS?
-      
-
-<h2 id="dns-analogy">DNS Analogy</h2>
-
+      <h2 id="dns-analogy">DNS Analogy</h2>
 <p>The analogy typically used to explain what DNS does is to compare it to a Phone Book.
 Which isn&rsquo;t a great analogy, when you look at how DNS works.</p>
-
 <p>I think I have a better analogy. The downside of my proposed analogy, is that it requires some additional explaining - although I suspect people coming out of school today aren&rsquo;t very familiar with phone books anymore either&hellip;</p>
-
 <p>Here is my suggestion for a better analogy&hellip;</p>
-
 <p>Canada&rsquo;s Postal Code System.</p>
-
 <p>Allow me to elaborate.</p>
-
-<p>In Canada, we address our like so:<br />
-RECIPIENT NAME<br />
-STREET ADDRESS<br />
-CITY, PROVINCE<br />
+<p>In Canada, we address our like so:<br>
+RECIPIENT NAME<br>
+STREET ADDRESS<br>
+CITY, PROVINCE<br>
 POSTAL CODE</p>
-
 <p>A postal code is a 6 character alpha numeric code, with a space between the thrid and fourth characters. They always start with a letter, and they alternate letter and number.</p>
-
-<p>For example, Vancouver City Hall&rsquo;s Postal Code is<br />
+<p>For example, Vancouver City Hall&rsquo;s Postal Code is<br>
 V5Y 1V4</p>
-
 <p>Let&rsquo;s break down postal codes, and see why this is a better analogy for the DNS system.</p>
-
 <p>Postal Codes are used to sort mail - all the Postal Codes in BC start with V. All of the Postal Codes in Ontario start with P. (Quick Canadian Geography aside, BC and Ontario are Provinces, they are generally equivalent to US States, if that is relevant. Also BC is 364,764 sq mi, Texas is only 268,597 sq mi.)
-This first letter tells the mail sorting system what large geographic section of the country to route the mail to.<br />
+This first letter tells the mail sorting system what large geographic section of the country to route the mail to.<br>
 The first three characters - V5Y in our example - represent a section of the city. Cities over a certain population will have many different valid combinations for the first three characters. From maps I&rsquo;ve looked at, Vancouver has around 29 different codes for the first three characters.</p>
-
 <p>The last three characters of the postal code - 1V4 - represent a specific address or a range of addresses.
 In the case of city hall, it is likley a specific address.</p>
-
 <p>How does this make for a better analogy? I&rsquo;m glad you asked.</p>
-
 <p>DNS is a hierachical system, with searches (assuming results aren&rsquo;t cached) starting from the right of the name and working to the left.
-Using www.clintmcguire.com as our example, we start our lookup by asking the Root DNS servers (represented by a &ldquo;hidden&rdquo; &lsquo;.&rsquo; at the end of the name) about what servers to ask to get information about the .com part of the name. One of the Root servers will return some options for .com DNS servers.<br />
-Our query then goes to the .com DNS servers and asks about clintmcguire.com.<br />
-A .com DNS server will respond with clintmcguire.com&rsquo;s DNS servers.<br />
+Using <a href="http://www.clintmcguire.com">www.clintmcguire.com</a> as our example, we start our lookup by asking the Root DNS servers (represented by a &ldquo;hidden&rdquo; &lsquo;.&rsquo; at the end of the name) about what servers to ask to get information about the .com part of the name. One of the Root servers will return some options for .com DNS servers.<br>
+Our query then goes to the .com DNS servers and asks about clintmcguire.com.<br>
+A .com DNS server will respond with clintmcguire.com&rsquo;s DNS servers.<br>
 The process is repeated looking for the server called www, by asking clintmcguire.com&rsquo;s DNS servers for the answer.</p>
-
 <p>Stated another way, we are refining a search by asking each level of a hierarchy for more specific information, until we get the specific answer we need - moving from most broad to most specific.</p>
-
 <p>And that is why a Postal Code is a better analogy than a Phone Book. With a Phone Book you make an alphabetical search based on a name (white pages) or an alphabetical search based on name in a business category (yellow pages). The end result is a phone number to contact a person/business - which is basically what DNS does, but it doesn&rsquo;t convey the method of the search accurately.
 DNS is actually starting with a very broad search scope and narrowing down the search space as it moves from one level down to the next. In the end you get an IP to communicate with, which in IPv4 kinda sorta looks like a phone number, if you squint hard enough. But IPv6 is coming soon (any day now, I&rsquo;ll just sit here waiting for it, yup, just a little bit longer&hellip;) and no one would confuse an IPv6 address for a phone number. It&rsquo;s unlikely they would confuse it with a Postal Code, either, but they both use numbers AND letters, so that should also count for something.</p>
 
@@ -284,7 +267,7 @@ DNS is actually starting with a very broad search scope and narrowing down the s
 </div> 
 
 <div class="page_footer">
-	<p>&copy; Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
+	<p>© Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
 </div>
     
     

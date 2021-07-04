@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on Website of Clint McGuire</title>
@@ -7,10 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Clint McGuire 2009-2020</copyright>
-    <lastBuildDate>Tue, 02 Jun 2020 23:04:11 -0700</lastBuildDate>
-    
-	<atom:link href="https://www.clintmcguire.com/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Sun, 04 Jul 2021 10:44:13 -0700</lastBuildDate><atom:link href="https://www.clintmcguire.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FortiGate CLI LDAP Test</title>
+      <link>https://www.clintmcguire.com/blog/fortigate-cli-ldap-test/</link>
+      <pubDate>Sun, 04 Jul 2021 10:44:13 -0700</pubDate>
+      
+      <guid>https://www.clintmcguire.com/blog/fortigate-cli-ldap-test/</guid>
+      <description>The Symptoms A client was having an issue with IPsec VPN connections to their FortiGate. Users were getting non-descriptive error messages and not able to connect. The issue was affecting all users. We couldn&amp;rsquo;t find anything in the FortiClient or FortiGate logs to indicate what the problem was. As far as we could see, the FortiClient connection was simply timing out.
+The FortiGate Web GUI showed us LDAP was working. Looking at packet traces on the FortiGate we could see the IPsec traffic come in, but we weren&amp;rsquo;t seeing any traffic going back to the source.</description>
+    </item>
     
     <item>
       <title>FortiGate SSL Inspection Exclusion</title>
@@ -55,7 +61,8 @@ The error message in FortiManager is spread across four lines, they are:
 &amp;ldquo;The field ca is empty!&amp;rdquo;
 &amp;ldquo;node_check_object fail! for ca&amp;rdquo;
 &amp;ldquo;Attribute &amp;lsquo;ca&amp;rsquo; MUST be set.&amp;rdquo;
-I&amp;rsquo;ve run into this in my lab, and I&amp;rsquo;m pretty sure I saw this in a production FortiManager.</description>
+I&amp;rsquo;ve run into this in my lab, and I&amp;rsquo;m pretty sure I saw this in a production FortiManager.
+I found this issue discussed on the Fortinet forums, but I didn&amp;rsquo;t find the solution there.</description>
     </item>
     
     <item>
@@ -75,9 +82,7 @@ For example, I have a script that will check the name of the FortiGate it is run
       <pubDate>Sun, 05 Apr 2020 23:42:24 -0700</pubDate>
       
       <guid>https://www.clintmcguire.com/blog/optimization/</guid>
-      <description>Problems  My site was not available over HTTPS.
- My site was slow to load.
-  Investigation - HTTPS This site is hosted on GitHub, so going through their documentation it looked like I should have been able to use a CDN and still have GitHub generate a cert for the site. However, it was not.
+      <description>Problems  My site was not available over HTTPS. My site was slow to load.  Investigation - HTTPS This site is hosted on GitHub, so going through their documentation it looked like I should have been able to use a CDN and still have GitHub generate a cert for the site. However, it was not.
 Solution - HTTPS As an experiment I disabled the CDN, to see if GitHub would be able to generate the certificate - this worked pretty quickly and in the end was pretty simple.</description>
     </item>
     
@@ -95,28 +100,6 @@ I&amp;rsquo;m running Hyper-V on Windows 10, because it is simple and provides t
     </item>
     
     <item>
-      <title>Training Report - Day 1</title>
-      <link>https://www.clintmcguire.com/blog/training-report-day1/</link>
-      <pubDate>Fri, 03 Apr 2020 22:44:56 -0700</pubDate>
-      
-      <guid>https://www.clintmcguire.com/blog/training-report-day1/</guid>
-      <description>How the new plan went The training was executed as planned.
-Twenty seconds of work, followed by twenty seconds of rest was not much of a stimulus.
-The two minutes of rest at the end was enough to nearly fully recover between rounds. Three rounds was sufficient to get my heart rate up, warm up joints and generally get my day started.
-Skipping easy didn&amp;rsquo;t go as poorly as I expected - in regards to stepping on the rope - but my calves need to get used to the jumping.</description>
-    </item>
-    
-    <item>
-      <title>Training in Isolation</title>
-      <link>https://www.clintmcguire.com/blog/training-in-isolation/</link>
-      <pubDate>Thu, 02 Apr 2020 22:40:20 -0700</pubDate>
-      
-      <guid>https://www.clintmcguire.com/blog/training-in-isolation/</guid>
-      <description>In the Before Time Before everybody had to stay home all the time, I would be at the local gym 3 days a week working out with barbells. I would squat, either bench or overhead press, deadlift and then do chin ups. Simple, effective, full body and as heavy as I could make it.
-My goal for 2020 was to deadlift 555 pounds for a set of 5 reps. I was deadlifting 380 pounds for 5 reps before the gym closed, so I am not likely to hit my goal this year.</description>
-    </item>
-    
-    <item>
       <title>FortiGate SD-WAN Setup</title>
       <link>https://www.clintmcguire.com/blog/fortigate-sdwan-setup/</link>
       <pubDate>Wed, 01 Apr 2020 21:35:39 -0700</pubDate>
@@ -125,11 +108,8 @@ My goal for 2020 was to deadlift 555 pounds for a set of 5 reps. I was deadlifti
       <description>Minimal Requirements Here are the quick and dirty steps to get SD-WAN up and running on a FortiGate.
 I&amp;rsquo;m running FortiOS 6.2.3 on 60E.
 SD-WAN Interface Under Network -&amp;gt; SD-WAN:
- Set the Status to Enabled
- Add at least one available port to the SD-WAN Interface Members
- Hit Apply  Perfomance Metrics Under Network -&amp;gt; Performance SLA:
- Create a new SLA
- Give it a Name</description>
+ Set the Status to Enabled Add at least one available port to the SD-WAN Interface Members Hit Apply  Perfomance Metrics Under Network -&amp;gt; Performance SLA:
+ Create a new SLA Give it a Name For Protocol pick Ping Add two IPs for servers to run ping tests against - I&amp;rsquo;d recommend 1.</description>
     </item>
     
     <item>
@@ -140,7 +120,7 @@ SD-WAN Interface Under Network -&amp;gt; SD-WAN:
       <guid>https://www.clintmcguire.com/blog/4-segment-network/</guid>
       <description>Purpose How do you design a well-organized, well managed network for small/medium business?
 Let&amp;rsquo;s layout some assumptions:
- There are server in the office The servers are in either in a well-organized closet or in a server room (they are not in a Colo - but access is restricted) There may be some amount of Cloud/SaaS applications This is not a VDI environment (we could sketch that out in a different post) Security is a concern - but not security at any cost</description>
+ There are server in the office The servers are in either in a well-organized closet or in a server room (they are not in a Colo - but access is restricted) There may be some amount of Cloud/SaaS applications This is not a VDI environment (we could sketch that out in a different post) Security is a concern - but not security at any cost  Let&amp;rsquo;s start with what I generally see As a consultant, I&amp;rsquo;ve been engaged by dozens of small/medium size businesses and many large businesses.</description>
     </item>
     
     <item>
@@ -214,7 +194,8 @@ The client sends a request - typically via UDP - on port 53, to the name resolve
       
       <guid>https://www.clintmcguire.com/blog/how-dns-works/</guid>
       <description>DNS Analogy The analogy typically used to explain what DNS does is to compare it to a Phone Book. Which isn&amp;rsquo;t a great analogy, when you look at how DNS works.
-I think I have a better analogy. The downside of my proposed analogy, is that it requires some additional explaining - although I suspect people coming out of school today aren&amp;rsquo;t very familiar with phone books anymore either&amp;hellip;</description>
+I think I have a better analogy. The downside of my proposed analogy, is that it requires some additional explaining - although I suspect people coming out of school today aren&amp;rsquo;t very familiar with phone books anymore either&amp;hellip;
+Here is my suggestion for a better analogy&amp;hellip;</description>
     </item>
     
     <item>
@@ -235,10 +216,9 @@ The commands to configure the PDC to get time from the NTP Pool servers:</descri
       
       <guid>https://www.clintmcguire.com/blog/find-az-offers/</guid>
       <description>Following up on my post about finding Azure Images by Publisher, here is how to get all the SKUs for the specific Offers.
-Get-AzVMImageSKu is the command to run.
+Get-AzVMImageSKuis the command to run.
 It requires Location, Publisher, and Offer.
-For example: Get-AzVMImageSku -Location &amp;lsquo;eastus&amp;rsquo; -publisher &amp;lsquo;fortinet&amp;rsquo; -Offer &amp;lsquo;fortinet_fortigate-vm_v5&amp;rsquo;
-This will return the two SKUs - &amp;ldquo;fortinet_fg-vm&amp;rdquo; and &amp;ldquo;fortinet_fg-vm_payg&amp;rdquo;
+For example: Get-AzVMImageSku -Location &amp;lsquo;eastus&amp;rsquo; -publisher &amp;lsquo;fortinet&amp;rsquo; -Offer &amp;lsquo;fortinet_fortigate-vm_v5&amp;rsquo;This will return the two SKUs - &amp;ldquo;fortinet_fg-vm&amp;rdquo; and &amp;ldquo;fortinet_fg-vm_payg&amp;rdquo;
 You can take the SKUs and use those to deploy new VMs.</description>
     </item>
     
@@ -249,10 +229,8 @@ You can take the SKUs and use those to deploy new VMs.</description>
       
       <guid>https://www.clintmcguire.com/blog/find-az-images-by-publisher/</guid>
       <description>First install the PowerShell Az Module.
-On Windows, open an elevated PowerShell window and run: Install-Module -Name Az -AllowClobber
-On MacOS, use sudo to open pwsh, then run: Install-Module -Name Az -AllowClobber
-Once the Az module is installed, exit the elevated/sudo PowerShell session and open a regular PowerShell session.
-Connect to your Azure account - Connect-AzAccount and use the device login URL and Code to sign in.
+On Windows, open an elevated PowerShell window and run: Install-Module -Name Az -AllowClobberOn MacOS, use sudoto open pwsh, then run: Install-Module -Name Az -AllowClobberOnce the Az module is installed, exit the elevated/sudo PowerShell session and open a regular PowerShell session.
+Connect to your Azure account - Connect-AzAccountand use the device login URL and Code to sign in.
 If you don&amp;rsquo;t know the exact Publisher Name, you can find it by looking at all the Publishers.</description>
     </item>
     
@@ -269,7 +247,8 @@ $webhash = &amp;quot;3...f&#39;
 [Paste the full SHA256 hash in the quotes]
 Then use PowerShell to compare this to the published hash.
 if ($hash -eq $webhash){$true}
-This will return either &amp;ldquo;True&amp;rdquo; or nothing, if &amp;ldquo;True&amp;rdquo; then the hashes match.</description>
+This will return either &amp;ldquo;True&amp;rdquo; or nothing, if &amp;ldquo;True&amp;rdquo; then the hashes match.
+Or if you want to do it in one line:</description>
     </item>
     
     <item>
@@ -300,9 +279,9 @@ The specific process doesn&amp;rsquo;t take up much CPU or RAM, but it is annoyi
       
       <guid>https://www.clintmcguire.com/blog/redhat_enterprise_linux_training_notes/</guid>
       <description>Notes from RHEL 7 Partner Training&amp;hellip;
-You can access Red Hat Support via the CLI tool redhat-support-tool The tool gives you access to the KB, which you can search from the CLI and you can work with support tickets.
-Running sosreport will create an archive file with logs and other info that can be attached to a ticket.
-redhat-support-tool has options for attaching files, it will look for an sosreport when you first open the ticket.</description>
+You can access Red Hat Support via the CLI toolredhat-support-toolThe tool gives you access to the KB, which you can search from the CLI and you can work with support tickets.
+Running sosreportwill create an archive file with logs and other info that can be attached to a ticket.
+redhat-support-toolhas options for attaching files, it will look for an sosreport when you first open the ticket.</description>
     </item>
     
     <item>
@@ -311,10 +290,9 @@ redhat-support-tool has options for attaching files, it will look for an sosrepo
       <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>https://www.clintmcguire.com/blog/use_powershell_to_test_connection_to_a_port/</guid>
-      <description>To quickly test if you can communicate with a server on a specific port use this command: Test-NetConnection (hostname/ip) -Port (tcp port number) You are looking for TcpTestSucceeded : True in the output.
+      <description>To quickly test if you can communicate with a server on a specific port use this command: Test-NetConnection (hostname/ip) -Port (tcp port number)You are looking for TcpTestSucceeded : True in the output.
 Example: PS C:\Users\Clint&amp;gt; Test-NetConnection www.google.com -port 80
-ComputerName : www.google.com RemoteAddress : 74.125.28.103 RemotePort : 80 InterfaceAlias : vEthernet (LAN) 2 SourceAddress : 192.168.0.5 TcpTestSucceeded : True
-This command is quite flexible, you can also have it test with ICMP like PING and Trace Route.</description>
+ComputerName : www.google.com RemoteAddress : 74.125.28.103 RemotePort : 80 InterfaceAlias : vEthernet (LAN) 2 SourceAddress : 192.168.0.5 TcpTestSucceeded : TrueThis command is quite flexible, you can also have it test with ICMP like PING and Trace Route.</description>
     </item>
     
     <item>

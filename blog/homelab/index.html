@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.80.0" />
   <meta name="author" content="Clint McGuire">
 
   
@@ -156,30 +156,22 @@ if (!doNotTrack) {
 
     <div class="post-style" itemprop="articleBody">
       Build and Plan for a Home Lab
-      
-
-<h2 id="home-lab-build">Home Lab Build</h2>
-
+      <h2 id="home-lab-build">Home Lab Build</h2>
 <p>This seems like good time to dust off the home lab gear.  So I&rsquo;ve pulled the hardware out and made sure everything has downloaded all the updates.</p>
-
-<p>My lab is pretty simple.<br />
-The network is a FortiGate, FortiSwitch and FortiAP.<br />
-The compute and storage is a desktop that I&rsquo;ve jammed as many SSDs into as I can.<br />
+<p>My lab is pretty simple.<br>
+The network is a FortiGate, FortiSwitch and FortiAP.<br>
+The compute and storage is a desktop that I&rsquo;ve jammed as many SSDs into as I can.<br>
 I&rsquo;m running Hyper-V on Windows 10, because it is simple and provides the features I need.</p>
-
-<p>The rest of the house also uses the Fortinet devices, so I&rsquo;ve put the lab &ldquo;server&rdquo; on its own VLAN.<br />
-This allows me to setup all the trappings of an AD domain, with out any bleed over into the rest of the house.<br />
-And since everyone is home all the time and using the network - I can&rsquo;t have my lab be a bottleneck.<br />
+<p>The rest of the house also uses the Fortinet devices, so I&rsquo;ve put the lab &ldquo;server&rdquo; on its own VLAN.<br>
+This allows me to setup all the trappings of an AD domain, with out any bleed over into the rest of the house.<br>
+And since everyone is home all the time and using the network - I can&rsquo;t have my lab be a bottleneck.<br>
 I need to be able to reboot or simply shutdown my lab, without it affecting regular operations.</p>
-
-<p>Because the FortiSwitch is managed by the FortiGate I created the new VLAN on the FortiGate, assigned it to the port I had connected the &ldquo;server&rdquo; to, and then built firewall rules around this VLAN.<br />
-I can lock down access into and out of this VLAN on the FortiGate to as granular as required, without any additional configuration on any other devices.<br />
+<p>Because the FortiSwitch is managed by the FortiGate I created the new VLAN on the FortiGate, assigned it to the port I had connected the &ldquo;server&rdquo; to, and then built firewall rules around this VLAN.<br>
+I can lock down access into and out of this VLAN on the FortiGate to as granular as required, without any additional configuration on any other devices.<br>
 So I can access and manage my lab without it impacting the rest of the family.</p>
-
 <h2 id="home-lab-plan">Home Lab Plan</h2>
-
-<p>I&rsquo;m not entirely sure what I&rsquo;m going to test out first - but I have some Active Direcotry Certificate Services questions I would like to get answers too, and the best way is probably to just test it all out.<br />
-However, before I start building out all the servers for that, I think I will start with how to best setup and tear down a lab. I know there are many options in this space, and I&rsquo;ve played with several of them a little bit in the past, but it&rsquo;s been a while.<br />
+<p>I&rsquo;m not entirely sure what I&rsquo;m going to test out first - but I have some Active Direcotry Certificate Services questions I would like to get answers too, and the best way is probably to just test it all out.<br>
+However, before I start building out all the servers for that, I think I will start with how to best setup and tear down a lab. I know there are many options in this space, and I&rsquo;ve played with several of them a little bit in the past, but it&rsquo;s been a while.<br>
 I suspect I will have something next week to post about my experiments in steamlined lab setup.</p>
 
     </div>
@@ -262,7 +254,7 @@ I suspect I will have something next week to post about my experiments in steaml
 </div> 
 
 <div class="page_footer">
-	<p>&copy; Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
+	<p>© Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
 </div>
     
     

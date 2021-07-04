@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.80.0" />
   <meta name="author" content="Clint McGuire">
 
   
@@ -157,19 +157,14 @@ if (!doNotTrack) {
     <div class="post-style" itemprop="articleBody">
       Resolve remote host names
       <p>I was looking into an certificate issue a client was having with their web proxy and in testing I thought it might be helpful to resolve the DNS names for all the open connections on ports 80 and 443.</p>
-
 <p>A quick netstat -anop tcp shows too many connections to bother doing manually and scraping the output with PowerShell would be possible, but isn&rsquo;t my first choice.</p>
-
 <p>Thankfully Get-NetTCPConnections will show very similar details to the netstat above, so I started there.</p>
-
 <p>Lets start by getting all the connections that are using TLS:
-<code>$443 = Get-NetTCPConnection | where remotePort -eq 443 </code>
+<!-- raw HTML omitted -->$443 = Get-NetTCPConnection | where remotePort -eq 443 <!-- raw HTML omitted -->
 Then we pass $443 to Resolve-DNS like so:
-<code>foreach ($socket in $443){Resolve-DnsName -name $socket.remoteaddress}</code>
+<!-- raw HTML omitted -->foreach ($socket in $443){Resolve-DnsName -name $socket.remoteaddress}<!-- raw HTML omitted -->
 This will use reverse DNS look up to resolve the names and will display them neatly.</p>
-
 <p>To do this with HTTP, simply change all occurrences of 443, above, with 80.</p>
-
 <p>This wasn&rsquo;t as helpful as I was hoping, since all the entries resolved to AWS, but it was something I thought I might end up using again&hellip;</p>
 
     </div>
@@ -252,7 +247,7 @@ This will use reverse DNS look up to resolve the names and will display them nea
 </div> 
 
 <div class="page_footer">
-	<p>&copy; Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
+	<p>© Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
 </div>
     
     

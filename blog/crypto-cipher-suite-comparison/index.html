@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.80.0" />
   <meta name="author" content="Clint McGuire">
 
   
@@ -156,19 +156,12 @@ if (!doNotTrack) {
 
     <div class="post-style" itemprop="articleBody">
       Comparison of the different components of the Cryptographic Cipher Suites
-      
-
-<h2 id="components">Components</h2>
-
-<p>As detailed in my post on <a href="https://www.clintmcguire.com/blog/cryptographic-cipher-suites/" target="_blank">Cryptographic Cipher Suites</a> each of the suites has a Protocol, a Key Exchange algorithm, a Signature Authentication algorithm, an Encryption algorithm, and a Message Authentication algorithm.<br />
+      <h2 id="components">Components</h2>
+<p>As detailed in my post on <a href="https://www.clintmcguire.com/blog/cryptographic-cipher-suites/">Cryptographic Cipher Suites</a> each of the suites has a Protocol, a Key Exchange algorithm, a Signature Authentication algorithm, an Encryption algorithm, and a Message Authentication algorithm.<br>
 Here we are going to compare these different components and highlight the cipher suites currently considered strong*.</p>
-
 <p><code>*</code> currently only means at the time of this writting - a flaw could be found in the algorithm or in the implementation of the algorithm at any time, so do additional research to confirm the current strength of the cipher suite. You&rsquo;ve been warned&hellip;</p>
-
 <p>One last point - I am going to restrict the list of suites to those supported by Windows 10/Windows Server v1903 - because it is the most recent one that they have published a list for (I believe the same list applies to v1909, but I haven&rsquo;t confirmed this), and because it is the area of computers where I spend the most time working with ciphers.</p>
-
 <h2 id="the-list">The List</h2>
-
 <pre><code>TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
 TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
 TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
@@ -214,102 +207,68 @@ TLS_PSK_WITH_AES_256_CBC_SHA384
 TLS_PSK_WITH_AES_128_CBC_SHA256
 TLS_PSK_WITH_NULL_SHA384
 TLS_PSK_WITH_NULL_SHA256
-</code></pre>
-
-<p><a href="https://docs.microsoft.com/en-us/windows/win32/secauthn/tls-cipher-suites-in-windows-10-v1903" target="_blank">Source</a></p>
-
+</code></pre><p><a href="https://docs.microsoft.com/en-us/windows/win32/secauthn/tls-cipher-suites-in-windows-10-v1903">Source</a></p>
 <h2 id="protocol">Protocol</h2>
-
 <p>This one is simple, they all start with TLS, there is no alternate listed. So, nothing to see here, move along, move along.</p>
-
 <h2 id="key-exchange">Key Exchange</h2>
-
 <p>There are 4 Key Exchange options:</p>
-
 <pre><code>ECHDE
 DHE
 RSA
 PSK
-</code></pre>
-
-<p>These are short for:<br />
-ECHDE - Elliptic Curve Diffie-Hellman Ephemeral - Diffie-Hellman algorithm with Elliptical Curves and an Ephemeral key<br />
-DHE - Diffie-Hellman Ephemeral - Diffie-Hellman algorithm with Ephermeral key<br />
-RSA - Rivest Shamir Adleman - RSA algorithm<br />
+</code></pre><p>These are short for:<br>
+ECHDE - Elliptic Curve Diffie-Hellman Ephemeral - Diffie-Hellman algorithm with Elliptical Curves and an Ephemeral key<br>
+DHE - Diffie-Hellman Ephemeral - Diffie-Hellman algorithm with Ephermeral key<br>
+RSA - Rivest Shamir Adleman - RSA algorithm<br>
 PSK - Pre-Shared Key - a pre-shared key</p>
-
 <p>Elliptic curve cryptogrophy is a relatively newer form, so may not be supported by all devices - however, it benefits from using a smaller key size because the mathmatics are such that reversing the algorith is exceedingly costly - computationally.</p>
-
 <p>Ephemeral keys allow for Perfect Forward Secrecy - this is good, but I&rsquo;m not going to go into it here.</p>
-
 <p>Diffie-Hellman and RSA were both invented in the 1970s, I believe Diffie-Hellman is considered to be a stronger algorithm (I may be wrong about this, I don&rsquo;t have any specific sources), but RSA is more widely used.</p>
-
 <p>PSK is only available for applications on Windows to use - so this won&rsquo;t be used by IIS or a web browser on the computer (generally); I&rsquo;ve included it here for completeness.</p>
-
 <h2 id="signature-authentication">Signature Authentication</h2>
-
 <p>There are 3 Signature Authentication algoriths:</p>
-
 <pre><code>ECDSA
 RSA
 DSS
-</code></pre>
-
-<p>ECDSA - Elliptic Curve Digital Signature Algorith - The Digital Signature Algorithm, part of the NIST FIPS, using an Elliptic Curve<br />
-RSA - Rivest Shamir Adleman - RSA algorimth, as above<br />
+</code></pre><p>ECDSA - Elliptic Curve Digital Signature Algorith - The Digital Signature Algorithm, part of the NIST FIPS, using an Elliptic Curve<br>
+RSA - Rivest Shamir Adleman - RSA algorimth, as above<br>
 DSS - Digital Signature Standard - Defined by NIST as part of FIPS</p>
-
-<p>DSA and DSS are part of the NIST FIPS suite of algorithms.<br />
+<p>DSA and DSS are part of the NIST FIPS suite of algorithms.<br>
 RSA is the other option.
 There are technically two &ldquo;export&rdquo; options on this list, but they intentially weak, so let&rsquo;s just pretend they aren&rsquo;t there, and never use them&hellip;</p>
-
 <h2 id="encryption">Encryption</h2>
-
 <p>There are 4 different Encryption algorithms available - in order of strength they are:</p>
-
 <pre><code>AES  
 3DES  
 RC4  
 DES
-</code></pre>
-
-<p>There is also NULL - but that would be no encryption - so it should not be used.<br />
-DES, 3DES and RC4 are legacy and should be avoided.<br />
+</code></pre><p>There is also NULL - but that would be no encryption - so it should not be used.<br>
+DES, 3DES and RC4 are legacy and should be avoided.<br>
 Leaving only AES.</p>
-
-<p>There are 4 different options for AES.<br />
-AES 256 GCM<br />
-AES 128 GCM<br />
-AES 256 CBC<br />
+<p>There are 4 different options for AES.<br>
+AES 256 GCM<br>
+AES 128 GCM<br>
+AES 256 CBC<br>
 AES 128 CBC</p>
-
-<p>CBC - Cipher Block Chaining - this suffers from weaknesses that can be exploited and should be avoided.<br />
-GCM - Galois/Counter mode - addresses the weaknesses in CBC and is also faster to generate.<br />
+<p>CBC - Cipher Block Chaining - this suffers from weaknesses that can be exploited and should be avoided.<br>
+GCM - Galois/Counter mode - addresses the weaknesses in CBC and is also faster to generate.<br>
 The options of 128 or 256 are the key size used in the encryption, larger keys are better, but some devices might not be able to calculate the larger keys quickly. GCM 128 is quite strong, 256 is stronger, but might slow down applications on some older devices.</p>
-
 <h2 id="message-authentication">Message Authentication</h2>
-
 <p>There are two options for Message authentication - SHA and MD5.</p>
-
-<p>MD5 is considered insecure and should be avoided.<br />
+<p>MD5 is considered insecure and should be avoided.<br>
 SHA means SHA-1 (Secure Hashing Algorithm version 1), while SHA256 and SHA384 are both SHA-2 (version 2), with either a 256 or 384 bit hash. Longer hashes are better, but take more CPU resources to compute. SHA-1 is considered insecure, and is no longer used for SSL Certificates - but because it only generates a 160 bit hash, it might be fine for your use case.</p>
-
 <h2 id="what-is-strong">What is Strong*</h2>
-
 <p>Well - for starters, it really depends on what you are securing and what you need. If you have just had a security audit run against your internal systems and the report says you need to clean up the suites on your internal webserver, then you need to determine what algorithms are supported by your clients - older OSes may not support newer options - and if their hardware will be able to compute the longer hashes/encrypted messages.</p>
-
-<p>That said - the strongest options is probably:<br />
+<p>That said - the strongest options is probably:<br>
 TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384</p>
-
-<p>But, you don&rsquo;t want to restrict your systems to just one cipher suite, you will need to configure a few suites, in order of preference (usually). So these are the ones that are I would suggest you have enabled:<br />
-TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384<br />
-TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256<br />
-TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384<br />
-TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256<br />
-TLS_DHE_RSA_WITH_AES_256_GCM_SHA384<br />
+<p>But, you don&rsquo;t want to restrict your systems to just one cipher suite, you will need to configure a few suites, in order of preference (usually). So these are the ones that are I would suggest you have enabled:<br>
+TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384<br>
+TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256<br>
+TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384<br>
+TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256<br>
+TLS_DHE_RSA_WITH_AES_256_GCM_SHA384<br>
 TLS_DHE_RSA_WITH_AES_128_GCM_SHA256</p>
-
-<p>If you need to take a look at additonal cipher suites - look them up on <a href="https://ciphersuite.info/" target="_blank">CipherSuite.info</a> and see what rating they provide (Recommended, Secure, Weak or Insecure).</p>
+<p>If you need to take a look at additonal cipher suites - look them up on <a href="https://ciphersuite.info/">CipherSuite.info</a> and see what rating they provide (Recommended, Secure, Weak or Insecure).</p>
 
     </div>
 
@@ -391,7 +350,7 @@ TLS_DHE_RSA_WITH_AES_128_GCM_SHA256</p>
 </div> 
 
 <div class="page_footer">
-	<p>&copy; Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
+	<p>© Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
 </div>
     
     

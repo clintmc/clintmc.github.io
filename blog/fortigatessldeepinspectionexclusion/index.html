@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.80.0" />
   <meta name="author" content="Clint McGuire">
 
   
@@ -156,36 +156,23 @@ if (!doNotTrack) {
 
     <div class="post-style" itemprop="articleBody">
       How to exclude sites from SSL Inspection
-      
-
-<h2 id="things-weren-t-working-as-expected">Things weren&rsquo;t working as expected</h2>
-
+      <h2 id="things-werent-working-as-expected">Things weren&rsquo;t working as expected</h2>
 <p>I had recently enabled the SSL Deep Inspection policy on some of my web traffic - in part to try to block ads, maybe I&rsquo;ll write a blog post about that another time - and I was noticing odd behaviour.</p>
-
-<p>A few of the odd things were around VPN connections and Citrix sessions.<br />
-FortiClient VPN wasn&rsquo;t able to connect - it was getting to 80% then throwing an error saying there was something wrong w/ my credentials or my account wasn&rsquo;t setup for VPN access.<br />
+<p>A few of the odd things were around VPN connections and Citrix sessions.<br>
+FortiClient VPN wasn&rsquo;t able to connect - it was getting to 80% then throwing an error saying there was something wrong w/ my credentials or my account wasn&rsquo;t setup for VPN access.<br>
 With Citrix, apps would look like they were launching from the StoreFront, but they wouldn&rsquo;t load - they wouldn&rsquo;t even briefly show up in the connection manager. Launching a published desktop it would load the app&rsquo;s borders, but then throw an error.</p>
-
 <p>Once I saw the Citrix published Desktop error, I was pretty sure I knew the source.</p>
-
-<h2 id="but-i-d-already-installed-the-cert-the-fortigate-was-using">But I&rsquo;d already installed the cert the FortiGate was using</h2>
-
+<h2 id="but-id-already-installed-the-cert-the-fortigate-was-using">But I&rsquo;d already installed the cert the FortiGate was using</h2>
 <p>I had installed the FortiGate&rsquo;s cert as a Trusted Root CA Cert on my laptop, so I was expecting the traffic would be fine. However, I needed to exclude the sites from the SSL Inspection rule. Once the exclusion was in place everything started working again.</p>
-
-<p>To add the sites, expand Security Profiles - SSL/SSH Inspection.<br />
-<img src="/SecurityProfiles-SSL.png" alt="SSL/SSH Inspection Policy section" /></p>
-
-<p>Select the policy in use, and scroll down to the &ldquo;Exempt from SSL Inspection&rdquo; section.<br />
-<img src="/ExemptFromSSL.png" alt="SSL Inspection Exemption" /></p>
-
-<p>You can exempt entire web categories, but I needed to exempt addresses.<br />
-To create a new address, click the &ldquo;+&rdquo; at the bottom of the addresses column, this will open the &ldquo;Select Entries&rdquo; panel, click the &ldquo;+ Create&rdquo; button to add a new entry.  From the options, I needed to select Wildcard FQDN for each of the client&rsquo;s URLs.<br />
-<img src="/CreateNewAddress.png" alt="Create new Address" /></p>
-
+<p>To add the sites, expand Security Profiles - SSL/SSH Inspection.<br>
+<img src="/SecurityProfiles-SSL.png" alt="SSL/SSH Inspection Policy section"></p>
+<p>Select the policy in use, and scroll down to the &ldquo;Exempt from SSL Inspection&rdquo; section.<br>
+<img src="/ExemptFromSSL.png" alt="SSL Inspection Exemption"></p>
+<p>You can exempt entire web categories, but I needed to exempt addresses.<br>
+To create a new address, click the &ldquo;+&rdquo; at the bottom of the addresses column, this will open the &ldquo;Select Entries&rdquo; panel, click the &ldquo;+ Create&rdquo; button to add a new entry.  From the options, I needed to select Wildcard FQDN for each of the client&rsquo;s URLs.<br>
+<img src="/CreateNewAddress.png" alt="Create new Address"></p>
 <p>Give the new address entry a name, enter the URL and hit OK.  For the URL I used <code>*.example.com</code>. This will not take <code>www.example.com</code>, it will only accept <code>*</code> on the version of FortiOS I was working on.</p>
-
 <p>Make sure to add the new address to the list of exclusions, then click Ok to update the policy.</p>
-
 <p>You might need to close and re-open your browser for the FortiGate to stop swapping its cert in for the orginal.</p>
 
     </div>
@@ -268,7 +255,7 @@ To create a new address, click the &ldquo;+&rdquo; at the bottom of the addresse
 </div> 
 
 <div class="page_footer">
-	<p>&copy; Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
+	<p>© Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
 </div>
     
     

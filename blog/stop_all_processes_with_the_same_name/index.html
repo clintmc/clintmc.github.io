@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.80.0" />
   <meta name="author" content="Clint McGuire">
 
   
@@ -158,18 +158,14 @@ if (!doNotTrack) {
       User PowerShell to stop all processes with the same name
       <p>I have a utility server that I connect to frequently and for some reason or other, that I haven&rsquo;t had time to investigate yet, a certain Citrix related process launches and re-launches.
 Over the course of weeks there can be 30+ instances of this process running under my user account.</p>
-
 <p>The specific process doesn&rsquo;t take up much CPU or RAM, but it is annoying and if I someone else is using the server for real work, then those resources could be better allocated.</p>
-
 <p>Task Manager takes too much clicking around to clean them all up, so I do a quick kick with PowerShell.
 In an Elevated PowerShell session:
-<code>Get-Process | Where {$_.ProcessName -like &ldquo;SelfServicePlugin&rdquo;} | Stop-Process</code></p>
-
+<!-- raw HTML omitted -->Get-Process | Where {$_.ProcessName -like &ldquo;SelfServicePlugin&rdquo;} | Stop-Process<!-- raw HTML omitted --></p>
 <p>You can change out SelfServicePlugin for anything else you need.
 I suggest testing before you run this somewhere important. A simple test is:
-<code>Get-Process | Where {$_.ProcessName -like &ldquo;SelfServicePlugin&rdquo;} | Stop-Process -WhatIf</code>
+<!-- raw HTML omitted -->Get-Process | Where {$_.ProcessName -like &ldquo;SelfServicePlugin&rdquo;} | Stop-Process -WhatIf<!-- raw HTML omitted -->
 Then you can quickly compare the PIDs with Task Manager.</p>
-
 <p>Caveat Emptor: This will stop all process that match the name you provide. If another user has the same process running for them, it will get stopped too.
 You can use the Property SessionID to filter for processes running under a certain login, but I will leave figuring that out as an activity for the curious.</p>
 
@@ -253,7 +249,7 @@ You can use the Property SessionID to filter for processes running under a certa
 </div> 
 
 <div class="page_footer">
-	<p>&copy; Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
+	<p>© Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
 </div>
     
     

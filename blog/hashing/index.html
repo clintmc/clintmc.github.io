@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.80.0" />
   <meta name="author" content="Clint McGuire">
 
   
@@ -156,30 +156,24 @@ if (!doNotTrack) {
 
     <div class="post-style" itemprop="articleBody">
       What are Hashes For?
-      
-
-<h2 id="what-is-hashing">What is Hashing</h2>
-
+      <h2 id="what-is-hashing">What is Hashing</h2>
 <p>Very simplified: Hashing is a mathmatical operation used to take an Input and turn it into a different Output.</p>
-
 <p>More specifically: the hasning function will take an input of variable size and produce an output of a fixed size. The mathmatical process should not be reversible, the same input should always yield a constant output, a small change to the input should have a large change on the output, and two different inputs should never generate the same output.</p>
-
 <h2 id="why-we-hash">Why we Hash</h2>
-
 <p>There are few reason, but let&rsquo;s focus on two. Files and Secure Communications.</p>
-
 <ol>
-<li><p>Files:<br />
-If you download a file from a website, you want to make sure the file on your computer is the file as it was put onto the website - you don&rsquo;t want a file that was modified by a malicious actor and you don&rsquo;t want a file corrupted during download. Using a hash published on the original site you can see what hash the author said the file had, when they uploaded it to the site. Then you check the hash of the file on your computer and see if they match. <a href="https://www.clintmcguire.com/blog/compare_file_hash_with_powershell/" target="_blank">Here</a> I&rsquo;ve written up how to do this with PowerShell.</p></li>
-
-<li><p>Secure Communications:<br />
-As part of a TLS communication channel, the messages sent, after being encrypted are also hashed - this is a signature - so that they can validated. This is effectively the same thing as validating the file example above, but built into the protocol to happen automatically.</p></li>
+<li>
+<p>Files:<br>
+If you download a file from a website, you want to make sure the file on your computer is the file as it was put onto the website - you don&rsquo;t want a file that was modified by a malicious actor and you don&rsquo;t want a file corrupted during download. Using a hash published on the original site you can see what hash the author said the file had, when they uploaded it to the site. Then you check the hash of the file on your computer and see if they match. <a href="https://www.clintmcguire.com/blog/compare_file_hash_with_powershell/">Here</a> I&rsquo;ve written up how to do this with PowerShell.</p>
+</li>
+<li>
+<p>Secure Communications:<br>
+As part of a TLS communication channel, the messages sent, after being encrypted are also hashed - this is a signature - so that they can validated. This is effectively the same thing as validating the file example above, but built into the protocol to happen automatically.</p>
+</li>
 </ol>
-
 <h2 id="some-hash-functions">Some Hash Functions</h2>
-
-<p>There have been a lot of Hash Functions over the years - many have been discarded. The most commonly used today are MD5, SHA-1, and SHA-2. MD5 is considered cryptographically broken, but it&rsquo;s probably fine for checking to see if that EXE you downloaded was what the author said it was.  SHA-1 is considered insecure, and isn&rsquo;t recommended for Secure Communications, but is still fine for looking at files you grab off the internet. SHA-2 is the best option for Secure Communications, but actually isn&rsquo;t the newest. SHA-3 has been published for a while - NIST published it as a standard back in 2015&hellip;<br />
-I&rsquo;m not sure why this hasn&rsquo;t been adopted widely, yet. I see the OpenSSL has it listed in their <a href="https://www.openssl.org/docs/man1.1.1/man3/EVP_shake256.html" target="_blank">man</a> page. But looking around more it isn&rsquo;t mentioned much anywhere else&hellip;
+<p>There have been a lot of Hash Functions over the years - many have been discarded. The most commonly used today are MD5, SHA-1, and SHA-2. MD5 is considered cryptographically broken, but it&rsquo;s probably fine for checking to see if that EXE you downloaded was what the author said it was.  SHA-1 is considered insecure, and isn&rsquo;t recommended for Secure Communications, but is still fine for looking at files you grab off the internet. SHA-2 is the best option for Secure Communications, but actually isn&rsquo;t the newest. SHA-3 has been published for a while - NIST published it as a standard back in 2015&hellip;<br>
+I&rsquo;m not sure why this hasn&rsquo;t been adopted widely, yet. I see the OpenSSL has it listed in their <a href="https://www.openssl.org/docs/man1.1.1/man3/EVP_shake256.html">man</a> page. But looking around more it isn&rsquo;t mentioned much anywhere else&hellip;
 So, until SHA-3 gains wider traction use SHA-2 where you can.</p>
 
     </div>
@@ -262,7 +256,7 @@ So, until SHA-3 gains wider traction use SHA-2 where you can.</p>
 </div> 
 
 <div class="page_footer">
-	<p>&copy; Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
+	<p>© Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
 </div>
     
     

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.80.0" />
   <meta name="author" content="Clint McGuire">
 
   
@@ -156,96 +156,12 @@ if (!doNotTrack) {
 
     <div class="post-style" itemprop="articleBody">
       PowerShell script that checks AD logs for last logon of all domain joined computers
-      
-
-<h1 id="update">Update</h1>
-
-<p>I&rsquo;ve posted an updated version of this script in a new section of my blog. Because all the comments below relate to the original version of the script I&rsquo;m going to leave that version posted here. You can find the new version of the script <a title="Get-ComputerLastLogon" href="http://www.clintmcguire.com/get-computerlastlogon/">here</a>.</p>
-
+      <h1 id="update">Update</h1>
+<p>I&rsquo;ve posted an updated version of this script in a new section of my blog. Because all the comments below relate to the original version of the script I&rsquo;m going to leave that version posted here. You can find the new version of the script <!-- raw HTML omitted -->here<!-- raw HTML omitted -->.</p>
 <p>I wrote a script to get the last time each computer logged into the domain.</p>
-
-<p>This script is very similar to my script that gets user last logon times, which you can find <a title="Powershell Get All Users Last Logon Time" href="http://www.clintmcguire.com/2011/05/29/powershell-script-to-get-all-ad-users-last-logon-time/" target="_blank">here</a>.</p>
-
-<p>This script requires the Quest AD Cmdlets, which you can download <a title="Quest AD Cmdlets" href="http://www.quest.com/powershell/activeroles-server.aspx" target="_blank">here</a>. (Check the box agreeing to the terms to see the download options.)</p>
-
-<p><code>
-##==============================================================================
-##==============================================================================</p>
-
-<h2 id="script-get-allcomputerlastlogon">SCRIPT&hellip;&hellip;&hellip;: Get-AllComputerLastLogon</h2>
-
-<h2 id="author-clint-mcguire">AUTHOR&hellip;&hellip;&hellip;: Clint McGuire</h2>
-
-<h2 id="email">EMAIL&hellip;&hellip;&hellip;.:</h2>
-
-<h2 id="version-1">VERSION&hellip;&hellip;..: 1</h2>
-
-<h2 id="date-2011-05-26">DATE&hellip;&hellip;&hellip;..: 2011_05_26</h2>
-
-<h2 id="copyright-2011-clint-mcguire">COPYRIGHT&hellip;&hellip;: 2011, Clint McGuire</h2>
-
-<h2 id="license">LICENSE&hellip;&hellip;..:</h2>
-
-<h2 id="requirements-powershell-v2-0-quest-ad-cmdlets">REQUIREMENTS&hellip;: Powershell v2.0, Quest AD Cmdlets</h2>
-
-<h2 id="description-gets-all-computer-accounts-last-logon-times-and-exports-to-csv-file">DESCRIPTION&hellip;.: Gets all computer accounts&rsquo; last logon times and exports to CSV file.</h2>
-
-<h2 id="notes">NOTES&hellip;&hellip;&hellip;.:</h2>
-
-<h2 id="customize">CUSTOMIZE&hellip;&hellip;:</h2>
-
-<p>##==============================================================================</p>
-
-<h2 id="revised-by">REVISED BY&hellip;..:</h2>
-
-<h2 id="email-1">EMAIL&hellip;&hellip;&hellip;.:</h2>
-
-<h2 id="revision-date">REVISION DATE..:</h2>
-
-<h2 id="revision-notes">REVISION NOTES.:</h2>
-
-<p>##
-##==============================================================================
-##==============================================================================
-##==============================================================================</p>
-
-<h2 id="start-lt-code-gt">START &lt;code&gt;</h2>
-
-<p>##==============================================================================
-$DCs = Get-QADComputer -ComputerRole DomainController
-$LastLogon = @{}
-ForEach ($DC in $DCs) {
-$Computers = Get-QADcomputer -Service $dc.dnshostname -ip lastlogontimestamp
-ForEach ($Computer in $Computers)
-{
-If ($Computer.lastlogontimestamp -ne $null)
-{
-$Time = $Computer.lastlogontimestamp | Get-Date -format u
-}
-Else
-{
-$Time = $Computer.lastlogontimestamp
-}
-$ComputerName = $Computer.ComputerName
-If ($LastLogon.ContainsKey($ComputerName))
-{
-If ($LastLogon.Get_Item($ComputerName) -le $Time)
-{
-$LastLogon.Set_Item($ComputerName, $Time)
-}
-}
-Else
-{
-$LastLogon.Add($ComputerName, $Time)
-}
-}
-}
-$LastLogon.GetEnumerator() | Sort-Object Name |export-csv $home\ComputerLastLogon.csv -NoTypeInformation
-##==============================================================================</p>
-
-<h2 id="end-lt-code-gt">END &lt;code&gt;</h2>
-
-<p>##==============================================================================</code></p>
+<p>This script is very similar to my script that gets user last logon times, which you can find <!-- raw HTML omitted -->here<!-- raw HTML omitted -->.</p>
+<p>This script requires the Quest AD Cmdlets, which you can download <!-- raw HTML omitted -->here<!-- raw HTML omitted -->. (Check the box agreeing to the terms to see the download options.)</p>
+<!-- raw HTML omitted -->
 
     </div>
 
@@ -327,7 +243,7 @@ $LastLogon.GetEnumerator() | Sort-Object Name |export-csv $home\ComputerLastLogo
 </div> 
 
 <div class="page_footer">
-	<p>&copy; Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
+	<p>© Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
 </div>
     
     

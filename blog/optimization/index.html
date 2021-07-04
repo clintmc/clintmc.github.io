@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.80.0" />
   <meta name="author" content="Clint McGuire">
 
   
@@ -156,38 +156,26 @@ if (!doNotTrack) {
 
     <div class="post-style" itemprop="articleBody">
       Hugo Optimizations
-      
-
-<h2 id="problems">Problems</h2>
-
+      <h2 id="problems">Problems</h2>
 <ol>
-<li>My site was not available over HTTPS.<br /></li>
-<li>My site was slow to load.<br /></li>
+<li>My site was not available over HTTPS.</li>
+<li>My site was slow to load.</li>
 </ol>
-
-<h2 id="investigation-https">Investigation - HTTPS</h2>
-
+<h2 id="investigation---https">Investigation - HTTPS</h2>
 <p>This site is hosted on GitHub, so going through their documentation it looked like I should have been able to use a CDN and still have GitHub generate a cert for the site. However, it was not.</p>
-
-<h2 id="solution-https">Solution - HTTPS</h2>
-
+<h2 id="solution---https">Solution - HTTPS</h2>
 <p>As an experiment I disabled the CDN, to see if GitHub would be able to generate the certificate - this worked pretty quickly and in the end was pretty simple. I was trying to do something fancy and ended up in a situation where the CDN wasn&rsquo;t really doing everything it could, and neither was GitHub.</p>
-
-<p>Unfortunately, not having the CDN meant that there was no caching to speed up the page loads. So I would notice how slow the page would load after posting updates. At first I thought it was just because the site would need to get re-cached in GitHub&rsquo;s CDN (I&rsquo;m pretty sure they use one, but I haven&rsquo;t investigated) and after I visited it the first time the cache would start to get updated on the CDN servers and everything would be fine.<br />
+<p>Unfortunately, not having the CDN meant that there was no caching to speed up the page loads. So I would notice how slow the page would load after posting updates. At first I thought it was just because the site would need to get re-cached in GitHub&rsquo;s CDN (I&rsquo;m pretty sure they use one, but I haven&rsquo;t investigated) and after I visited it the first time the cache would start to get updated on the CDN servers and everything would be fine.<br>
 I was wrong.</p>
-
-<h2 id="investigation-slow-site">Investigation - Slow Site</h2>
-
-<p>I noticed, after not making any changes, that the site was still slow.<br />
-So I found a couple tools that check page load speeds and I was informed that my &lsquo;avatar&rsquo; and &lsquo;hero&rsquo; images were too large and slowing down the page load.<br />
-So I went about resizing the avatar image, because it was actually a very large image - 1985 x 1383 - and tried to bring it down to the 110 x 77 that the image displays as. But I found that when I brought the image down that small, even without any compression - the image quality dropped off.  So I could get that image to the exact right size, to make the tool happy, but I wasn&rsquo;t happy with it anymore.<br />
+<h2 id="investigation---slow-site">Investigation - Slow Site</h2>
+<p>I noticed, after not making any changes, that the site was still slow.<br>
+So I found a couple tools that check page load speeds and I was informed that my &lsquo;avatar&rsquo; and &lsquo;hero&rsquo; images were too large and slowing down the page load.<br>
+So I went about resizing the avatar image, because it was actually a very large image - 1985 x 1383 - and tried to bring it down to the 110 x 77 that the image displays as. But I found that when I brought the image down that small, even without any compression - the image quality dropped off.  So I could get that image to the exact right size, to make the tool happy, but I wasn&rsquo;t happy with it anymore.<br>
 The hero image is the header image on the top of this page - it needs to resize dynamically with the screen size, which the tools understand, so they weren&rsquo;t so much complaining about the file size. They complained about the file format.  This one was pretty easy to fix.</p>
-
-<h2 id="solution-slow-site">Solution - Slow Site</h2>
-
-<p>In the end I decided that scaling the avatar image down to 300 x 209 was about as small as I could make the image, but still keep the display quality high - perhaps I was doing something wrong with the scaling process, but this seemed like the best solution to me.<br />
-Although the tools are still grumpy about the image being larger than it&rsquo;s actual display size&hellip;<br />
-For the hero image, I just had the image converted to webp format.<br />
+<h2 id="solution---slow-site">Solution - Slow Site</h2>
+<p>In the end I decided that scaling the avatar image down to 300 x 209 was about as small as I could make the image, but still keep the display quality high - perhaps I was doing something wrong with the scaling process, but this seemed like the best solution to me.<br>
+Although the tools are still grumpy about the image being larger than it&rsquo;s actual display size&hellip;<br>
+For the hero image, I just had the image converted to webp format.<br>
 I&rsquo;m not sure if this is a quirk of the theme I&rsquo;m using, but each of the static pages for this site have their own hero value, so to implement this solution across all pages would require me to update each of the page files.  I might get around to that in a few days - but I think I will take a look at the Hugo documentation to see if there is a way I can make this change in the main config file&hellip;</p>
 
     </div>
@@ -270,7 +258,7 @@ I&rsquo;m not sure if this is a quirk of the theme I&rsquo;m using, but each of 
 </div> 
 
 <div class="page_footer">
-	<p>&copy; Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
+	<p>© Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
 </div>
     
     

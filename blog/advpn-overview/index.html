@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.80.0" />
   <meta name="author" content="Clint McGuire">
 
   
@@ -156,43 +156,25 @@ if (!doNotTrack) {
 
     <div class="post-style" itemprop="articleBody">
       Comparison of ADVPN to Hub &amp; Spoke and Full Mesh
-      
-
-<h2 id="high-level-overview">High Level Overview</h2>
-
+      <h2 id="high-level-overview">High Level Overview</h2>
 <p>To explain ADVPN it is useful to contrast it with the two main alternatives - Hub &amp; Spoke and Full Mesh.</p>
-
 <p>In a Hub &amp; Spoke network one site is deemed the Hub, with all other sites - Spokes - connecting directly to the Hub.
 In a Full Mesh all sites connect to all other sites.</p>
-
 <p>ADVPN starts as Hub &amp; Spoke, with one site deemed the Hub - but all Spokes can directly connect by getting connection details from the Hub.</p>
-
 <p>Using ADVPN reduces the number of IPsec tunnels that need to be maintained by each site - as they only need to have persistent connects to the Hub and will have temporary connections to the other Spokes - as required for traffic.</p>
-
 <p>A common use case is a VoIP deployment, where Spokes will need to directly connect to each other for calls.</p>
-
 <h2 id="examples">Examples</h2>
-
 <p>Comparing a Full Mesh, Hub &amp; Spoke and ADVPN in terms of a VoIP system is useful, so let’s do that…</p>
-
 <p>First, there are <em>n</em> sites and each site has only one outbound connection (DIA or MPLS).</p>
-
 <p>In a Full Mesh, all sites are persistently connected to each other. So each site has <em>(n - 1)</em> IPsec tunnels. VoIP connections can be quickly made between sites, because the routing is persistently in place.</p>
-
 <p>In a Hub &amp; Spoke all Spokes have 1 IPsec tunnel - back to the Hub, and the Hub has <em>(n - 1)</em> IPsec tunnels. VoIP connections between two sites must route through the Hub. This can lead to some unoptimized paths, as two sites geographically close could be sending traffic to a geographically distant Hub.</p>
-
 <p>In ADVPN all Spokes have 1 persistent IPsec tunnel - back to the Hub, and the Hub has <em>(n - 1)</em> IPsec tunnels, until two Spokes need to complete a call. When a new VoIP call is initiated the traffic will initially be sent to the Hub and routed to the other Spoke, then the Hub will provide details for the two Spokes to connect directly.</p>
-
 <p>Second, there are <em>n</em> sites and each site has two outbound connections (DIA or MPLS) with IPsec connections setup to be fully redundant.</p>
-
 <p>In a Full Mesh, all sites have four IPsec connections to all other sites. I believe that would make the math <em>4(n - 1)</em>, per site.</p>
-
 <p>In a Hub &amp; Spoke all Spokes have 4 IPsec tunnels back to the Hub, and the Hub has <em>4(n - 1)</em> IPsec connections to the Spokes.</p>
-
 <p>In ADVPN all Spokes have 4 IPsec tunnel back to the Hub. They will bring up 4 tunnels to each other Spoke as required.</p>
-
-<p>Why 4 tunnels instead of 2? Because each site has 2 outbound connections, that will make 2 endpoints at each end of the connection. To have these fully redundant Hub link 1 will need to connect to Spoke link 1 and Spoke link 2, the same with Hub link 2.<br />
-So there are 4 connections.<br />
+<p>Why 4 tunnels instead of 2? Because each site has 2 outbound connections, that will make 2 endpoints at each end of the connection. To have these fully redundant Hub link 1 will need to connect to Spoke link 1 and Spoke link 2, the same with Hub link 2.<br>
+So there are 4 connections.<br>
 This applies to the Full Mesh as well, greatly compounding the number of IPsec tunnels in a Full Mesh with two Internet connections at each location.</p>
 
     </div>
@@ -275,7 +257,7 @@ This applies to the Full Mesh as well, greatly compounding the number of IPsec t
 </div> 
 
 <div class="page_footer">
-	<p>&copy; Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
+	<p>© Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
 </div>
     
     

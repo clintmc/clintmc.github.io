@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.80.0" />
   <meta name="author" content="Clint McGuire">
 
   
@@ -156,89 +156,63 @@ if (!doNotTrack) {
 
     <div class="post-style" itemprop="articleBody">
       A Model for a Well Organized, Well Managed Network
-      
-
-<h2 id="purpose">Purpose</h2>
-
+      <h2 id="purpose">Purpose</h2>
 <p>How do you design a well-organized, well managed network for small/medium business?</p>
-
 <p>Let&rsquo;s layout some assumptions:</p>
-
 <ul>
 <li>There are server in the office</li>
 <li>The servers are in either in a well-organized closet or in a server room (they are not in a Colo - but access is restricted)</li>
 <li>There may be some amount of Cloud/SaaS applications</li>
 <li>This is not a VDI environment (we could sketch that out in a different post)</li>
-<li>Security is a concern - but not security at any cost<br /></li>
+<li>Security is a concern - but not security at any cost</li>
 </ul>
-
-<h2 id="let-s-start-with-what-i-generally-see">Let&rsquo;s start with what I generally see</h2>
-
-<p>As a consultant, I&rsquo;ve been engaged by dozens of small/medium size businesses and many large businesses. What I tend to see in the small/medium group is a flat network using a single subnet - a /24 or less common a /16. There is only one VLAN and all the Servers, Switches, Hypervisors and Desktops are in the broadcast domain.<br />
+<h2 id="lets-start-with-what-i-generally-see">Let&rsquo;s start with what I generally see</h2>
+<p>As a consultant, I&rsquo;ve been engaged by dozens of small/medium size businesses and many large businesses. What I tend to see in the small/medium group is a flat network using a single subnet - a /24 or less common a /16. There is only one VLAN and all the Servers, Switches, Hypervisors and Desktops are in the broadcast domain.<br>
 If I was an attacker, this would be a &ldquo;Target Rich Environment&rdquo;&hellip;</p>
-
-<p>Now, I know how these companies tend to arrive at this situation - whoever originally setup the network didn&rsquo;t have the equipment, budget or network knowledge at the time to do something more complicated - and small business tends to value &ldquo;IT WORKS&rdquo; over &ldquo;IT IS SECURE AND WORKS&rdquo;.<br />
+<p>Now, I know how these companies tend to arrive at this situation - whoever originally setup the network didn&rsquo;t have the equipment, budget or network knowledge at the time to do something more complicated - and small business tends to value &ldquo;IT WORKS&rdquo; over &ldquo;IT IS SECURE AND WORKS&rdquo;.<br>
 I&rsquo;ve seen larger businesses that have struggled to unwinding this technical debt.</p>
-
 <p>This flat network poses a lot of problems:</p>
-
 <ol>
 <li>A worm (e.g. NotPetya) that infects one machine has unrestricted access via Layer 2 broadcast to all other IPs</li>
 <li>As the number of machines increase over time the available addresses will eventually run out, requiring some re-IPing</li>
 <li>If a hacker gets control of one desktop they have a platform for attacking the entire network</li>
 <li>Insider threat is also unrestricted</li>
 </ol>
-
 <p>What&rsquo;s the better option?</p>
-
 <h2 id="nuts-and-bolts">Nuts and Bolts</h2>
-
 <p>With the goal to limit the &ldquo;blast radius&rdquo; - since 3 or the 4 problems I&rsquo;ve listed boil down to too much access - I&rsquo;ve been strongly recommending dividing the network into 4 general segments:</p>
-
 <ol>
 <li>Desktops</li>
 <li>Servers</li>
 <li>Management</li>
 <li>DMZ</li>
 </ol>
-
-<p>This isn&rsquo;t revolutionary, but from the environments I&rsquo;ve seen this would be a big change.<br />
+<p>This isn&rsquo;t revolutionary, but from the environments I&rsquo;ve seen this would be a big change.<br>
 Small/Medium business do not have unlimited security budgets (who does?), they don&rsquo;t generally have many IT staff members - and those they do have tend to be focused on Servers and Desktops, not the network or security - and their Business Leaders don&rsquo;t have a security focus - yet.</p>
-
-<p>Let&rsquo;s talk about these segments - this is not a hard and fast rule, this is a basic model. Some businesses will break Servers down into two segments: Applications and Storage/Data. Some businesses will want to segregate their Accounting computers away from the rest of their desktops.<br />
+<p>Let&rsquo;s talk about these segments - this is not a hard and fast rule, this is a basic model. Some businesses will break Servers down into two segments: Applications and Storage/Data. Some businesses will want to segregate their Accounting computers away from the rest of their desktops.<br>
 But this is the starting point I think most companies can begin from.</p>
-
-<p>Critically, these four segments need to be separated by a Firewall, applying Layer 7 application controls and full UTM scanning to the traffic.<br />
-And this is why we are focusing this conversation on Small/Medium business - a Large Organization will have additional equipment and needs, and this design won&rsquo;t fit.<br />
-A small business can start with an HA Pair of FortiGates and have these 4 segments setup and running on relatively low cost equipment.<br />
-The UTM scanning is important - I can add AV scanning to the firewall rule that permits SMB traffic from desktops to file servers - this is critical for preventing the spread of worms.<br />
-I can add IPS to the firewall rules that allow DMZ VMs to talk to internal servers, and I can add IPS to prevent a hacker or insider threat from moving from a desktop to the servers.<br />
+<p>Critically, these four segments need to be separated by a Firewall, applying Layer 7 application controls and full UTM scanning to the traffic.<br>
+And this is why we are focusing this conversation on Small/Medium business - a Large Organization will have additional equipment and needs, and this design won&rsquo;t fit.<br>
+A small business can start with an HA Pair of FortiGates and have these 4 segments setup and running on relatively low cost equipment.<br>
+The UTM scanning is important - I can add AV scanning to the firewall rule that permits SMB traffic from desktops to file servers - this is critical for preventing the spread of worms.<br>
+I can add IPS to the firewall rules that allow DMZ VMs to talk to internal servers, and I can add IPS to prevent a hacker or insider threat from moving from a desktop to the servers.<br>
 Having a firewall as the core of the network, instead of a router, provides much better security.</p>
-
-<p>Let&rsquo;s expand on the Management segment definition, because this is probably the least self-explanatory.<br />
-The Management segment is where the Hypervisor host management IPs are (ESXi IPs), it&rsquo;s where the Hypervisor management server is (vCenter), it’s where the IPMI management cards are (iLO, iDRAC, IMM), it&rsquo;s where switch management IPs are, it might be where you put your Backup Server.<br />
-(I believe I could make a pretty good case to put the backup server into yet another segment, all by itself, but let&rsquo;s not digress.)<br />
+<p>Let&rsquo;s expand on the Management segment definition, because this is probably the least self-explanatory.<br>
+The Management segment is where the Hypervisor host management IPs are (ESXi IPs), it&rsquo;s where the Hypervisor management server is (vCenter), it’s where the IPMI management cards are (iLO, iDRAC, IMM), it&rsquo;s where switch management IPs are, it might be where you put your Backup Server.<br>
+(I believe I could make a pretty good case to put the backup server into yet another segment, all by itself, but let&rsquo;s not digress.)<br>
 Desktops, Servers and DMZ are all pretty obvious - Servers, as mentioned earlier, might need to be broken down into more than one segment, but for a model, this is fine.</p>
-
 <p>One last thing about Desktops - where possible and supported by the switch hardware, their network ports should probably be put into an Access or Protected VLAN. This might be a bit trickier for a small business, as this might not be supported on the hardware they have or the hardware they have budget for, but this should be a design ideal to aim for.</p>
-
 <h2 id="what-about-wifi">What about WIFI</h2>
-
-<p>Yeah, well, I could sit here and list out all the different possible things, what about printers, what about VoIP, what about Fax Machines&hellip;<br />
+<p>Yeah, well, I could sit here and list out all the different possible things, what about printers, what about VoIP, what about Fax Machines&hellip;<br>
 I&rsquo;m not here to design all the networks, I&rsquo;m here discussing a model that I think is an improvement!</p>
-
-<p>Not satisfied with that answer - fine. It depends. It depends on what the equipment can support, if they are using EAP to bridge laptops to the LAN, or if they are providing Guest WIFI.  Likely WIFI is 2, maybe 3 more segments.<br />
+<p>Not satisfied with that answer - fine. It depends. It depends on what the equipment can support, if they are using EAP to bridge laptops to the LAN, or if they are providing Guest WIFI.  Likely WIFI is 2, maybe 3 more segments.<br>
 This breaks my nice neat 4 segment model, so I&rsquo;ve excluded it. :P</p>
-
 <h2 id="yeah-what-about-voip">Yeah, what about VoIP</h2>
-
 <p>Well, again, it depends&hellip; Most organizations have this on a separate VLAN to start, so that&rsquo;s not too big a problem, but you will have to sort out where the VoIP Servers go and what firewall policies need to be put around that traffic.</p>
-
-<h2 id="summary-firewall-centric-design">Summary - Firewall Centric Design</h2>
-
-<p>I believe that generally available, relatively low cost hardware can provide a more secure network for small and medium size business. With a considered network design these organizations could greatly increase their network security.<br />
-I&rsquo;ve been working with FortiGate products for a few years and am confident that correctly sized appliances will run this well.<br />
-I&rsquo;ve a bit of experience with WatchGuard and these will probably do fine too. However, I prefer Fortinet&rsquo;s products because they have Switches and APs that plug in and extend the firewall and can all be centrally managed.<br />
+<h2 id="summary---firewall-centric-design">Summary - Firewall Centric Design</h2>
+<p>I believe that generally available, relatively low cost hardware can provide a more secure network for small and medium size business. With a considered network design these organizations could greatly increase their network security.<br>
+I&rsquo;ve been working with FortiGate products for a few years and am confident that correctly sized appliances will run this well.<br>
+I&rsquo;ve a bit of experience with WatchGuard and these will probably do fine too. However, I prefer Fortinet&rsquo;s products because they have Switches and APs that plug in and extend the firewall and can all be centrally managed.<br>
 I would like to hear your thoughts on this model and if you have experience with a similar design, what hardware did you use and how did users find it?</p>
 
     </div>
@@ -321,7 +295,7 @@ I would like to hear your thoughts on this model and if you have experience with
 </div> 
 
 <div class="page_footer">
-	<p>&copy; Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
+	<p>© Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
 </div>
     
     

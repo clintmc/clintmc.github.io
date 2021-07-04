@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.80.0" />
   <meta name="author" content="Clint McGuire">
 
   
@@ -156,29 +156,20 @@ if (!doNotTrack) {
 
     <div class="post-style" itemprop="articleBody">
       How to use PowerShell to check a file hash
-      
-
-<p>Once you&rsquo;ve downloaded the file use <code>Get-FileHash</code> to calculate the SHA256 hash.<br />
+      <p>Once you&rsquo;ve downloaded the file use <code>Get-FileHash</code> to calculate the SHA256 hash.<br>
 <code>$hash = (Get-FileHash .\filename.exe).hash</code></p>
-
-<p>Copy the hash value from the website and assign it to a variable to compare.<br />
-<code>$webhash = &quot;3...f'</code><br />
+<p>Copy the hash value from the website and assign it to a variable to compare.<br>
+<code>$webhash = &quot;3...f'</code><br>
 [Paste the full SHA256 hash in the quotes]</p>
-
-<p>Then use PowerShell to compare this to the published hash.<br />
+<p>Then use PowerShell to compare this to the published hash.<br>
 <code>if ($hash -eq $webhash){$true}</code></p>
-
 <p>This will return either &ldquo;True&rdquo; or nothing, if &ldquo;True&rdquo; then the hashes match.</p>
-
-<p>Or if you want to do it in one line:<br />
-<code>If ((Get-FileHash .\filename.exe).hash -eq &quot;3..f&quot;){$True}</code><br />
+<p>Or if you want to do it in one line:<br>
+<code>If ((Get-FileHash .\filename.exe).hash -eq &quot;3..f&quot;){$True}</code><br>
 [Published SHA256 goes in the quotes.]</p>
-
 <h2 id="algorithms">Algorithms</h2>
-
-<p>The default hashing algorithm used is SHA256 (SHA version 2, 256 bit hash).<br />
+<p>The default hashing algorithm used is SHA256 (SHA version 2, 256 bit hash).<br>
 <code>Get-FileHash</code> supports the following algorithms</p>
-
 <ul>
 <li>SHA1</li>
 <li>SHA256</li>
@@ -186,15 +177,11 @@ if (!doNotTrack) {
 <li>SHA512</li>
 <li>MD5</li>
 </ul>
-
-<p>To use a different algorithm, use the <code>-Algorithm</code> parameter to pass the desired option.<br />
+<p>To use a different algorithm, use the <code>-Algorithm</code> parameter to pass the desired option.<br>
 I&rsquo;ve listed the algorithms here in the format accepted by PowerShell.</p>
-
-<p>Here is the oneliner with SHA1 for the algorithm:<br />
+<p>Here is the oneliner with SHA1 for the algorithm:<br>
 <code>If ((Get-FileHash .\filename.exe -Algorithm SHA1).hash -eq &quot;3..f&quot;){$True}</code></p>
-
 <h3 id="quick-reminder">Quick reminder</h3>
-
 <p>MD5 and SHA1 are no longer considered secure, so where possible avoide them, in favour of the stronger SHA 2 options.</p>
 
     </div>
@@ -277,7 +264,7 @@ I&rsquo;ve listed the algorithms here in the format accepted by PowerShell.</p>
 </div> 
 
 <div class="page_footer">
-	<p>&copy; Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
+	<p>© Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
 </div>
     
     

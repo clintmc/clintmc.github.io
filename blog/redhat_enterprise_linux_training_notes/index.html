@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.80.0" />
   <meta name="author" content="Clint McGuire">
 
   
@@ -156,145 +156,99 @@ if (!doNotTrack) {
 
     <div class="post-style" itemprop="articleBody">
       Red Hat Enterprise Linux Training Notes
-      
-
-<p>Notes from RHEL 7 Partner Training&hellip;</p>
-
-<p>You can access Red Hat Support via the CLI tool<code> redhat-support-tool</code>
+      <p>Notes from RHEL 7 Partner Training&hellip;</p>
+<p>You can access Red Hat Support via the CLI tool<!-- raw HTML omitted --> redhat-support-tool<!-- raw HTML omitted -->
 The tool gives you access to the KB, which you can search from the CLI and you can work with support tickets.</p>
-
-<p>Running <code>sosreport</code> will create an archive file with logs and other info that can be attached to a ticket.</p>
-
-<p><code>redhat-support-tool</code> has options for attaching files, it will look for an sosreport when you first open the ticket.</p>
-
-<p>RHEL 7 has symbolic links for 4 folders in <code>/</code> to the same folder in /usr.
+<p>Running <!-- raw HTML omitted -->sosreport<!-- raw HTML omitted --> will create an archive file with logs and other info that can be attached to a ticket.</p>
+<p><!-- raw HTML omitted -->redhat-support-tool<!-- raw HTML omitted --> has options for attaching files, it will look for an sosreport when you first open the ticket.</p>
+<p>RHEL 7 has symbolic links for 4 folders in <!-- raw HTML omitted -->/<!-- raw HTML omitted --> to the same folder in /usr.
 They are:</p>
-
 <pre><code>/bin links to /usr/bin
 /sbin links to /usr/sbin
 /lib links to /usr/lib
 /lib64 links to /usr/lib64
 </code></pre>
-
-<p><code>cp -r</code> is required for copying folders;<code>-r</code> is for recursive.</p>
-
-<p><code>mkdir -p</code> creates parent directories as well.</p>
-
-<p><code>rmdir</code> for removing empty directories, but <code>rm -rf</code> for folders with contents.</p>
-
+<p><!-- raw HTML omitted -->cp -r<!-- raw HTML omitted --> is required for copying folders;<!-- raw HTML omitted -->-r<!-- raw HTML omitted --> is for recursive.</p>
+<p><!-- raw HTML omitted -->mkdir -p<!-- raw HTML omitted --> creates parent directories as well.</p>
+<p><!-- raw HTML omitted -->rmdir<!-- raw HTML omitted --> for removing empty directories, but <!-- raw HTML omitted -->rm -rf<!-- raw HTML omitted --> for folders with contents.</p>
 <p>Hard links are limited to being in the same file system; soft links/symbolic links can cross file systems.</p>
-
 <p>New user accounts automatically have a Primary Group with the same name as the username. The Primary Group owns the files created by the user.</p>
-
-<p>PolicyKit is similar to UAC in Windows. It is for GUI based apps and maintains its own configuration (independent of <code>sudo</code>) for what users/groups are permitted to elevate their privileges.</p>
-
+<p>PolicyKit is similar to UAC in Windows. It is for GUI based apps and maintains its own configuration (independent of <!-- raw HTML omitted -->sudo<!-- raw HTML omitted -->) for what users/groups are permitted to elevate their privileges.</p>
 <p>SU options:</p>
-
 <pre><code>    add &lt;code&gt;-&lt;/code&gt; to start with a clean environment
     add &lt;code&gt;-c&lt;/code&gt; to run a single command
 </code></pre>
-
-<p>Commands run via <code>sudo</code> are logged to <code>/var/log/secure</code></p>
-
-<p><code>userdel -r</code> deletes the user from /etc/passwd and deletes their home directory.</p>
-
+<p>Commands run via <!-- raw HTML omitted -->sudo<!-- raw HTML omitted --> are logged to <!-- raw HTML omitted -->/var/log/secure<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->userdel -r<!-- raw HTML omitted --> deletes the user from /etc/passwd and deletes their home directory.</p>
 <p>Deleting a user frees up the UID, which could be re-assigned to a new user. Files owned by a UID that has been assigned to a new user keep their ownership, meaning they are now owned by a new user. This may have unintended consequences.</p>
-
 <p>To find unowned files run this command as root:
-<code>find / -nouser -o -nogroup 2&gt; /dev/null</code></p>
-
-<p>Passwords for users are stored in <code>/etc/shadow</code>
+<!-- raw HTML omitted -->find / -nouser -o -nogroup 2&gt; /dev/null<!-- raw HTML omitted --></p>
+<p>Passwords for users are stored in <!-- raw HTML omitted -->/etc/shadow<!-- raw HTML omitted -->
 They are stored salted and hashed.
-Hashing algorithm defaults to SHA-512 - this can be changed - via <code>authconfig &ndash;passalgo</code> - but it can only be lowered to MD5 or SHA-256, so probably not a good idea. (More bits == better!)</p>
-
+Hashing algorithm defaults to SHA-512 - this can be changed - via <!-- raw HTML omitted -->authconfig &ndash;passalgo<!-- raw HTML omitted --> - but it can only be lowered to MD5 or SHA-256, so probably not a good idea. (More bits == better!)</p>
 <p>Passwords are processed by adding the salt to the user provided password and re-encrypted. If the value of this process matches the stored (hashed &amp; salted) password, then the user has provided the correct password.
 Each user has a randomly generated salt. I assume this is picked at user creation time, but could be updated when the password is changed.
 Unique salts prevents identical values for hashed passwords.</p>
-
-<p>Password aging and expiry is controlled with <code>chage</code>.
-Account locking is controlled with <code>usermod -L</code></p>
-
+<p>Password aging and expiry is controlled with <!-- raw HTML omitted -->chage<!-- raw HTML omitted -->.
+Account locking is controlled with <!-- raw HTML omitted -->usermod -L<!-- raw HTML omitted --></p>
 <p>Users can be assigned the &ldquo;nologin&rdquo; shell. This will prevent shell connections, but still allows the user to have an account. Example provided includes a mail user, where access to email is controlled via local account, but the user does not access their email from a shell session.
-nologon shell is <code>/sbin/nologin</code></p>
-
-<p><code>sssd</code> package provides LDAP client software dependencies.
-<code>krb5-workstation</code> package is useful for debuging kerberos issues and can work with kerberos tickets from the CLI.</p>
-
-<p>IPA can be used to control <code>sudo</code>, ssh public keys, ssh host keys, server certs, automounter maps.
+nologon shell is <!-- raw HTML omitted -->/sbin/nologin<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->sssd<!-- raw HTML omitted --> package provides LDAP client software dependencies.
+<!-- raw HTML omitted -->krb5-workstation<!-- raw HTML omitted --> package is useful for debuging kerberos issues and can work with kerberos tickets from the CLI.</p>
+<p>IPA can be used to control <!-- raw HTML omitted -->sudo<!-- raw HTML omitted -->, ssh public keys, ssh host keys, server certs, automounter maps.
 IPA server provides LDAP and Kerberos.
 IPA can create and manage domains.</p>
-
-<p><code>samba-winbind</code> can be installed so the computer can join an AD Domain, <code>authconfig</code> can be used to configure <code>winbind</code>.</p>
-
-<p><code>realmd</code> package can be used to join an AD Domain and configure which users are allowed to login to the Red Hat computer.</p>
-
+<p><!-- raw HTML omitted -->samba-winbind<!-- raw HTML omitted --> can be installed so the computer can join an AD Domain, <!-- raw HTML omitted -->authconfig<!-- raw HTML omitted --> can be used to configure <!-- raw HTML omitted -->winbind<!-- raw HTML omitted -->.</p>
+<p><!-- raw HTML omitted -->realmd<!-- raw HTML omitted --> package can be used to join an AD Domain and configure which users are allowed to login to the Red Hat computer.</p>
 <p>Users need to login with their fully qualified name, eg:
-IPA = user1@ipa.example.com
+IPA = <a href="mailto:user1@ipa.example.com">user1@ipa.example.com</a>
 AD = DOMAIN\user1</p>
-
-<p>Red Hat has an IPA guide here: <a href="https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html-single/Identity_Management_Guide/index.html" target="_blank">https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html-single/Identity_Management_Guide/index.html</a>
+<p>Red Hat has an IPA guide here: <a href="https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html-single/Identity_Management_Guide/index.html">https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html-single/Identity_Management_Guide/index.html</a>
 But from a quick scan I don&rsquo;t know what IPA stands for.</p>
-
 <p>File Permissions
 Changing Group ownership of a file or directory - use : before the group name.
-<code>chown :newgroup dirname</code></p>
-
+<!-- raw HTML omitted -->chown :newgroup dirname<!-- raw HTML omitted --></p>
 <p>Changing User and Group ownership of a file or directory - declare as user:group.
-<code>chown newuser:newgroup dirname</code></p>
-
+<!-- raw HTML omitted -->chown newuser:newgroup dirname<!-- raw HTML omitted --></p>
 <p>Restrictions:
 Only root can the user that owns a file.
 root or the current owner can change the group that owns the file, but current (non-root) user can only change the group to one that the user is a member of.</p>
-
-<p><code>chgrp</code> can also be used to change group ownership; <code>chgrp</code> works like <code>chown</code>, including <code>-R</code> for recursive.</p>
-
+<p><!-- raw HTML omitted -->chgrp<!-- raw HTML omitted --> can also be used to change group ownership; <!-- raw HTML omitted -->chgrp<!-- raw HTML omitted --> works like <!-- raw HTML omitted -->chown<!-- raw HTML omitted -->, including <!-- raw HTML omitted -->-R<!-- raw HTML omitted --> for recursive.</p>
 <p>Special Permissions for Files
-<code>setuid</code> permissions allow a file to be executed as the user that owns the file, instead of the user that calls the file.
-<code>setgid</code> permissions allow a file to be executed as the group that owns the file.
-When looking the the file properties <code>(ls -l)</code> you will see a <code>S</code> or an <code>s</code>.
+<!-- raw HTML omitted -->setuid<!-- raw HTML omitted --> permissions allow a file to be executed as the user that owns the file, instead of the user that calls the file.
+<!-- raw HTML omitted -->setgid<!-- raw HTML omitted --> permissions allow a file to be executed as the group that owns the file.
+When looking the the file properties <!-- raw HTML omitted -->(ls -l)<!-- raw HTML omitted --> you will see a <!-- raw HTML omitted -->S<!-- raw HTML omitted --> or an <!-- raw HTML omitted -->s<!-- raw HTML omitted -->.
 The capital S means there are no execute permissions on the file, whereas the small s means that there are execute permissions.</p>
-
-<p><code>setuid</code> permissions can be set using <code>chmod u+s filename</code> or <code>chmod 4700 filename</code> and <code>setgid</code> permissions can be set using <code>chmod g+s filename</code> or <code>chmod 2700 filename</code>.</p>
-
+<p><!-- raw HTML omitted -->setuid<!-- raw HTML omitted --> permissions can be set using <!-- raw HTML omitted -->chmod u+s filename<!-- raw HTML omitted --> or <!-- raw HTML omitted -->chmod 4700 filename<!-- raw HTML omitted --> and <!-- raw HTML omitted -->setgid<!-- raw HTML omitted --> permissions can be set using <!-- raw HTML omitted -->chmod g+s filename<!-- raw HTML omitted --> or <!-- raw HTML omitted -->chmod 2700 filename<!-- raw HTML omitted -->.</p>
 <p><em>Special Permissions for Directories</em>
-<em>When the <code>sticky</code> bit is enabled on a directory, it restricts who can delete files. Only root, the owner of the file or the owner of the directory that the file is in can delete the file contents.</em>
-<em><code>sticky</code> bit is displayed as a <code>t</code> at the end of the permissions for a directory. (<code>ls -ld</code> will show something like: <code>drwxrwxrwt</code>)</em>
+<em>When the <!-- raw HTML omitted -->sticky<!-- raw HTML omitted --> bit is enabled on a directory, it restricts who can delete files. Only root, the owner of the file or the owner of the directory that the file is in can delete the file contents.</em>
+<em><!-- raw HTML omitted -->sticky<!-- raw HTML omitted --> bit is displayed as a <!-- raw HTML omitted -->t<!-- raw HTML omitted --> at the end of the permissions for a directory. (<!-- raw HTML omitted -->ls -ld<!-- raw HTML omitted --> will show something like: <!-- raw HTML omitted -->drwxrwxrwt<!-- raw HTML omitted -->)</em>
 <em>The sticky bit is set via:</em>
-<em><code>chmod a+t directoryname</code> or <code>chmod 1777 directoryname</code></em></p>
-
-<p>Shared folders can be configured with <code>setgid</code> so that the files created in these folders inherit the group owner value that is assigned to the directory, instead of the defualt behaviour, which is to have the primary group of the user that creates the file.
-<code>chmod g+s directoryname</code>
+<em><!-- raw HTML omitted -->chmod a+t directoryname<!-- raw HTML omitted --> or <!-- raw HTML omitted -->chmod 1777 directoryname<!-- raw HTML omitted --></em></p>
+<p>Shared folders can be configured with <!-- raw HTML omitted -->setgid<!-- raw HTML omitted --> so that the files created in these folders inherit the group owner value that is assigned to the directory, instead of the defualt behaviour, which is to have the primary group of the user that creates the file.
+<!-- raw HTML omitted -->chmod g+s directoryname<!-- raw HTML omitted -->
 Directory permissions will show an S or an s where the x should be.
 Capital S for no execute bit on the folder.</p>
-
 <h2 id="selinux">SELinux</h2>
-
 <p>SELinux adds an additional layer of object-oriented security to Linux.
 Provides sophisticated security rules for defining access.</p>
-
-<p>To check SELinux mode run <code>getenforce</code>
-To check for SELinux contexts on files/folders use <code>ls -Z</code>
-To display SELinux booleans run <code>getsebool -a</code></p>
-
+<p>To check SELinux mode run <!-- raw HTML omitted -->getenforce<!-- raw HTML omitted -->
+To check for SELinux contexts on files/folders use <!-- raw HTML omitted -->ls -Z<!-- raw HTML omitted -->
+To display SELinux booleans run <!-- raw HTML omitted -->getsebool -a<!-- raw HTML omitted --></p>
 <p>Modes are to determine how rules are enacted - Enforcing, Permissive, Disabled.
 Changing between Enforcing and Permissive does not require a reboot.
 Changing to Disabled does require a reboot - using Permissive instead of Disabled is recommended.</p>
-
 <h2 id="process-management">Process Management</h2>
-
 <p>Processes can be managed for the current user or another user with Signals.
 Signals tell the process what action to take - Stop, Terminate, Kill, Core Dump, Resume&hellip;
 Signals can be initiated with keyboard shortcuts or by calling the short name for the signal.
 Users can Kill processes they own, but root is required to kill processes owned by other users.</p>
-
-<p>Suspend (STOP) is initiated with <code>Crtl-Z</code>
-Kill is intiated with <code>Crtl-C</code>
-Core Dump is initiated with <code>Crtl-&lt;/code&gt;</p>
-
-<p>Use <code>kill</code> command to send any signal
-Use <code>killall</code> to kill processes in groups, either by matching name, owned by user or all system processes.
-Use <code>pkill</code> to kill processes with even more granular control.</p>
-
+<p>Suspend (STOP) is initiated with <!-- raw HTML omitted -->Crtl-Z<!-- raw HTML omitted -->
+Kill is intiated with <!-- raw HTML omitted -->Crtl-C<!-- raw HTML omitted -->
+Core Dump is initiated with <!-- raw HTML omitted -->Crtl-&lt;/code&gt;</p>
+<p>Use <!-- raw HTML omitted -->kill<!-- raw HTML omitted --> command to send any signal
+Use <!-- raw HTML omitted -->killall<!-- raw HTML omitted --> to kill processes in groups, either by matching name, owned by user or all system processes.
+Use <!-- raw HTML omitted -->pkill<!-- raw HTML omitted --> to kill processes with even more granular control.</p>
 <p>Use terminate option first, since it allows for clean up. Kill is final and doesn&rsquo;t allow for clean up, should only be used if the process does not respond.</p>
 
     </div>
@@ -377,7 +331,7 @@ Use <code>pkill</code> to kill processes with even more granular control.</p>
 </div> 
 
 <div class="page_footer">
-	<p>&copy; Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
+	<p>© Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
 </div>
     
     

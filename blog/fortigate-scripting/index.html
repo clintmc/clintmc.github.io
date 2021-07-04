@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.80.0" />
   <meta name="author" content="Clint McGuire">
 
   
@@ -156,23 +156,15 @@ if (!doNotTrack) {
 
     <div class="post-style" itemprop="articleBody">
       A bit about TCL and FortiManager and a Conversion Script I wrote
-      
-
-<h2 id="fortigate-scripts">FortiGate Scripts</h2>
-
-<p>I&rsquo;ve been doing quite a bit of scripting for FortiGates recently. Much of it in TCL.<br />
-FortiManager is capapble of running TCL scripts, which allow for the script to make decisions.<br />
+      <h2 id="fortigate-scripts">FortiGate Scripts</h2>
+<p>I&rsquo;ve been doing quite a bit of scripting for FortiGates recently. Much of it in TCL.<br>
+FortiManager is capapble of running TCL scripts, which allow for the script to make decisions.<br>
 For example, I have a script that will check the name of the FortiGate it is running on, then based on the hostname, it will assign different values to the device.  I needed to write this script so I could roll out ADVPN to multiple sites, for a client.</p>
-
-<p>While I can&rsquo;t publish the ADVPN script, I have put a CLI to TCL conversion script up on <a href="https://github.com/clintmc/fortinet/blob/master/ConvertToTCL.ps1" target="_blank">GitHub</a>. This script will take a text file and wrap uncommented lines, so they can be processed by TCL.</p>
-
+<p>While I can&rsquo;t publish the ADVPN script, I have put a CLI to TCL conversion script up on <a href="https://github.com/clintmc/fortinet/blob/master/ConvertToTCL.ps1">GitHub</a>. This script will take a text file and wrap uncommented lines, so they can be processed by TCL.</p>
 <p>TCL/FortiManager require each line of CLI command to be executed to be wrapped in some annoying to type and annoying to read additonal character.  By running the CLI commands through my converter script - and adding a Procedure to the output - the TCL script is easier to read/understand.</p>
-
 <p>Let me point it out again - the conversion script doesn&rsquo;t add the procedure, it only wraps the CLI commands in the text required for the procedure to run the commands. The output file has one specific job - take CLI commands and turn them into something FortiManager can run as TCL.</p>
-
 <p>It won&rsquo;t perform any further logic - you will need to supply that, and you should probably write it in after you run the conversion script, otherwise your output will look weird and probably not run.</p>
-
-<p>I&rsquo;ve created a new, currently public, <a href="https://github.com/clintmc/fortinet" target="_blank">repo</a> for Fortinet related scripts. I will probably add some more scripts to this repo. I think I can add some scripts I&rsquo;ve been using in my lab.</p>
+<p>I&rsquo;ve created a new, currently public, <a href="https://github.com/clintmc/fortinet">repo</a> for Fortinet related scripts. I will probably add some more scripts to this repo. I think I can add some scripts I&rsquo;ve been using in my lab.</p>
 
     </div>
 
@@ -254,7 +246,7 @@ For example, I have a script that will check the name of the FortiGate it is run
 </div> 
 
 <div class="page_footer">
-	<p>&copy; Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
+	<p>© Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
 </div>
     
     

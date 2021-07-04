@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.80.0" />
   <meta name="author" content="Clint McGuire">
 
   
@@ -156,39 +156,31 @@ if (!doNotTrack) {
 
     <div class="post-style" itemprop="articleBody">
       How to fix this odd error where FortiManager tries to install a certificate that isn&#39;t valid
-      
-
-<h2 id="issue">Issue</h2>
-
-<p>FortiManager, when it&rsquo;s new - I think, will sometimes try to push a certificate to FortiGate devices.<br />
-The error message in FortiManager is spread across four lines, they are:<br />
-&ldquo;Input is not a valid CA certificate.&rdquo;<br />
-&ldquo;The field ca is empty!&rdquo;<br />
-&ldquo;node_check_object fail! for ca&rdquo;<br />
-&ldquo;Attribute &lsquo;ca&rsquo; MUST be set.&rdquo;<br />
-<img src="/FortiManagerVPNCA.png" alt="Error message" /><br />
-I&rsquo;ve run into this in my lab, and I&rsquo;m pretty sure I saw this in a production FortiManager.<br />
+      <h2 id="issue">Issue</h2>
+<p>FortiManager, when it&rsquo;s new - I think, will sometimes try to push a certificate to FortiGate devices.<br>
+The error message in FortiManager is spread across four lines, they are:<br>
+&ldquo;Input is not a valid CA certificate.&rdquo;<br>
+&ldquo;The field ca is empty!&rdquo;<br>
+&ldquo;node_check_object fail! for ca&rdquo;<br>
+&ldquo;Attribute &lsquo;ca&rsquo; MUST be set.&rdquo;<br>
+<img src="/FortiManagerVPNCA.png" alt="Error message"><br>
+I&rsquo;ve run into this in my lab, and I&rsquo;m pretty sure I saw this in a production FortiManager.<br>
 I found this issue discussed on the Fortinet forums, but I didn&rsquo;t find the solution there.</p>
-
 <h2 id="solution">Solution</h2>
-
-<p>The solution that I used to fix this in my lab was to remove the certificate entries from the CLI configs.<br />
+<p>The solution that I used to fix this in my lab was to remove the certificate entries from the CLI configs.<br>
 It is located in two places - probably&hellip;</p>
-
-<p>First - we can remove the certificate from the Policy configuration, this may be all that is needed to resolve the issue.<br />
-Under Policy and Objects, select the Object Configuration screen. Go to the CLI Only Objects.<br />
-Expand vpn, expand certificate, select ca.<br />
+<p>First - we can remove the certificate from the Policy configuration, this may be all that is needed to resolve the issue.<br>
+Under Policy and Objects, select the Object Configuration screen. Go to the CLI Only Objects.<br>
+Expand vpn, expand certificate, select ca.<br>
 Select and Delete the certificate that is causing the issue.</p>
-
-<p>Second - if required, you can remove the certificate from each device&rsquo;s configuration.<br />
-On the Device Manager screen, under CLI Configurations.<br />
-Expand: vpn, certificate, ca.<br />
+<p>Second - if required, you can remove the certificate from each device&rsquo;s configuration.<br>
+On the Device Manager screen, under CLI Configurations.<br>
+Expand: vpn, certificate, ca.<br>
 Select and Delete the certificate that is causing the issue.</p>
-
-<p>NOTE: By default, FortiManager will not show you CLI Only Objects or CLI Configurations.<br />
-If you don&rsquo;t see them then you will need to modify the Display Options.<br />
-In Policy and Objects, click on Tools, Display Options.<br />
-At the very bottom of the list, you should see CLI Only Objects. Check the box and click OK.<br />
+<p>NOTE: By default, FortiManager will not show you CLI Only Objects or CLI Configurations.<br>
+If you don&rsquo;t see them then you will need to modify the Display Options.<br>
+In Policy and Objects, click on Tools, Display Options.<br>
+At the very bottom of the list, you should see CLI Only Objects. Check the box and click OK.<br>
 In Device Manager, click on Tools, Global Display Options.
 At the very bottom, again, you should see CLI Configurations. Check the box and click OK.</p>
 
@@ -272,7 +264,7 @@ At the very bottom, again, you should see CLI Configurations. Check the box and 
 </div> 
 
 <div class="page_footer">
-	<p>&copy; Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
+	<p>© Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
 </div>
     
     

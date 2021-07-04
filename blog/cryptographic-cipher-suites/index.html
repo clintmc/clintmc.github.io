@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.80.0" />
   <meta name="author" content="Clint McGuire">
 
   
@@ -156,36 +156,26 @@ if (!doNotTrack) {
 
     <div class="post-style" itemprop="articleBody">
       An explanation of Cipher Suite Naming
-      
-
-<h2 id="what-are-cryptographic-cipher-suites">What are Cryptographic Cipher Suites</h2>
-
+      <h2 id="what-are-cryptographic-cipher-suites">What are Cryptographic Cipher Suites</h2>
 <p>Cipher suites are a combination of different algorithms the system will use to encrypt the communication.
 Each operating system/application will have a set of suites it is capable of supporting.</p>
-
 <p>Let&rsquo;s take a few examples - using the IANA names:</p>
-
 <ol>
 <li><code>TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384</code></li>
 <li><code>TLS_RSA_WITH_AES_256_CBC_SHA</code></li>
 <li><code>TLS_RSA_WITH_NULL_SHA</code></li>
 </ol>
-
 <p>Each of these suites has a Protocol, a Key Exchange algorithm, a Signature Authentication algorithm, an Encryption algorithm, and a Message Authentication algorithm.</p>
-
 <p>Breaking each of them down they look like this:</p>
-
 <ol>
 <li>Protocol - TLS; Key Exchange - ECDHE; Signature Authentication - ECDSA; Encryption - AES 256 GCM; Message Authentication - SHA384</li>
 <li>Protocol - TLS; Key Exchange and Signature Authentication - RSA; Encryption - AES 256 CBC; Message Authentication - SHA</li>
 <li>Protocol - TLS; Key Exchange and Signature Authentication - RSA; Encryption - NONE; Message Authentication - SHA</li>
 </ol>
-
 <p>There are different naming schemes for the suite. Windows uses the IANA naming scheme.
 OpenSSL and GnuTLS use slightly different names.
 There are also Hex codes used to represent the suites.</p>
-
-<p>At the time of this writing, I&rsquo;ve found the <a href="https://ciphersuite.info/" target="_blank">CipherSuite.info</a> site to be a great resource for looking up the different suites - listing the different names, providing information about the relative strength/weakness of ciphers and being able to look up which suites are affected by different vulnerabilities. Huge shout out the team there.</p>
+<p>At the time of this writing, I&rsquo;ve found the <a href="https://ciphersuite.info/">CipherSuite.info</a> site to be a great resource for looking up the different suites - listing the different names, providing information about the relative strength/weakness of ciphers and being able to look up which suites are affected by different vulnerabilities. Huge shout out the team there.</p>
 
     </div>
 
@@ -267,7 +257,7 @@ There are also Hex codes used to represent the suites.</p>
 </div> 
 
 <div class="page_footer">
-	<p>&copy; Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
+	<p>© Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
 </div>
     
     

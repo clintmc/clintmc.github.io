@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.80.0" />
   <meta name="author" content="Clint McGuire">
 
   
@@ -156,30 +156,20 @@ if (!doNotTrack) {
 
     <div class="post-style" itemprop="articleBody">
       How to modify outbound routing decisions for BGP
-      
-
-<h2 id="local-preference">Local Preference</h2>
-
-<p>I needed to use BGP to advertise the networks in a multi-site network, with FortiGates acting as routers at each site. Using iBGP we configured the Primary Subnet at the Primary Date Center to also be advertised by the DR Data Center. However, because the workload would only be active at the Primary DC - until an actual DR event happened - we needed to ensure that traffic for that subnet would only be routed to the Primary DC.<br />
+      <h2 id="local-preference">Local Preference</h2>
+<p>I needed to use BGP to advertise the networks in a multi-site network, with FortiGates acting as routers at each site. Using iBGP we configured the Primary Subnet at the Primary Date Center to also be advertised by the DR Data Center. However, because the workload would only be active at the Primary DC - until an actual DR event happened - we needed to ensure that traffic for that subnet would only be routed to the Primary DC.<br>
 Reviewing the documentation I determined that modifying the Local Preference was the best option to configure.</p>
-
 <p>In the FortiGates, we created a BGP Route Map, added a rule and used the command <code>set set-local-preference 200</code>. This route map is then applied to the neighbour defined as the Primary Site - by using the <code>set route-map-in “&lt;BGP Rule Name&gt;”</code>.</p>
-
 <p>The default Local Preference assigned to iBGP routes, on FortiGates, is 100. So we needed to increase the preference on the Primary Site neighbour, so that it would route to that host. By modifying this value all the BGP information is still being propagated to all the sites, but the FortiGates will exclude the lower preference sites from the routing table, while the route to the high preference sites are up.</p>
-
-<p>One other thing I ran into while testing this was <code>route-map-in</code> versus <code>route-map-out</code>.<br />
+<p>One other thing I ran into while testing this was <code>route-map-in</code> versus <code>route-map-out</code>.<br>
 We already had <code>route-map-out</code> values configured on the neighbours, I didn’t notice the distinction, initially, so I was scratching my head trying to figure out why the route-map wasn’t modifying the BGP Table.</p>
-
-<p>The <code>route-map-out</code> doesn’t process the Local Preference value, because the <code>out</code> is for modifying outbound BGP information.<br />
+<p>The <code>route-map-out</code> doesn’t process the Local Preference value, because the <code>out</code> is for modifying outbound BGP information.<br>
 Local Preference only modifies incoming data - so it needs to be applied via <code>set route-map-in</code>.</p>
-
 <p>Speaking of the BGP Table, on FortiGates you can see the table by running <code>get router info bgp networks</code>.</p>
-
-<p>As you make changes to the BGP config, you will need to refresh the table, you do that by clearing the neighbours:<br />
+<p>As you make changes to the BGP config, you will need to refresh the table, you do that by clearing the neighbours:<br>
 <code>exe router clear bgp ip &lt;neighbour-ip&gt; soft</code></p>
-
-<p>If you can handle a network disruption you can run this command:<br />
-<code>exe router clear bgp ip &lt;neighbour-ip&gt;</code><br />
+<p>If you can handle a network disruption you can run this command:<br>
+<code>exe router clear bgp ip &lt;neighbour-ip&gt;</code><br>
 This one isn’t recommended on production gear during business hours, but maybe you really do need to do it&hellip;</p>
 
     </div>
@@ -262,7 +252,7 @@ This one isn’t recommended on production gear during business hours, but maybe
 </div> 
 
 <div class="page_footer">
-	<p>&copy; Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
+	<p>© Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
 </div>
     
     

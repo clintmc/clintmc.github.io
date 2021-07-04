@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.80.0" />
   <meta name="author" content="Clint McGuire">
 
   
@@ -156,17 +156,12 @@ if (!doNotTrack) {
 
     <div class="post-style" itemprop="articleBody">
       Find Azure Market Place Image Offers
-      <p>Following up on my post about <a href="http://www.clintmcguire.com/blog/find-az-images-by-publisher/" target="_blank">finding Azure Images by Publisher</a>, here is how to get all the SKUs for the specific Offers.</p>
-
-<p><code>Get-AzVMImageSKu</code> is the command to run.</p>
-
+      <p>Following up on my post about <a href="http://www.clintmcguire.com/blog/find-az-images-by-publisher/">finding Azure Images by Publisher</a>, here is how to get all the SKUs for the specific Offers.</p>
+<p><!-- raw HTML omitted -->Get-AzVMImageSKu<!-- raw HTML omitted --> is the command to run.</p>
 <p>It requires Location, Publisher, and Offer.</p>
-
 <p>For example:
-<code>Get-AzVMImageSku -Location &lsquo;eastus&rsquo; -publisher &lsquo;fortinet&rsquo; -Offer &lsquo;fortinet_fortigate-vm_v5&rsquo;</code></p>
-
+<!-- raw HTML omitted -->Get-AzVMImageSku -Location &lsquo;eastus&rsquo; -publisher &lsquo;fortinet&rsquo; -Offer &lsquo;fortinet_fortigate-vm_v5&rsquo;<!-- raw HTML omitted --></p>
 <p>This will return the two SKUs - &ldquo;fortinet_fg-vm&rdquo; and &ldquo;fortinet_fg-vm_payg&rdquo;</p>
-
 <p>You can take the SKUs and use those to deploy new VMs.</p>
 
     </div>
@@ -249,7 +244,7 @@ if (!doNotTrack) {
 </div> 
 
 <div class="page_footer">
-	<p>&copy; Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
+	<p>© Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
 </div>
     
     

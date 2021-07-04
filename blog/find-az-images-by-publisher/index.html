@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.80.0" />
   <meta name="author" content="Clint McGuire">
 
   
@@ -157,27 +157,16 @@ if (!doNotTrack) {
     <div class="post-style" itemprop="articleBody">
       Use AZ PowerShell module to find VM Images available by Publisher
       <p>First install the PowerShell Az Module.</p>
-
-<p>On Windows, open an elevated PowerShell window and run: <code>Install-Module -Name Az -AllowClobber</code></p>
-
-<p>On MacOS, use <code>sudo</code> to open <code>pwsh</code>, then run: <code>Install-Module -Name Az -AllowClobber</code></p>
-
+<p>On Windows, open an elevated PowerShell window and run: <!-- raw HTML omitted -->Install-Module -Name Az -AllowClobber<!-- raw HTML omitted --></p>
+<p>On MacOS, use <!-- raw HTML omitted -->sudo<!-- raw HTML omitted --> to open <!-- raw HTML omitted -->pwsh<!-- raw HTML omitted -->, then run: <!-- raw HTML omitted -->Install-Module -Name Az -AllowClobber<!-- raw HTML omitted --></p>
 <p>Once the Az module is installed, exit the elevated/sudo PowerShell session and open a regular PowerShell session.</p>
-
-<p>Connect to your Azure account - <code>Connect-AzAccount</code> and use the device login URL and Code to sign in.</p>
-
+<p>Connect to your Azure account - <!-- raw HTML omitted -->Connect-AzAccount<!-- raw HTML omitted --> and use the device login URL and Code to sign in.</p>
 <p>If you don&rsquo;t know the exact Publisher Name, you can find it by looking at all the Publishers.</p>
-
-<p>Use <code>Get-AzVMImagePublisher -Location &lsquo;LocationName&rsquo;</code> to get a full list of the Publishers that have Images in that Location.</p>
-
-<p>Use <code>Get-AzVMImagePublisher -Location &lsquo;LocationName&rsquo; | where -Property PublisherName -match &ldquo;string with *&rdquo;</code> to narrow down the list.</p>
-
+<p>Use <!-- raw HTML omitted -->Get-AzVMImagePublisher -Location &lsquo;LocationName&rsquo;<!-- raw HTML omitted --> to get a full list of the Publishers that have Images in that Location.</p>
+<p>Use <!-- raw HTML omitted -->Get-AzVMImagePublisher -Location &lsquo;LocationName&rsquo; | where -Property PublisherName -match &ldquo;string with *&quot;<!-- raw HTML omitted --> to narrow down the list.</p>
 <p>Match will work with the * wildcard, in my testing this returned more matches than I was expecting. (I should point out I was using PowerShell 6.1, in case that makes a difference.)</p>
-
 <p>LocationName can be &lsquo;eastus&rsquo; or &lsquo;westus&rsquo;, etc. It will also accept &lsquo;east us&rsquo;, in my testing.</p>
-
-<p>When you have the Publisher Name you can get the list of all their VM Images by using: <code>Get-AzVMImageOffer -Location &lsquo;LocationName&rsquo; -PublisherName &lsquo;PublisherName&rsquo;</code></p>
-
+<p>When you have the Publisher Name you can get the list of all their VM Images by using: <!-- raw HTML omitted -->Get-AzVMImageOffer -Location &lsquo;LocationName&rsquo; -PublisherName &lsquo;PublisherName&rsquo;<!-- raw HTML omitted --></p>
 <p>This will return the Offer and Id, in addition to the PublisherName and Location.</p>
 
     </div>
@@ -260,7 +249,7 @@ if (!doNotTrack) {
 </div> 
 
 <div class="page_footer">
-	<p>&copy; Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
+	<p>© Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
 </div>
     
     

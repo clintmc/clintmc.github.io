@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.80.0" />
   <meta name="author" content="Clint McGuire">
 
   
@@ -156,67 +156,47 @@ if (!doNotTrack) {
 
     <div class="post-style" itemprop="articleBody">
       Quick, Basic SD-WAN Setup
-      
-
-<h2 id="minimal-requirements">Minimal Requirements</h2>
-
-<p>Here are the quick and dirty steps to get SD-WAN up and running on a FortiGate.<br />
+      <h2 id="minimal-requirements">Minimal Requirements</h2>
+<p>Here are the quick and dirty steps to get SD-WAN up and running on a FortiGate.<br>
 I&rsquo;m running FortiOS 6.2.3 on 60E.</p>
-
 <h3 id="sd-wan-interface">SD-WAN Interface</h3>
-
 <p>Under Network -&gt; SD-WAN:</p>
-
 <ol>
-<li>Set the Status to Enabled<br /></li>
-<li>Add at least one available port to the SD-WAN Interface Members<br /></li>
+<li>Set the Status to Enabled</li>
+<li>Add at least one available port to the SD-WAN Interface Members</li>
 <li>Hit Apply</li>
 </ol>
-
 <h3 id="perfomance-metrics">Perfomance Metrics</h3>
-
 <p>Under Network -&gt; Performance SLA:</p>
-
 <ol>
-<li>Create a new SLA<br /></li>
-<li>Give it a Name<br /></li>
-<li>For Protocol pick Ping<br /></li>
-<li>Add two IPs for servers to run ping tests against - I&rsquo;d recommend 1.1.1.1 and 8.8.8.8, since they are Anycast and globaly respond quickly, but you might want to add one of your ISP&rsquo;s upstream routers. You need to put two addresses in here. (Can be FQDNs)<br /></li>
-<li>Add the Interface(s) [WAN1 or WAN2, etc.] you want to use this test to the Participants box<br /></li>
-<li>Make sure &ldquo;Enable probe packets&rdquo; is selected - should be by defualt<br /></li>
+<li>Create a new SLA</li>
+<li>Give it a Name</li>
+<li>For Protocol pick Ping</li>
+<li>Add two IPs for servers to run ping tests against - I&rsquo;d recommend 1.1.1.1 and 8.8.8.8, since they are Anycast and globaly respond quickly, but you might want to add one of your ISP&rsquo;s upstream routers. You need to put two addresses in here. (Can be FQDNs)</li>
+<li>Add the Interface(s) [WAN1 or WAN2, etc.] you want to use this test to the Participants box</li>
+<li>Make sure &ldquo;Enable probe packets&rdquo; is selected - should be by defualt</li>
 <li>Hit Ok</li>
 </ol>
-
 <h3 id="route">Route</h3>
-
 <p>Under Network -&gt; Static Routes:</p>
-
 <ol>
-<li>Create a new route<br /></li>
-<li>Destination - Subnet<br /></li>
-<li>Address - 0.0.0.0/0.0.0.0<br /></li>
-<li>Interface - SD-WAN<br /></li>
+<li>Create a new route</li>
+<li>Destination - Subnet</li>
+<li>Address - 0.0.0.0/0.0.0.0</li>
+<li>Interface - SD-WAN</li>
 <li>Admin Distance - 1 (or higher if you need it, make sure you pick the right one for your setup)</li>
 <li>Hit Ok</li>
 </ol>
-
 <h3 id="firewall-policy">Firewall Policy</h3>
-
-<p>Under Policy &amp; Objects:<br />
+<p>Under Policy &amp; Objects:<br>
 Create Policies - as required - to allow traffic out by this new interface</p>
-
 <h2 id="overview">Overview</h2>
-
 <p>These steps will create a new SD-WAN interface, turn on some basic performance monitoring, and add the new route, so you can use this interface in your Firewall Policies.</p>
-
 <p>I had originally negelcted to setup the Performance SLA, and regretted it. It was quick to setup and provided some interesting information.</p>
-
 <p>These steps can be followed as-is with a brand new FortiGate or one currently in production, however, this is easier on a brand new Gate. One that is already in production might require moving interfaces around and re-doing Firewall Policies&hellip;</p>
-
 <h2 id="next-steps">Next Steps</h2>
-
-<p>Once you&rsquo;ve got a basic SD-WAN running, you can start to enable some of the more interesting features - which is the SD-WAN Rules, under Network. With those rules you can steer traffic based on Source, Destination, Internet Service, Application - so that the traffic goes out the interface to match an SLA requirement or to maximize availalbe bandwidth or you can assign a preferred interface for a specific type of traffic.<br />
-The Cookbook explains the different SD-WAN Rule options <a href="https://docs.fortinet.com/document/fortigate/6.2.3/cookbook/716691/wan-path-control" target="_blank">here</a>.</p>
+<p>Once you&rsquo;ve got a basic SD-WAN running, you can start to enable some of the more interesting features - which is the SD-WAN Rules, under Network. With those rules you can steer traffic based on Source, Destination, Internet Service, Application - so that the traffic goes out the interface to match an SLA requirement or to maximize availalbe bandwidth or you can assign a preferred interface for a specific type of traffic.<br>
+The Cookbook explains the different SD-WAN Rule options <a href="https://docs.fortinet.com/document/fortigate/6.2.3/cookbook/716691/wan-path-control">here</a>.</p>
 
     </div>
 
@@ -298,7 +278,7 @@ The Cookbook explains the different SD-WAN Rule options <a href="https://docs.fo
 </div> 
 
 <div class="page_footer">
-	<p>&copy; Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
+	<p>© Clint McGuire 2009-2020. Powered by <a href="http://gohugo.io/">Hugo</a> and a modified version of <a href="https://github.com/jhu247/minimal-academic">Minimal Academic</a></p>
 </div>
     
     
