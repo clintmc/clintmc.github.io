@@ -6,8 +6,21 @@
     <description>Recent content in Home on Website of Clint McGuire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; Clint McGuire 2009-2020</copyright>
-    <lastBuildDate>Sun, 04 Jul 2021 10:44:13 -0700</lastBuildDate><atom:link href="https://www.clintmcguire.com/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; Clint McGuire 2009-2021</copyright>
+    <lastBuildDate>Mon, 06 Sep 2021 17:43:40 -0700</lastBuildDate><atom:link href="https://www.clintmcguire.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setup MCLAG Trunks between FortiSwitch and VMware</title>
+      <link>https://www.clintmcguire.com/blog/fortiswitch-mclag-vmware/</link>
+      <pubDate>Mon, 06 Sep 2021 17:43:40 -0700</pubDate>
+      
+      <guid>https://www.clintmcguire.com/blog/fortiswitch-mclag-vmware/</guid>
+      <description>If you have MCLAG setup on FortiSwitches, you can setup static Trunks to the ESXi hosts for redundant connections.
+I&amp;rsquo;ve used this with FortiOS 6.2 and 6.4 with VMware 6.7. I&amp;rsquo;ve only attempted this with FortiGate Managed FortiSwitch, I believe - but can&amp;rsquo;t confirm - that this is a requirement. (I&amp;rsquo;m pretty sure MCLAG only works when the FortiSwitches are Managed by a FortiGate.)
+Directions are below.
+Requirments:
+ Two FortiSwitches capable of MCLAG (Model 200+) Two NIC ports in the ESXi hosts One cable from the ESXi host connecting to each switch  vSwitch Standard Settings I&amp;rsquo;ve only tested this with Standard vSwitches, so my directions will only cover them.</description>
+    </item>
+    
     <item>
       <title>FortiGate CLI LDAP Test</title>
       <link>https://www.clintmcguire.com/blog/fortigate-cli-ldap-test/</link>
