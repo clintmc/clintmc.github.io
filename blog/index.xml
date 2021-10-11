@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Clint McGuire 2009-2021</copyright>
-    <lastBuildDate>Mon, 06 Sep 2021 17:43:40 -0700</lastBuildDate><atom:link href="https://www.clintmcguire.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Oct 2021 07:47:36 -0600</lastBuildDate><atom:link href="https://www.clintmcguire.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Security Baseline</title>
+      <link>https://www.clintmcguire.com/blog/securitybaseline/</link>
+      <pubDate>Mon, 11 Oct 2021 07:47:36 -0600</pubDate>
+      
+      <guid>https://www.clintmcguire.com/blog/securitybaseline/</guid>
+      <description>Background In Heavy Strategy EP. 010 - Budgeting for Cybersecurity Greg Ferro &amp;amp; Johna Till Johnson agree that &amp;ldquo;Detection is better than Prevention&amp;rdquo;, in that same episode Greg said that he recommended SDP (Software-Defined Perimeter), Asset Inventory and EPP (Endpoint Protection Platform) for all devices.
+SDP, Asset Inventory and EPP are protection technologies, so this could be seen as conflicting with &amp;ldquo;detection is better&amp;hellip;&amp;rdquo;. However, I think what Greg is getting at is that there needs to be a minimum level of protection and that further spending on additional protection technologies is likely to be wasteful.</description>
+    </item>
+    
     <item>
       <title>Setup MCLAG Trunks between FortiSwitch and VMware</title>
       <link>https://www.clintmcguire.com/blog/fortiswitch-mclag-vmware/</link>
