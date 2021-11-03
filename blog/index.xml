@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Clint McGuire 2009-2021</copyright>
-    <lastBuildDate>Mon, 11 Oct 2021 07:47:36 -0600</lastBuildDate><atom:link href="https://www.clintmcguire.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 03 Nov 2021 07:35:48 -0700</lastBuildDate><atom:link href="https://www.clintmcguire.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FortiSwitch VLANs</title>
+      <link>https://www.clintmcguire.com/blog/fortiswitch-vlans/</link>
+      <pubDate>Wed, 03 Nov 2021 07:35:48 -0700</pubDate>
+      
+      <guid>https://www.clintmcguire.com/blog/fortiswitch-vlans/</guid>
+      <description>In the FortiSwitch Management, for Ports and Trunks, it shows Native VLAN and Allowed VLANs. This was new terminology for me. Other switches I&amp;rsquo;ve used in the past have had either Tagged or Untagged.
+If you look in the CLI, you can also assign an Untagged VLAN to ports&amp;hellip;
+How do you modify the VLANs in the GUI? Quick note, to change the VLAN in the GUI, find the port, put your mouse over the table cell for the port and VLAN type you want to change, then click the Pencil icon that will show up in the top right of the cell.</description>
+    </item>
+    
     <item>
       <title>Security Baseline</title>
       <link>https://www.clintmcguire.com/blog/securitybaseline/</link>
