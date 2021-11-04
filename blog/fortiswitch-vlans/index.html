@@ -163,20 +163,20 @@ This was new terminology for me. Other switches I&rsquo;ve used in the past have
 <p>Quick note, to change the VLAN in the GUI, find the port, put your mouse over the table cell for the port and VLAN type you want to change, then click the Pencil icon that will show up in the top right of the cell.<br>
 This will open a menu where you can select the new settings you want.</p>
 <p>If you want to change multiple ports at the same time, you can use the Shift-Click, or the Control/Command-Click multiple select methods.
-In case these terms are not familiar (I may have them wrong), to select a continuous range, click the first in the range, hold shift and click the last in the range.  To select multiple, but not continous, click the first port, hold Control (on Windows) or Command (on Mac) then click the next port, hold the keyboard button again and click the third, repeat until all required selections are made.</p>
+In case these terms are not familiar (I may have them wrong), to select a continuous range, click the first in the range, hold shift and click the last in the range.  To select multiple, but not continuous, click the first port, hold Control (on Windows) or Command (on Mac) then click the next port, hold the keyboard button again and click the third, repeat until all required selections are made.</p>
 <h3 id="native-vlan">Native VLAN</h3>
 <p>This is sort of like Untagged.
 As packets ingress into the switch, if they have no tag, the FortiSwitch assigns the Native VLAN as a tag.
 As packets leave switch ports, if their tag matches the Native VLAN the packet is sent with out without a tag.
 It takes untagged traffic, assigns it a tag, moves it through the network and potentially untags it.</p>
 <h3 id="allowed-vlan">Allowed VLAN</h3>
-<p>The Allowed VLANs are a list of VLAN IDs that the switch will accect (ingress) or transmit (egress) for that port.
+<p>The Allowed VLANs are a list of VLAN IDs that the switch will accept (ingress) or transmit (egress) for that port.
 The Native VLAN is on this list implicitly, so it doesn&rsquo;t need to be added.
 This is like Tagged ports on another vendor&rsquo;s gear.</p>
 <h4 id="can-i-put-the-native-vlan-in-the-allowed-vlan-list">Can I put the Native VLAN in the Allowed VLAN list?</h4>
 <p>I&rsquo;ve tested this on 6.4.6 and 6.4.7 in the GUI - no. When modifying the Allowed VLAN list, it doesn&rsquo;t include the VLAN currently assigned as Native VLAN.</p>
 <h3 id="what-is-the-underlying-model-here">What is the underlying model here?</h3>
-<p>Here&rsquo;s my speculation - I don&rsquo;t think this is in the docs (I can&rsquo;t find it).  The Fortinet VLAN model is that all packets should have a tag while they are moving through the FortiSwitches. This is why Untagged is hidden on the CLI and the Native VLAN tag gets added on ingress to untagged packets. Also, the Untagged VLAN option only applies on Eggress.<br>
+<p>Here&rsquo;s my speculation - I don&rsquo;t think this is in the docs (I can&rsquo;t find it).  The Fortinet VLAN model is that all packets should have a tag while they are moving through the FortiSwitches. This is why Untagged is hidden on the CLI and the Native VLAN tag gets added on ingress to untagged packets. Also, the Untagged VLAN option only applies on Egress.<br>
 I don&rsquo;t see anything wrong with having all packets tagged as they move through the switch, but this was new to me. I did the CCNA course a long, long time ago. I don&rsquo;t recall Native VLANs from it. I don&rsquo;t recall them coming up when I was prepping for the Brocade cert I took (merely a long time ago). It would have simplified my understanding of the terminology if this model had been presented first.</p>
 
     </div>
