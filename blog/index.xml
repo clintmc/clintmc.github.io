@@ -6,8 +6,18 @@
     <description>Recent content in Blog on Website of Clint McGuire</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; Clint McGuire 2009-2021</copyright>
-    <lastBuildDate>Fri, 04 Feb 2022 07:44:38 -0800</lastBuildDate><atom:link href="https://www.clintmcguire.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>&amp;copy; Clint McGuire 2009-2022</copyright>
+    <lastBuildDate>Mon, 21 Feb 2022 21:10:28 -0800</lastBuildDate><atom:link href="https://www.clintmcguire.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Five Tips to Secure M365 Business Standard</title>
+      <link>https://www.clintmcguire.com/blog/five-tips-to-secure-m365-business-standard/</link>
+      <pubDate>Mon, 21 Feb 2022 21:10:28 -0800</pubDate>
+      
+      <guid>https://www.clintmcguire.com/blog/five-tips-to-secure-m365-business-standard/</guid>
+      <description>How to improve security in M365 Microsoft has added a lot of security features to the M365 platform, but not all of them are available to all license levels. If you are licensed for M365 Business Standard you won&amp;rsquo;t have access to all the security features in the platform, so let&amp;rsquo;s focus on what is available to your tenant and review the Top 5.
+ Setup multi-factor authentication for all users Create dedicated admin accounts Filter out commonly malicious attachments from email Use mail flow rules to warn users about potentially dangerous attachments Use mail flow rules to prevent auto-forwarding of email  How do these improve security?</description>
+    </item>
+    
     <item>
       <title>BEC</title>
       <link>https://www.clintmcguire.com/blog/bec/</link>
