@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <meta name="generator" content="Hugo 0.80.0" />
+  <meta name="generator" content="Hugo 0.102.0" />
   <meta name="author" content="Clint McGuire">
 
   
@@ -157,16 +157,16 @@ if (!doNotTrack) {
 <p>In a Windows Domain, the default config is for the PDC to get time from an external time source, the other DCs to get time from the PDC and the domain members to get time for a DC in their Site.</p>
 <p>So only the PDC should need to be modified.</p>
 <p>The commands to configure the PDC to get time from the NTP Pool servers:</p>
-<pre><code>w32tm /config /manualpeerlist:&quot;0.north-america.pool.ntp.org,0x09 1.north-america.pool.ntp.org,0x09 2.north-america.pool.ntp.org,0x09 3.north-america.pool.ntp.org,0x09&quot; /syncfromflags:manual /reliable:yes /update
-Net Stop &quot;Windows Time&quot;
-Net Start &quot;Windows Time&quot;
+<pre tabindex="0"><code>w32tm /config /manualpeerlist:&#34;0.north-america.pool.ntp.org,0x09 1.north-america.pool.ntp.org,0x09 2.north-america.pool.ntp.org,0x09 3.north-america.pool.ntp.org,0x09&#34; /syncfromflags:manual /reliable:yes /update
+Net Stop &#34;Windows Time&#34;
+Net Start &#34;Windows Time&#34;
 w32tm /resync
 </code></pre><p>Note on the manualpeerlist - after each server name we are adding <code>,0x09</code> because we want to combine the options <code>0x01</code> and <code>0x08</code> - you can look those values up here: <a href="https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc773263(v=ws.10)#registry-path-25">https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc773263(v=ws.10)#registry-path-25</a></p>
 <p>If you want to use different servers for peers go to the <!-- raw HTML omitted -->NTP Pool Project <!-- raw HTML omitted -->website and select the servers that match your needs.
 (Don&rsquo;t forget to put double quotes around your server list and spaces between server names!)</p>
 <p>You can run the above commands on a non-domain joined computer and get the same result.</p>
 <p>If you have a domain joined computer that needs to have the NTP settings reset - so it will check with a DC - use the following commands:</p>
-<pre><code>w32tm /config /syncfromflags:domhier /update
+<pre tabindex="0"><code>w32tm /config /syncfromflags:domhier /update
 Net Stop w32tm
 Net Start w32tm
 </code></pre><p>One last thing about w32tm - it is not designed to provide highly accurate time, for time sensitive apps. If you have time sensitive apps you will need to find an alternate time server.</p>
@@ -224,7 +224,7 @@ Net Start w32tm
 <div class="disqus">
   <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

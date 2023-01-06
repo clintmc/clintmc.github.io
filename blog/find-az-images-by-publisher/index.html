@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <meta name="generator" content="Hugo 0.80.0" />
+  <meta name="generator" content="Hugo 0.102.0" />
   <meta name="author" content="Clint McGuire">
 
   
@@ -162,7 +162,7 @@ if (!doNotTrack) {
 <p>Use <!-- raw HTML omitted -->Get-AzVMImagePublisher -Location &lsquo;LocationName&rsquo;<!-- raw HTML omitted --> to get a full list of the Publishers that have Images in that Location.</p>
 <p>Use <!-- raw HTML omitted -->Get-AzVMImagePublisher -Location &lsquo;LocationName&rsquo; | where -Property PublisherName -match &ldquo;string with *&quot;<!-- raw HTML omitted --> to narrow down the list.</p>
 <p>Match will work with the * wildcard, in my testing this returned more matches than I was expecting. (I should point out I was using PowerShell 6.1, in case that makes a difference.)</p>
-<p>LocationName can be &lsquo;eastus&rsquo; or &lsquo;westus&rsquo;, etc. It will also accept &lsquo;east us&rsquo;, in my testing.</p>
+<p>LocationName can be &rsquo;eastus&rsquo; or &lsquo;westus&rsquo;, etc. It will also accept &rsquo;east us&rsquo;, in my testing.</p>
 <p>When you have the Publisher Name you can get the list of all their VM Images by using: <!-- raw HTML omitted -->Get-AzVMImageOffer -Location &lsquo;LocationName&rsquo; -PublisherName &lsquo;PublisherName&rsquo;<!-- raw HTML omitted --></p>
 <p>This will return the Offer and Id, in addition to the PublisherName and Location.</p>
 
@@ -215,7 +215,7 @@ if (!doNotTrack) {
 <div class="disqus">
   <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

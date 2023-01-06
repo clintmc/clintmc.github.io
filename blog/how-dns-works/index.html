@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <meta name="generator" content="Hugo 0.80.0" />
+  <meta name="generator" content="Hugo 0.102.0" />
   <meta name="author" content="Clint McGuire">
 
   
@@ -176,7 +176,7 @@ The first three characters - V5Y in our example - represent a section of the cit
 In the case of city hall, it is likley a specific address.</p>
 <p>How does this make for a better analogy? I&rsquo;m glad you asked.</p>
 <p>DNS is a hierachical system, with searches (assuming results aren&rsquo;t cached) starting from the right of the name and working to the left.
-Using <a href="http://www.clintmcguire.com">www.clintmcguire.com</a> as our example, we start our lookup by asking the Root DNS servers (represented by a &ldquo;hidden&rdquo; &lsquo;.&rsquo; at the end of the name) about what servers to ask to get information about the .com part of the name. One of the Root servers will return some options for .com DNS servers.<br>
+Using <a href="https://www.clintmcguire.com">www.clintmcguire.com</a> as our example, we start our lookup by asking the Root DNS servers (represented by a &ldquo;hidden&rdquo; &lsquo;.&rsquo; at the end of the name) about what servers to ask to get information about the .com part of the name. One of the Root servers will return some options for .com DNS servers.<br>
 Our query then goes to the .com DNS servers and asks about clintmcguire.com.<br>
 A .com DNS server will respond with clintmcguire.com&rsquo;s DNS servers.<br>
 The process is repeated looking for the server called www, by asking clintmcguire.com&rsquo;s DNS servers for the answer.</p>
@@ -233,7 +233,7 @@ DNS is actually starting with a very broad search scope and narrowing down the s
 <div class="disqus">
   <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <meta name="generator" content="Hugo 0.80.0" />
+  <meta name="generator" content="Hugo 0.102.0" />
   <meta name="author" content="Clint McGuire">
 
   
@@ -154,7 +154,7 @@ if (!doNotTrack) {
     <div class="post-style" itemprop="articleBody">
       How the DNS Protocol Returns Data
       <h2 id="view-from-the-client">View from the client</h2>
-<p>A client system - phone, dekstop, laptop, server - looking to find an IP address for a name, lets use <a href="http://www.clintmcguire.com">www.clintmcguire.com</a> as an example, sends a DNS request to its configured name resolvers.<br>
+<p>A client system - phone, dekstop, laptop, server - looking to find an IP address for a name, lets use <a href="https://www.clintmcguire.com">www.clintmcguire.com</a> as an example, sends a DNS request to its configured name resolvers.<br>
 Name resolvers are either statically assigned by a network administrator or handed out by DHCP.</p>
 <p>The client sends a request - typically via UDP - on port 53, to the name resolver. This is a question, asking for the Resource Record (RR) details that match a name/domain name.</p>
 <p>The name resolver will - eventually, ideally - return the data to the client.</p>
@@ -167,7 +167,7 @@ Name resolvers are either statically assigned by a network administrator or hand
 </ol>
 <p>In the case of #3, the name resolver will respond to the client with the answer from the cache.<br>
 In the case of #1 or 2, the name resolver will have to find the answer for the client.</p>
-<p>Lets go back to our example - <a href="http://www.clintmcguire.com">www.clintmcguire.com</a> - this name requires an RR to lookup. If you are using a web browser to go this site, the request will contain either an <code>A</code> record or an <code>AAAA</code> (Quad-A) record.</p>
+<p>Lets go back to our example - <a href="https://www.clintmcguire.com">www.clintmcguire.com</a> - this name requires an RR to lookup. If you are using a web browser to go this site, the request will contain either an <code>A</code> record or an <code>AAAA</code> (Quad-A) record.</p>
 <h3 id="resource-record-aside">Resource Record Aside</h3>
 <p>There are many types of RRs, here is a quick list - that is not definitive</p>
 <ul>
@@ -182,13 +182,13 @@ In the case of #1 or 2, the name resolver will have to find the answer for the c
 <h2 id="back-to-how-does-the-name-resolver-get-the-answer-to-provide-to-the-client">Back to how does the name resolver get the answer to provide to the client</h2>
 <p>With an RR type and domain or host name, the name resolver will start a search against the Root domain servers, looking for - in our example - the name servers for the .com domain.<br>
 It will then ask the .com servers for the name server for clintmcguire.com.<br>
-It will then ask the clintmcguire.com name servers for the A or AAAA record for <a href="http://www.clintmcguire.com">www.clintmcguire.com</a>.
+It will then ask the clintmcguire.com name servers for the A or AAAA record for <a href="https://www.clintmcguire.com">www.clintmcguire.com</a>.
 Once it gets this answer it will reply to the client with the details.</p>
 <p>This process descbribes a Recursive Query - where the name resolver does the leg work of tracking down the answer.<br>
 An alternate process would be an Iterative Query, the process is the similar.</p>
 <h2 id="how-does-an-interaive-query-work">How does an Interaive Query work</h2>
 <p>When a name server performs an Iterative Query, it responds to the client with the closest match it has, and leaves tracking down the answer to the client.<br>
-So asking for <a href="http://www.clintmcguire.com">www.clintmcguire.com</a>, a resolver might reply back with the .com name servers and a &ldquo;Good luck!&rdquo;, so the client then asks the .com servers for the name servers for clintmcguire.com. And so on.<br>
+So asking for <a href="https://www.clintmcguire.com">www.clintmcguire.com</a>, a resolver might reply back with the .com name servers and a &ldquo;Good luck!&rdquo;, so the client then asks the .com servers for the name servers for clintmcguire.com. And so on.<br>
 The end result will be the same.</p>
 <h2 id="a-bit-more-on-the-technical-side">A bit more on the technical side</h2>
 <p>Currently, DNS traffic is sent to UDP port 53 on the server. The protocol allows for traffic to be sent via TCP, also on port 53, but because of the additional overhead of the TCP communications, UDP is preferred.<br>
@@ -248,7 +248,7 @@ In the mean time you can test it out for yourself if you want to dig into this m
 <div class="disqus">
   <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

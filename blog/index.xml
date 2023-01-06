@@ -25,7 +25,7 @@ This cert also tests against broad knowledge of many different parts of Azure, s
       
       <guid>https://www.clintmcguire.com/blog/five-tips-to-secure-m365-business-standard/</guid>
       <description>How to improve security in M365 Microsoft has added a lot of security features to the M365 platform, but not all of them are available to all license levels. If you are licensed for M365 Business Standard you won&amp;rsquo;t have access to all the security features in the platform, so let&amp;rsquo;s focus on what is available to your tenant and review the Top 5.
- Setup multi-factor authentication for all users Create dedicated admin accounts Filter out commonly malicious attachments from email Use mail flow rules to warn users about potentially dangerous attachments Use mail flow rules to prevent auto-forwarding of email  How do these improve security?</description>
+Setup multi-factor authentication for all users Create dedicated admin accounts Filter out commonly malicious attachments from email Use mail flow rules to warn users about potentially dangerous attachments Use mail flow rules to prevent auto-forwarding of email How do these improve security?</description>
     </item>
     
     <item>
@@ -79,7 +79,7 @@ SDP, Asset Inventory and EPP are protection technologies, so this could be seen 
 I&amp;rsquo;ve used this with FortiOS 6.2 and 6.4 with VMware 6.7. I&amp;rsquo;ve only attempted this with FortiGate Managed FortiSwitch, I believe - but can&amp;rsquo;t confirm - that this is a requirement. (I&amp;rsquo;m pretty sure MCLAG only works when the FortiSwitches are Managed by a FortiGate.)
 Directions are below.
 Requirments:
- Two FortiSwitches capable of MCLAG (Model 200+) Two NIC ports in the ESXi hosts One cable from the ESXi host connecting to each switch  vSwitch Standard Settings I&amp;rsquo;ve only tested this with Standard vSwitches, so my directions will only cover them.</description>
+Two FortiSwitches capable of MCLAG (Model 200+) Two NIC ports in the ESXi hosts One cable from the ESXi host connecting to each switch vSwitch Standard Settings I&amp;rsquo;ve only tested this with Standard vSwitches, so my directions will only cover them.</description>
     </item>
     
     <item>
@@ -156,7 +156,7 @@ For example, I have a script that will check the name of the FortiGate it is run
       <pubDate>Sun, 05 Apr 2020 23:42:24 -0700</pubDate>
       
       <guid>https://www.clintmcguire.com/blog/optimization/</guid>
-      <description>Problems  My site was not available over HTTPS. My site was slow to load.  Investigation - HTTPS This site is hosted on GitHub, so going through their documentation it looked like I should have been able to use a CDN and still have GitHub generate a cert for the site. However, it was not.
+      <description>Problems My site was not available over HTTPS. My site was slow to load. Investigation - HTTPS This site is hosted on GitHub, so going through their documentation it looked like I should have been able to use a CDN and still have GitHub generate a cert for the site. However, it was not.
 Solution - HTTPS As an experiment I disabled the CDN, to see if GitHub would be able to generate the certificate - this worked pretty quickly and in the end was pretty simple.</description>
     </item>
     
@@ -182,8 +182,8 @@ I&amp;rsquo;m running Hyper-V on Windows 10, because it is simple and provides t
       <description>Minimal Requirements Here are the quick and dirty steps to get SD-WAN up and running on a FortiGate.
 I&amp;rsquo;m running FortiOS 6.2.3 on 60E.
 SD-WAN Interface Under Network -&amp;gt; SD-WAN:
- Set the Status to Enabled Add at least one available port to the SD-WAN Interface Members Hit Apply  Perfomance Metrics Under Network -&amp;gt; Performance SLA:
- Create a new SLA Give it a Name For Protocol pick Ping Add two IPs for servers to run ping tests against - I&amp;rsquo;d recommend 1.</description>
+Set the Status to Enabled Add at least one available port to the SD-WAN Interface Members Hit Apply Perfomance Metrics Under Network -&amp;gt; Performance SLA:
+Create a new SLA Give it a Name For Protocol pick Ping Add two IPs for servers to run ping tests against - I&amp;rsquo;d recommend 1.</description>
     </item>
     
     <item>
@@ -194,7 +194,7 @@ SD-WAN Interface Under Network -&amp;gt; SD-WAN:
       <guid>https://www.clintmcguire.com/blog/4-segment-network/</guid>
       <description>Purpose How do you design a well-organized, well managed network for small/medium business?
 Let&amp;rsquo;s layout some assumptions:
- There are server in the office The servers are in either in a well-organized closet or in a server room (they are not in a Colo - but access is restricted) There may be some amount of Cloud/SaaS applications This is not a VDI environment (we could sketch that out in a different post) Security is a concern - but not security at any cost  Let&amp;rsquo;s start with what I generally see As a consultant, I&amp;rsquo;ve been engaged by dozens of small/medium size businesses and many large businesses.</description>
+There are server in the office The servers are in either in a well-organized closet or in a server room (they are not in a Colo - but access is restricted) There may be some amount of Cloud/SaaS applications This is not a VDI environment (we could sketch that out in a different post) Security is a concern - but not security at any cost Let&amp;rsquo;s start with what I generally see As a consultant, I&amp;rsquo;ve been engaged by dozens of small/medium size businesses and many large businesses.</description>
     </item>
     
     <item>
@@ -226,7 +226,7 @@ Here we are going to compare these different components and highlight the cipher
       <guid>https://www.clintmcguire.com/blog/cryptographic-cipher-suites/</guid>
       <description>What are Cryptographic Cipher Suites Cipher suites are a combination of different algorithms the system will use to encrypt the communication. Each operating system/application will have a set of suites it is capable of supporting.
 Let&amp;rsquo;s take a few examples - using the IANA names:
- TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 TLS_RSA_WITH_AES_256_CBC_SHA TLS_RSA_WITH_NULL_SHA  Each of these suites has a Protocol, a Key Exchange algorithm, a Signature Authentication algorithm, an Encryption algorithm, and a Message Authentication algorithm.</description>
+TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 TLS_RSA_WITH_AES_256_CBC_SHA TLS_RSA_WITH_NULL_SHA Each of these suites has a Protocol, a Key Exchange algorithm, a Signature Authentication algorithm, an Encryption algorithm, and a Message Authentication algorithm.</description>
     </item>
     
     <item>
@@ -235,7 +235,7 @@ Let&amp;rsquo;s take a few examples - using the IANA names:
       <pubDate>Fri, 18 Oct 2019 19:29:34 -0700</pubDate>
       
       <guid>https://www.clintmcguire.com/blog/dns-tools/</guid>
-      <description>General Tools  nslookup - standard tool, comes with most OSes http://MXToolbox.com - Very useful site for doing DNS things, generally focused on email related checks - as the name implies - but still includes more general DNS lookup options Test-Connection - in PowerShell 6, this is really more of a super charged ping - but throw -ResolveDestination at it and it will do a lookup for you dnssec-analyzer - for testing DNSSEC Whois Lookup - mxtoolbox&amp;rsquo;s whois lookup hasn&amp;rsquo;t worked for me the last number of times I&amp;rsquo;ve used it, this one does&amp;hellip;  I&amp;rsquo;m pretty sure I&amp;rsquo;m forgetting 1 or 2, so I will come back and add them when I remember&amp;hellip;</description>
+      <description>General Tools nslookup - standard tool, comes with most OSes http://MXToolbox.com - Very useful site for doing DNS things, generally focused on email related checks - as the name implies - but still includes more general DNS lookup options Test-Connection - in PowerShell 6, this is really more of a super charged ping - but throw -ResolveDestination at it and it will do a lookup for you dnssec-analyzer - for testing DNSSEC Whois Lookup - mxtoolbox&amp;rsquo;s whois lookup hasn&amp;rsquo;t worked for me the last number of times I&amp;rsquo;ve used it, this one does&amp;hellip; I&amp;rsquo;m pretty sure I&amp;rsquo;m forgetting 1 or 2, so I will come back and add them when I remember&amp;hellip;</description>
     </item>
     
     <item>
@@ -290,9 +290,10 @@ The commands to configure the PDC to get time from the NTP Pool servers:</descri
       
       <guid>https://www.clintmcguire.com/blog/find-az-offers/</guid>
       <description>Following up on my post about finding Azure Images by Publisher, here is how to get all the SKUs for the specific Offers.
-Get-AzVMImageSKuis the command to run.
+Get-AzVMImageSKu is the command to run.
 It requires Location, Publisher, and Offer.
-For example: Get-AzVMImageSku -Location &amp;lsquo;eastus&amp;rsquo; -publisher &amp;lsquo;fortinet&amp;rsquo; -Offer &amp;lsquo;fortinet_fortigate-vm_v5&amp;rsquo;This will return the two SKUs - &amp;ldquo;fortinet_fg-vm&amp;rdquo; and &amp;ldquo;fortinet_fg-vm_payg&amp;rdquo;
+For example: Get-AzVMImageSku -Location &amp;rsquo;eastus&amp;rsquo; -publisher &amp;lsquo;fortinet&amp;rsquo; -Offer &amp;lsquo;fortinet_fortigate-vm_v5&amp;rsquo;
+This will return the two SKUs - &amp;ldquo;fortinet_fg-vm&amp;rdquo; and &amp;ldquo;fortinet_fg-vm_payg&amp;rdquo;
 You can take the SKUs and use those to deploy new VMs.</description>
     </item>
     
@@ -303,8 +304,10 @@ You can take the SKUs and use those to deploy new VMs.</description>
       
       <guid>https://www.clintmcguire.com/blog/find-az-images-by-publisher/</guid>
       <description>First install the PowerShell Az Module.
-On Windows, open an elevated PowerShell window and run: Install-Module -Name Az -AllowClobberOn MacOS, use sudoto open pwsh, then run: Install-Module -Name Az -AllowClobberOnce the Az module is installed, exit the elevated/sudo PowerShell session and open a regular PowerShell session.
-Connect to your Azure account - Connect-AzAccountand use the device login URL and Code to sign in.
+On Windows, open an elevated PowerShell window and run: Install-Module -Name Az -AllowClobber
+On MacOS, use sudo to open pwsh, then run: Install-Module -Name Az -AllowClobber
+Once the Az module is installed, exit the elevated/sudo PowerShell session and open a regular PowerShell session.
+Connect to your Azure account - Connect-AzAccount and use the device login URL and Code to sign in.
 If you don&amp;rsquo;t know the exact Publisher Name, you can find it by looking at all the Publishers.</description>
     </item>
     
@@ -353,9 +356,9 @@ The specific process doesn&amp;rsquo;t take up much CPU or RAM, but it is annoyi
       
       <guid>https://www.clintmcguire.com/blog/redhat_enterprise_linux_training_notes/</guid>
       <description>Notes from RHEL 7 Partner Training&amp;hellip;
-You can access Red Hat Support via the CLI toolredhat-support-toolThe tool gives you access to the KB, which you can search from the CLI and you can work with support tickets.
-Running sosreportwill create an archive file with logs and other info that can be attached to a ticket.
-redhat-support-toolhas options for attaching files, it will look for an sosreport when you first open the ticket.</description>
+You can access Red Hat Support via the CLI tool redhat-support-tool The tool gives you access to the KB, which you can search from the CLI and you can work with support tickets.
+Running sosreport will create an archive file with logs and other info that can be attached to a ticket.
+redhat-support-tool has options for attaching files, it will look for an sosreport when you first open the ticket.</description>
     </item>
     
     <item>
@@ -364,9 +367,10 @@ redhat-support-toolhas options for attaching files, it will look for an sosrepor
       <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
       
       <guid>https://www.clintmcguire.com/blog/use_powershell_to_test_connection_to_a_port/</guid>
-      <description>To quickly test if you can communicate with a server on a specific port use this command: Test-NetConnection (hostname/ip) -Port (tcp port number)You are looking for TcpTestSucceeded : True in the output.
+      <description>To quickly test if you can communicate with a server on a specific port use this command: Test-NetConnection (hostname/ip) -Port (tcp port number) You are looking for TcpTestSucceeded : True in the output.
 Example: PS C:\Users\Clint&amp;gt; Test-NetConnection www.google.com -port 80
-ComputerName : www.google.com RemoteAddress : 74.125.28.103 RemotePort : 80 InterfaceAlias : vEthernet (LAN) 2 SourceAddress : 192.168.0.5 TcpTestSucceeded : TrueThis command is quite flexible, you can also have it test with ICMP like PING and Trace Route.</description>
+ComputerName : www.google.com RemoteAddress : 74.125.28.103 RemotePort : 80 InterfaceAlias : vEthernet (LAN) 2 SourceAddress : 192.168.0.5 TcpTestSucceeded : True
+This command is quite flexible, you can also have it test with ICMP like PING and Trace Route.</description>
     </item>
     
     <item>

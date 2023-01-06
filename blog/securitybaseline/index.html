@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <meta name="generator" content="Hugo 0.80.0" />
+  <meta name="generator" content="Hugo 0.102.0" />
   <meta name="author" content="Clint McGuire">
 
   
@@ -159,7 +159,7 @@ SDP, Asset Inventory and EPP are protection technologies, so this could be seen 
 Nearly all organizations are going to have already spent some money on &ldquo;prevention tech&rdquo;, it&rsquo;s probably built into the network design.</p>
 <h2 id="so-what-is-the-security-baseline">So, what is the Security Baseline?</h2>
 <p>Greg provided 3 components as a starting point - SDP, Asset Inventory &amp; EPP. I&rsquo;m going to agree with two but exclude one.<br>
-I did some research into SDP after listening to the episode and I don&rsquo;t think it would fit in a baseline. I can see how this would be a very effective way to limit lateral movement in the network, making it exceedingly difficult for malware or an active attacker to spread/move - but this doesn&rsquo;t appear to be &ldquo;commodity&rdquo; parts most organizations will be able to stand-up and operate without a lot of effort. I feel SDP would belong on an &ldquo;Aspirational&rdquo; Security list, not a baseline.<br>
+SDP is an interesting technology. It appears to be the Zero Trust approach Fortinet has adopted - and possibly others, I haven&rsquo;t investigated the other vendors as much. I don&rsquo;t think SDP or Zero Trust would fit in a baseline list. They are very effective at limiting lateral movement in the network though, making it exceedingly difficult for malware or an attacker to spread - however, the current effort to implement, for most organizations, is high. I feel SDP and Zero Trust would belong on an &ldquo;Advanced&rdquo; Security list, not a baseline.<br>
 So, what would I add to the list? I feel the <a href="https://www.cyber.gov.au/acsc/view-all-content/publications/essential-eight-maturity-model">ASD Essential 8</a> make up the bulk of the additional components. Those eight items are:</p>
 <ul>
 <li>Application Control/Whitelisting</li>
@@ -167,13 +167,13 @@ So, what would I add to the list? I feel the <a href="https://www.cyber.gov.au/a
 <li>Configure MS Office Macro settings</li>
 <li>User App Hardening</li>
 <li>Restrict Admin Privileges</li>
-<li>Path OSes</li>
+<li>Patch OSes</li>
 <li>MFA</li>
 <li>Regular Backups</li>
 </ul>
-<p>All of these will require effort to implement correctly, and a few will potentially annoy users (MFA, Office Macros, App hardening - but restricting admin privileges, if users currently have them, most of all). But the improvement in security by implementing these controls is significant.</p>
-<p>I think there are still a few more things that we should add to this list&hellip;<br>
-While SDP might be too much of a lift for most networks, I do think that a UTM Firewall and <a href="https://www.clintmcguire.com/blog/4-segment-network/">Segmenting the Internal Network</a> deserve to be on the list.</p>
+<p>All of these will require effort to implement correctly, and a few will potentially annoy users (MFA, Office Macros, App hardening - but restricting admin privileges, if users currently have them, most of all). The improvement in security by implementing these controls is significant and worth working with users to achieve.</p>
+<p>There are still a few more things that we should add to this list.<br>
+While SDP might be too much of a lift for most networks, I do think that a Next Gen Firewall and <a href="https://www.clintmcguire.com/blog/4-segment-network/">Segmenting the Internal Network</a> deserve to be on the list.</p>
 <p>Having reviewed the <a href="https://verizon.com/dbir/">Verizon 2021 Data Breach Investigations Report</a> findings, it’s clear that in 2020, the largest number of attacks were Business Email Compromise and they had the highest median loss. So, we should add Mail Filtering to the list. [Yes, Ransomware gets a lot of headlines, but check the numbers for 2020, Verizon&rsquo;s data is quite clear. Also, if you look at the ASD Essential 8 - Ransomware is quite effectively mitigated by these 8 items.]</p>
 <p>The last item for the list, I believe, is Security Awareness training, also recommended by Greg &amp; Johna - in <a href="https://packetpushers.net/podcast/hs-009-the-metrics-of-it-security/">Heavy Strategy Ep. 009 - The Metrics of IT Security</a>.</p>
 <h2 id="wrap-up">Wrap up</h2>
@@ -186,10 +186,10 @@ While SDP might be too much of a lift for most networks, I do think that a UTM F
 <li>Configure MS Office Macro settings</li>
 <li>User App Hardening</li>
 <li>Restrict Admin Privileges</li>
-<li>Path OSes</li>
+<li>Patch OSes</li>
 <li>MFA</li>
 <li>Regular Backups</li>
-<li>UTM Firewall</li>
+<li>Next Gen Firewall</li>
 <li>Segmented Network Design</li>
 <li>Mail Filtering</li>
 <li>End User Security Awareness Training</li>
@@ -248,7 +248,7 @@ I&rsquo;d like to hear about this in the comments.</p>
 <div class="disqus">
   <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     

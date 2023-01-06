@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <meta name="generator" content="Hugo 0.80.0" />
+  <meta name="generator" content="Hugo 0.102.0" />
   <meta name="author" content="Clint McGuire">
 
   
@@ -159,7 +159,7 @@ Here we are going to compare these different components and highlight the cipher
 <p><code>*</code> currently only means at the time of this writting - a flaw could be found in the algorithm or in the implementation of the algorithm at any time, so do additional research to confirm the current strength of the cipher suite. You&rsquo;ve been warned&hellip;</p>
 <p>One last point - I am going to restrict the list of suites to those supported by Windows 10/Windows Server v1903 - because it is the most recent one that they have published a list for (I believe the same list applies to v1909, but I haven&rsquo;t confirmed this), and because it is the area of computers where I spend the most time working with ciphers.</p>
 <h2 id="the-list">The List</h2>
-<pre><code>TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+<pre tabindex="0"><code>TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
 TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
 TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
 TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
@@ -209,7 +209,7 @@ TLS_PSK_WITH_NULL_SHA256
 <p>This one is simple, they all start with TLS, there is no alternate listed. So, nothing to see here, move along, move along.</p>
 <h2 id="key-exchange">Key Exchange</h2>
 <p>There are 4 Key Exchange options:</p>
-<pre><code>ECHDE
+<pre tabindex="0"><code>ECHDE
 DHE
 RSA
 PSK
@@ -224,7 +224,7 @@ PSK - Pre-Shared Key - a pre-shared key</p>
 <p>PSK is only available for applications on Windows to use - so this won&rsquo;t be used by IIS or a web browser on the computer (generally); I&rsquo;ve included it here for completeness.</p>
 <h2 id="signature-authentication">Signature Authentication</h2>
 <p>There are 3 Signature Authentication algoriths:</p>
-<pre><code>ECDSA
+<pre tabindex="0"><code>ECDSA
 RSA
 DSS
 </code></pre><p>ECDSA - Elliptic Curve Digital Signature Algorith - The Digital Signature Algorithm, part of the NIST FIPS, using an Elliptic Curve<br>
@@ -235,7 +235,7 @@ RSA is the other option.
 There are technically two &ldquo;export&rdquo; options on this list, but they intentially weak, so let&rsquo;s just pretend they aren&rsquo;t there, and never use them&hellip;</p>
 <h2 id="encryption">Encryption</h2>
 <p>There are 4 different Encryption algorithms available - in order of strength they are:</p>
-<pre><code>AES  
+<pre tabindex="0"><code>AES  
 3DES  
 RC4  
 DES
@@ -316,7 +316,7 @@ TLS_DHE_RSA_WITH_AES_128_GCM_SHA256</p>
 <div class="disqus">
   <div id="disqus_thread"></div>
 <script type="application/javascript">
-    var disqus_config = function () {
+    window.disqus_config = function () {
     
     
     
