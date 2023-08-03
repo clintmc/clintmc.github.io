@@ -7,7 +7,18 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Clint McGuire 2009-2023</copyright>
-    <lastBuildDate>Fri, 14 Jul 2023 21:34:32 -0700</lastBuildDate><atom:link href="https://www.clintmcguire.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Aug 2023 07:48:22 -0700</lastBuildDate><atom:link href="https://www.clintmcguire.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Obsidian</title>
+      <link>https://www.clintmcguire.com/blog/how-i-use-obsidian/</link>
+      <pubDate>Thu, 03 Aug 2023 07:48:22 -0700</pubDate>
+      
+      <guid>https://www.clintmcguire.com/blog/how-i-use-obsidian/</guid>
+      <description>Background I have been using Obsidian since 2021 to take notes and keep myself organized. Over that time, my use of Obsidian has expanded and now it is critical to my daily workflow, for my work, my personal and professional development and my physical and mental health.
+Obsidian allows me to keep technical notes, study for test and organize my thoughts.
+Obsidian helps me track my personal goals and development.</description>
+    </item>
+    
     <item>
       <title>Azure Security Engineer Associate</title>
       <link>https://www.clintmcguire.com/blog/azuresecurityengineerassociate/</link>
