@@ -1,454 +1,285 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on Website of Clint McGuire</title>
+    <title>Blog on Clint McGuire</title>
     <link>https://www.clintmcguire.com/blog/</link>
-    <description>Recent content in Blog on Website of Clint McGuire</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; Clint McGuire 2009-2023</copyright>
-    <lastBuildDate>Tue, 15 Aug 2023 07:49:25 -0700</lastBuildDate><atom:link href="https://www.clintmcguire.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <description>Recent content in Blog on Clint McGuire</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 15 Aug 2023 07:49:25 -0700</lastBuildDate>
+    <atom:link href="https://www.clintmcguire.com/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How I Work with Obsidian</title>
       <link>https://www.clintmcguire.com/blog/how-i-work-with-obsidian/</link>
       <pubDate>Tue, 15 Aug 2023 07:49:25 -0700</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/how-i-work-with-obsidian/</guid>
-      <description>How it all began As I mentioned here, I&amp;rsquo;ve tried many different productivity tools for keeping myself organized at work but I&amp;rsquo;ve settled on Obsidian.
-It was going to be a demo for a co-worker.
-I started very simple, a note for each day, using the Daily Note plugin - no template, just a blank space where I put the various projects names and a line or two about status. I probably had the Calendar plugin installed - because it makes it easier to work with the Daily Note and I like having the calendar on the screen.</description>
+      <description>&lt;h2 id=&#34;how-it-all-began&#34;&gt;How it all began&lt;/h2&gt;&#xA;&lt;p&gt;As I mentioned &lt;a href=&#34;https://www.clintmcguire.com/blog/how-i-use-obsidian/&#34;&gt;here&lt;/a&gt;, I&amp;rsquo;ve tried many different productivity tools for keeping myself organized at work but I&amp;rsquo;ve settled on Obsidian.&lt;br&gt;&#xA;It was going to be a demo for a co-worker.&lt;br&gt;&#xA;I started very simple, a note for each day, using the Daily Note plugin - no template, just a blank space where I put the various projects names and a line or two about status.&#xA;I probably had the Calendar plugin installed - because it makes it easier to work with the Daily Note and I like having the calendar on the screen.&lt;br&gt;&#xA;I probably had two notes named after clients - so I could use wiki links - and one or two notes for Projects.&#xA;I gave the demo, explained how easy it was to work with and the potential benefits - I made a new daily note during our demo and added more data, I showed some basic markdown, all the typical demo things.&#xA;Later I did the same demo for one of our Service Delivery Managers.&lt;br&gt;&#xA;When I was going through it the second time I realized I should probably use it for myself.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>How I Study with Obsidian</title>
       <link>https://www.clintmcguire.com/blog/how-i-study-with-obsidian/</link>
       <pubDate>Fri, 11 Aug 2023 07:56:21 -0700</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/how-i-study-with-obsidian/</guid>
-      <description>As I mentioned here, I use Obsidian to prepare for tests.
-I have a simple process for preparing:
-Exam Prep note Find study material sources Create Topic Notes Gather data into Topic Notes Make content my own Turn Topic Notes into slides Review slides Take practice tests Add content to address weaknesses New notes specific to a part of the content/category Repeat steps 4, 5 &amp;amp; 6 Take exam Consistency This process has worked for me - I’ve passed 100% of the tests I taken using this method, on my first attempt.</description>
+      <description>&lt;p&gt;As I mentioned &lt;a href=&#34;https://www.clintmcguire.com/blog/how-i-use-obsidian/&#34;&gt;here&lt;/a&gt;, I use Obsidian to prepare for tests.&lt;br&gt;&#xA;I have a simple process for preparing:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Exam Prep note&lt;/li&gt;&#xA;&lt;li&gt;Find study material sources&lt;/li&gt;&#xA;&lt;li&gt;Create Topic Notes&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Gather data into Topic Notes&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Make content my own&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Turn Topic Notes into slides&lt;/li&gt;&#xA;&lt;li&gt;Review slides&lt;/li&gt;&#xA;&lt;li&gt;Take practice tests&lt;/li&gt;&#xA;&lt;li&gt;Add content to address weaknesses&#xA;&lt;ol&gt;&#xA;&lt;li&gt;New notes specific to a part of the content/category&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Repeat steps 4, 5 &amp;amp; 6&lt;/li&gt;&#xA;&lt;li&gt;Take exam&lt;/li&gt;&#xA;&lt;li&gt;Consistency&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;This process has worked for me - I’ve passed 100% of the tests I taken using this method, on my first attempt.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Obsidian</title>
       <link>https://www.clintmcguire.com/blog/how-i-use-obsidian/</link>
       <pubDate>Thu, 03 Aug 2023 07:48:22 -0700</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/how-i-use-obsidian/</guid>
-      <description>Background I have been using Obsidian since 2021 to take notes and keep myself organized. Over that time, my use of Obsidian has expanded and now it is critical to my daily workflow, for my work, my personal and professional development and my physical and mental health.
-Obsidian allows me to keep technical notes, study for test and organize my thoughts.
-Obsidian helps me track my personal goals and development.</description>
+      <description>&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;&#xA;&lt;p&gt;I have been using Obsidian since 2021 to take notes and keep myself organized. Over that time, my use of Obsidian has expanded and now it is critical to my daily workflow, for my work, my personal and professional development and my physical and mental health.&lt;/p&gt;&#xA;&lt;p&gt;Obsidian allows me to keep technical notes, study for test and organize my thoughts.&lt;/p&gt;&#xA;&lt;p&gt;Obsidian helps me track my personal goals and development.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Azure Security Engineer Associate</title>
       <link>https://www.clintmcguire.com/blog/azuresecurityengineerassociate/</link>
       <pubDate>Fri, 14 Jul 2023 21:34:32 -0700</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/azuresecurityengineerassociate/</guid>
-      <description>After a few months of preparation and practice exams, I&amp;rsquo;m happy to report that I&amp;rsquo;ve passed the AZ-500 Exam.
-https://learn.microsoft.com/api/credentials/share/en-ca/ClintMcGuire-6169/8D1573250504B569?sharingId=6505D259B91DCAD7</description>
+      <description>&lt;p&gt;After a few months of preparation and practice exams, I&amp;rsquo;m happy to report that I&amp;rsquo;ve passed the AZ-500 Exam.&lt;br&gt;&#xA;&lt;a href=&#34;https://learn.microsoft.com/api/credentials/share/en-ca/ClintMcGuire-6169/8D1573250504B569?sharingId=6505D259B91DCAD7&#34;&gt;https://learn.microsoft.com/api/credentials/share/en-ca/ClintMcGuire-6169/8D1573250504B569?sharingId=6505D259B91DCAD7&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>NSE7</title>
       <link>https://www.clintmcguire.com/blog/nse7/</link>
       <pubDate>Fri, 26 May 2023 21:32:50 -0700</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/nse7/</guid>
-      <description>After a couple months of studying, I&amp;rsquo;m happy to report that I&amp;rsquo;ve passed Fortinet&amp;rsquo;s NSE7 SD-WAN test, renewing my NSE certifications.
-I hold the following certifications from Fortinet:
-Network Security Professional - NSE4
-Network Security Analyst - NSE5
-Network Security Architect - NSE7</description>
+      <description>&lt;p&gt;After a couple months of studying, I&amp;rsquo;m happy to report that I&amp;rsquo;ve passed Fortinet&amp;rsquo;s NSE7 SD-WAN test, renewing my NSE certifications.&lt;br&gt;&#xA;I hold the following certifications from Fortinet:&lt;br&gt;&#xA;Network Security Professional - NSE4&lt;br&gt;&#xA;Network Security Analyst - NSE5&lt;br&gt;&#xA;Network Security Architect - NSE7&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>CISSP</title>
       <link>https://www.clintmcguire.com/blog/cissp/</link>
       <pubDate>Sun, 16 Apr 2023 07:55:07 -0700</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/cissp/</guid>
-      <description>After many months of study and preparation, I can happily say that I&amp;rsquo;ve been awarded the CISSP designation.
-https://www.credly.com/badges/f31a048f-61fa-4e40-8575-7a763b535227/public_url</description>
+      <description>&lt;p&gt;After many months of study and preparation, I can happily say that I&amp;rsquo;ve been awarded the CISSP designation.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.credly.com/badges/f31a048f-61fa-4e40-8575-7a763b535227/public_url&#34;&gt;https://www.credly.com/badges/f31a048f-61fa-4e40-8575-7a763b535227/public_url&lt;/a&gt;&lt;br&gt;&#xA;&lt;img src=&#34;https://www.clintmcguire.com/cissp.png&#34; alt=&#34;Certificate&#34;&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Azure Solution Architect</title>
       <link>https://www.clintmcguire.com/blog/azuresolutionarchitect/</link>
       <pubDate>Sun, 13 Mar 2022 10:43:05 -0700</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/azuresolutionarchitect/</guid>
-      <description>Azure Certifications My plan for this year is to get 3 Azure certificates. The first one on the list was the Azure Solution Architect Expert. I already hold the Azure Fundamentals - AZ-104 - certification, so I only needed to complete the AZ-305 exam to get this cert.
-This cert also tests against broad knowledge of many different parts of Azure, so going deep into any one area was not required.</description>
+      <description>&lt;h2 id=&#34;azure-certifications&#34;&gt;Azure Certifications&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://www.clintmcguire.com/azure-solutions-architect-expert-600x600.png&#34; alt=&#34;Certificate&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;My plan for this year is to get 3 Azure certificates.&#xA;The first one on the list was the Azure Solution Architect Expert.&#xA;I already hold the Azure Fundamentals - AZ-104 - certification, so I only needed to complete the AZ-305 exam to get this cert.&lt;br&gt;&#xA;This cert also tests against broad knowledge of many different parts of Azure, so going deep into any one area was not required.&#xA;Allowing me to learn the high-level functions/features/uses cases of the different components.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Five Tips to Secure M365 Business Standard</title>
       <link>https://www.clintmcguire.com/blog/five-tips-to-secure-m365-business-standard/</link>
       <pubDate>Mon, 21 Feb 2022 21:10:28 -0800</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/five-tips-to-secure-m365-business-standard/</guid>
-      <description>How to improve security in M365 Microsoft has added a lot of security features to the M365 platform, but not all of them are available to all license levels. If you are licensed for M365 Business Standard you won&amp;rsquo;t have access to all the security features in the platform, so let&amp;rsquo;s focus on what is available to your tenant and review the Top 5.
-Setup multi-factor authentication for all users Create dedicated admin accounts Filter out commonly malicious attachments from email Use mail flow rules to warn users about potentially dangerous attachments Use mail flow rules to prevent auto-forwarding of email How do these improve security?</description>
+      <description>&lt;h2 id=&#34;how-to-improve-security-in-m365&#34;&gt;How to improve security in M365&lt;/h2&gt;&#xA;&lt;p&gt;Microsoft has added a lot of security features to the M365 platform, but not all of them are available to all license levels.&#xA;If you are licensed for M365 Business Standard you won&amp;rsquo;t have access to all the security features in the platform, so let&amp;rsquo;s focus on what&#xA;is available to your tenant and review the Top 5.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Setup multi-factor authentication for all users&lt;/li&gt;&#xA;&lt;li&gt;Create dedicated admin accounts&lt;/li&gt;&#xA;&lt;li&gt;Filter out commonly malicious attachments from email&lt;/li&gt;&#xA;&lt;li&gt;Use mail flow rules to warn users about potentially dangerous attachments&lt;/li&gt;&#xA;&lt;li&gt;Use mail flow rules to prevent auto-forwarding of email&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;how-do-these-improve-security&#34;&gt;How do these improve security?&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-multi-factor-authentication&#34;&gt;1. Multi-factor Authentication&lt;/h3&gt;&#xA;&lt;p&gt;Enabling multi-factor authentication (MFA) for all users adds an additional layer of security when your users login. Since all M365 is hosted in the cloud,&#xA;the only way to verify access is by username and password - unless you also have MFA enabled. Before organizations moved to M365, they would often have a&#xA;server in their office, with a firewall protecting the office network from the outside. Limiting who was able to talk to the server. Since M365 is on the&#xA;internet, everyone has access. If an attacker can guess your users&amp;rsquo; usernames and passwords then they can get in.&lt;br&gt;&#xA;Enabling MFA greatly complicates things for an attacker.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>BEC</title>
       <link>https://www.clintmcguire.com/blog/bec/</link>
       <pubDate>Fri, 04 Feb 2022 07:44:38 -0800</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/bec/</guid>
-      <description>What is the Risk? The risk is high.
-The Verizon 2021 Data Breach Investigations Report lays out the statistics quite clearly. Comparing the three types of attacks - Business Email Compromise (BEC), Computer Data Breach (CDB) &amp;ldquo;Hacking&amp;rdquo; and Ransomware - there were 7 times the number of incidents of BEC. [BEC = 19,000; CDB = 2,780; Ransomware = 2,480]
-While not all incidents ended with the victim losing money, BEC came in number one here again - having the most incidents leading to a loss.</description>
+      <description>&lt;h2 id=&#34;what-is-the-risk&#34;&gt;What is the Risk?&lt;/h2&gt;&#xA;&lt;p&gt;The risk is high.&lt;br&gt;&#xA;The &lt;a href=&#34;https://verizon.com/dbir/&#34;&gt;Verizon 2021 Data Breach Investigations Report&lt;/a&gt; lays out the statistics quite clearly. Comparing the three types of attacks - Business Email Compromise (BEC), Computer Data Breach (CDB) &amp;ldquo;Hacking&amp;rdquo; and Ransomware - there were 7 times the number of incidents of BEC. [BEC = 19,000; CDB = 2,780; Ransomware = 2,480]&lt;br&gt;&#xA;While not all incidents ended with the victim losing money, BEC came in number one here again - having the most incidents leading to a loss.&lt;br&gt;&#xA;The median loss to a BEC incident, reported by Verizon in 2021, was $30,000 USD. The FBI Internet Crime Complain Center (IC3.gov) reported over $1,800,000,000 USD in losses in 2020.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Existential Cash Flow Crisis of Ransomware</title>
       <link>https://www.clintmcguire.com/blog/existential-cash-flow-crisis-of-ransomware/</link>
       <pubDate>Mon, 06 Dec 2021 08:03:00 -0800</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/existential-cash-flow-crisis-of-ransomware/</guid>
-      <description>Ransomware has evolved into a model known as Double Extortion. Before encrypting your data and holding it ransom, the criminals copy the data off your computers to their own, where they keep it as a hostage. If you choose to not pay the ransom they will expose the hostage copy of your data publicly on the internet. They use reputation risk and confidentiality requirements (either regulation or contractual) as a way to force the payment.</description>
+      <description>&lt;p&gt;Ransomware has evolved into a model known as Double Extortion. Before encrypting your data and holding it ransom, the criminals copy the data off your computers to their own, where they keep it as a hostage. If you choose to not pay the ransom they will expose the hostage copy of your data publicly on the internet. They use reputation risk and confidentiality requirements (either regulation or contractual) as a way to force the payment. Further, while they have a copy of your data, they are able to read your financials and insurance contracts so that they can set the maximum ransom. While there is a negotiation to determine the ransom, it is very one-sided.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>FortiSwitch VLANs</title>
       <link>https://www.clintmcguire.com/blog/fortiswitch-vlans/</link>
       <pubDate>Wed, 03 Nov 2021 07:35:48 -0700</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/fortiswitch-vlans/</guid>
-      <description>In the FortiSwitch Management, for Ports and Trunks, it shows Native VLAN and Allowed VLANs. This was new terminology for me. Other switches I&amp;rsquo;ve used in the past have had either Tagged or Untagged.
-If you look in the CLI, you can also assign an Untagged VLAN to ports&amp;hellip;
-How do you modify the VLANs in the GUI? Quick note, to change the VLAN in the GUI, find the port, put your mouse over the table cell for the port and VLAN type you want to change, then click the Pencil icon that will show up in the top right of the cell.</description>
+      <description>&lt;p&gt;In the FortiSwitch Management, for Ports and Trunks, it shows Native VLAN and Allowed VLANs.&#xA;This was new terminology for me. Other switches I&amp;rsquo;ve used in the past have had either Tagged or Untagged.&lt;/p&gt;&#xA;&lt;p&gt;If you look in the CLI, you can also assign an Untagged VLAN to ports&amp;hellip;&lt;/p&gt;&#xA;&lt;h3 id=&#34;how-do-you-modify-the-vlans-in-the-gui&#34;&gt;How do you modify the VLANs in the GUI?&lt;/h3&gt;&#xA;&lt;p&gt;Quick note, to change the VLAN in the GUI, find the port, put your mouse over the table cell for the port and VLAN type you want to change, then click the Pencil icon that will show up in the top right of the cell.&lt;br&gt;&#xA;This will open a menu where you can select the new settings you want.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Security Baseline</title>
       <link>https://www.clintmcguire.com/blog/securitybaseline/</link>
       <pubDate>Mon, 11 Oct 2021 07:47:36 -0600</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/securitybaseline/</guid>
-      <description>Background In Heavy Strategy EP. 010 - Budgeting for Cybersecurity Greg Ferro &amp;amp; Johna Till Johnson agree that &amp;ldquo;Detection is better than Prevention&amp;rdquo;, in that same episode Greg said that he recommended SDP (Software-Defined Perimeter), Asset Inventory and EPP (Endpoint Protection Platform) for all devices.
-SDP, Asset Inventory and EPP are protection technologies, so this could be seen as conflicting with &amp;ldquo;detection is better&amp;hellip;&amp;rdquo;. However, I think what Greg is getting at is that there needs to be a minimum level of protection and that further spending on additional protection technologies is likely to be wasteful.</description>
+      <description>&lt;h2 id=&#34;background&#34;&gt;Background&lt;/h2&gt;&#xA;&lt;p&gt;In &lt;a href=&#34;https://packetpushers.net/podcast/hs010-budgeting-for-cybersecurity/&#34;&gt;Heavy Strategy EP. 010 - Budgeting for Cybersecurity&lt;/a&gt; Greg Ferro &amp;amp; Johna Till Johnson agree that &amp;ldquo;Detection is better than Prevention&amp;rdquo;, in that same episode Greg said that he recommended SDP (Software-Defined Perimeter), Asset Inventory and EPP (Endpoint Protection Platform) for all devices.&lt;br&gt;&#xA;SDP, Asset Inventory and EPP are protection technologies, so this could be seen as conflicting with &amp;ldquo;detection is better&amp;hellip;&amp;rdquo;. However, I think what Greg is getting at is that there needs to be a minimum level of protection and that further spending on additional protection technologies is likely to be wasteful.&#xA;Nearly all organizations are going to have already spent some money on &amp;ldquo;prevention tech&amp;rdquo;, it&amp;rsquo;s probably built into the network design.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Setup MCLAG Trunks between FortiSwitch and VMware</title>
       <link>https://www.clintmcguire.com/blog/fortiswitch-mclag-vmware/</link>
       <pubDate>Mon, 06 Sep 2021 17:43:40 -0700</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/fortiswitch-mclag-vmware/</guid>
-      <description>If you have MCLAG setup on FortiSwitches, you can setup static Trunks to the ESXi hosts for redundant connections.
-I&amp;rsquo;ve used this with FortiOS 6.2 and 6.4 with VMware 6.7. I&amp;rsquo;ve only attempted this with FortiGate Managed FortiSwitch, I believe - but can&amp;rsquo;t confirm - that this is a requirement. (I&amp;rsquo;m pretty sure MCLAG only works when the FortiSwitches are Managed by a FortiGate.)
-Directions are below.
-Requirments:
-Two FortiSwitches capable of MCLAG (Model 200+) Two NIC ports in the ESXi hosts One cable from the ESXi host connecting to each switch vSwitch Standard Settings I&amp;rsquo;ve only tested this with Standard vSwitches, so my directions will only cover them.</description>
+      <description>&lt;p&gt;If you have MCLAG setup on FortiSwitches, you can setup static Trunks to the ESXi hosts for redundant connections.&lt;/p&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve used this with FortiOS 6.2 and 6.4 with VMware 6.7. I&amp;rsquo;ve only attempted this with FortiGate Managed FortiSwitch, I believe - but can&amp;rsquo;t confirm - that this is a requirement. (I&amp;rsquo;m pretty sure MCLAG only works when the FortiSwitches are Managed by a FortiGate.)&lt;/p&gt;&#xA;&lt;p&gt;Directions are below.&lt;br&gt;&#xA;Requirments:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Two FortiSwitches capable of MCLAG (Model 200+)&lt;/li&gt;&#xA;&lt;li&gt;Two NIC ports in the ESXi hosts&lt;/li&gt;&#xA;&lt;li&gt;One cable from the ESXi host connecting to each switch&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;vswitch-standard-settings&#34;&gt;vSwitch Standard Settings&lt;/h3&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve only tested this with Standard vSwitches, so my directions will only cover them.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>FortiGate CLI LDAP Test</title>
       <link>https://www.clintmcguire.com/blog/fortigate-cli-ldap-test/</link>
       <pubDate>Sun, 04 Jul 2021 10:44:13 -0700</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/fortigate-cli-ldap-test/</guid>
-      <description>The Symptoms A client was having an issue with IPsec VPN connections to their FortiGate. Users were getting non-descriptive error messages and not able to connect. The issue was affecting all users. We couldn&amp;rsquo;t find anything in the FortiClient or FortiGate logs to indicate what the problem was. As far as we could see, the FortiClient connection was simply timing out.
-The FortiGate Web GUI showed us LDAP was working. Looking at packet traces on the FortiGate we could see the IPsec traffic come in, but we weren&amp;rsquo;t seeing any traffic going back to the source.</description>
+      <description>&lt;h2 id=&#34;the-symptoms&#34;&gt;The Symptoms&lt;/h2&gt;&#xA;&lt;p&gt;A client was having an issue with IPsec VPN connections to their FortiGate. Users were getting non-descriptive error messages and not able to connect. The issue was affecting all users.&#xA;We couldn&amp;rsquo;t find anything in the FortiClient or FortiGate logs to indicate what the problem was.&#xA;As far as we could see, the FortiClient connection was simply timing out.&lt;/p&gt;&#xA;&lt;p&gt;The FortiGate Web GUI showed us LDAP was working.&#xA;Looking at packet traces on the FortiGate we could see the IPsec traffic come in, but we weren&amp;rsquo;t seeing any traffic going back to the source.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>FortiGate SSL Inspection Exclusion</title>
       <link>https://www.clintmcguire.com/blog/fortigatessldeepinspectionexclusion/</link>
       <pubDate>Tue, 02 Jun 2020 23:04:11 -0700</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/fortigatessldeepinspectionexclusion/</guid>
-      <description>Things weren&amp;rsquo;t working as expected I had recently enabled the SSL Deep Inspection policy on some of my web traffic - in part to try to block ads, maybe I&amp;rsquo;ll write a blog post about that another time - and I was noticing odd behaviour.
-A few of the odd things were around VPN connections and Citrix sessions.
-FortiClient VPN wasn&amp;rsquo;t able to connect - it was getting to 80% then throwing an error saying there was something wrong w/ my credentials or my account wasn&amp;rsquo;t setup for VPN access.</description>
+      <description>&lt;h2 id=&#34;things-werent-working-as-expected&#34;&gt;Things weren&amp;rsquo;t working as expected&lt;/h2&gt;&#xA;&lt;p&gt;I had recently enabled the SSL Deep Inspection policy on some of my web traffic - in part to try to block ads, maybe I&amp;rsquo;ll write a blog post about that another time - and I was noticing odd behaviour.&lt;/p&gt;&#xA;&lt;p&gt;A few of the odd things were around VPN connections and Citrix sessions.&lt;br&gt;&#xA;FortiClient VPN wasn&amp;rsquo;t able to connect - it was getting to 80% then throwing an error saying there was something wrong w/ my credentials or my account wasn&amp;rsquo;t setup for VPN access.&lt;br&gt;&#xA;With Citrix, apps would look like they were launching from the StoreFront, but they wouldn&amp;rsquo;t load - they wouldn&amp;rsquo;t even briefly show up in the connection manager. Launching a published desktop it would load the app&amp;rsquo;s borders, but then throw an error.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>BGP Local Preference</title>
       <link>https://www.clintmcguire.com/blog/bgplocpref/</link>
       <pubDate>Mon, 01 Jun 2020 21:49:42 -0700</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/bgplocpref/</guid>
-      <description>Local Preference I needed to use BGP to advertise the networks in a multi-site network, with FortiGates acting as routers at each site. Using iBGP we configured the Primary Subnet at the Primary Date Center to also be advertised by the DR Data Center. However, because the workload would only be active at the Primary DC - until an actual DR event happened - we needed to ensure that traffic for that subnet would only be routed to the Primary DC.</description>
+      <description>&lt;h2 id=&#34;local-preference&#34;&gt;Local Preference&lt;/h2&gt;&#xA;&lt;p&gt;I needed to use BGP to advertise the networks in a multi-site network, with FortiGates acting as routers at each site. Using iBGP we configured the Primary Subnet at the Primary Date Center to also be advertised by the DR Data Center. However, because the workload would only be active at the Primary DC - until an actual DR event happened - we needed to ensure that traffic for that subnet would only be routed to the Primary DC.&lt;br&gt;&#xA;Reviewing the documentation I determined that modifying the Local Preference was the best option to configure.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ADVPN Overview</title>
       <link>https://www.clintmcguire.com/blog/advpn-overview/</link>
       <pubDate>Fri, 29 May 2020 10:15:14 -0700</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/advpn-overview/</guid>
-      <description>High Level Overview To explain ADVPN it is useful to contrast it with the two main alternatives - Hub &amp;amp; Spoke and Full Mesh.
-In a Hub &amp;amp; Spoke network one site is deemed the Hub, with all other sites - Spokes - connecting directly to the Hub. In a Full Mesh all sites connect to all other sites.
-ADVPN starts as Hub &amp;amp; Spoke, with one site deemed the Hub - but all Spokes can directly connect by getting connection details from the Hub.</description>
+      <description>&lt;h2 id=&#34;high-level-overview&#34;&gt;High Level Overview&lt;/h2&gt;&#xA;&lt;p&gt;To explain ADVPN it is useful to contrast it with the two main alternatives - Hub &amp;amp; Spoke and Full Mesh.&lt;/p&gt;&#xA;&lt;p&gt;In a Hub &amp;amp; Spoke network one site is deemed the Hub, with all other sites - Spokes - connecting directly to the Hub.&#xA;In a Full Mesh all sites connect to all other sites.&lt;/p&gt;&#xA;&lt;p&gt;ADVPN starts as Hub &amp;amp; Spoke, with one site deemed the Hub - but all Spokes can directly connect by getting connection details from the Hub.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>FortiManager VPN Certificate</title>
       <link>https://www.clintmcguire.com/blog/fortimanager-vpn-certificate/</link>
       <pubDate>Wed, 27 May 2020 23:18:28 -0700</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/fortimanager-vpn-certificate/</guid>
-      <description>Issue FortiManager, when it&amp;rsquo;s new - I think, will sometimes try to push a certificate to FortiGate devices.
-The error message in FortiManager is spread across four lines, they are:
-&amp;ldquo;Input is not a valid CA certificate.&amp;rdquo;
-&amp;ldquo;The field ca is empty!&amp;rdquo;
-&amp;ldquo;node_check_object fail! for ca&amp;rdquo;
-&amp;ldquo;Attribute &amp;lsquo;ca&amp;rsquo; MUST be set.&amp;rdquo;
-I&amp;rsquo;ve run into this in my lab, and I&amp;rsquo;m pretty sure I saw this in a production FortiManager.
-I found this issue discussed on the Fortinet forums, but I didn&amp;rsquo;t find the solution there.</description>
+      <description>&lt;h2 id=&#34;issue&#34;&gt;Issue&lt;/h2&gt;&#xA;&lt;p&gt;FortiManager, when it&amp;rsquo;s new - I think, will sometimes try to push a certificate to FortiGate devices.&lt;br&gt;&#xA;The error message in FortiManager is spread across four lines, they are:&lt;br&gt;&#xA;&amp;ldquo;Input is not a valid CA certificate.&amp;rdquo;&lt;br&gt;&#xA;&amp;ldquo;The field ca is empty!&amp;rdquo;&lt;br&gt;&#xA;&amp;ldquo;node_check_object fail! for ca&amp;rdquo;&lt;br&gt;&#xA;&amp;ldquo;Attribute &amp;lsquo;ca&amp;rsquo; MUST be set.&amp;rdquo;&lt;br&gt;&#xA;&lt;img src=&#34;https://www.clintmcguire.com/FortiManagerVPNCA.png&#34; alt=&#34;Error message&#34;&gt;&lt;br&gt;&#xA;I&amp;rsquo;ve run into this in my lab, and I&amp;rsquo;m pretty sure I saw this in a production FortiManager.&lt;br&gt;&#xA;I found this issue discussed on the Fortinet forums, but I didn&amp;rsquo;t find the solution there.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>FortiGate Scripting</title>
       <link>https://www.clintmcguire.com/blog/fortigate-scripting/</link>
       <pubDate>Tue, 26 May 2020 22:51:16 -0700</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/fortigate-scripting/</guid>
-      <description>FortiGate Scripts I&amp;rsquo;ve been doing quite a bit of scripting for FortiGates recently. Much of it in TCL.
-FortiManager is capapble of running TCL scripts, which allow for the script to make decisions.
-For example, I have a script that will check the name of the FortiGate it is running on, then based on the hostname, it will assign different values to the device. I needed to write this script so I could roll out ADVPN to multiple sites, for a client.</description>
+      <description>&lt;h2 id=&#34;fortigate-scripts&#34;&gt;FortiGate Scripts&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve been doing quite a bit of scripting for FortiGates recently. Much of it in TCL.&lt;br&gt;&#xA;FortiManager is capapble of running TCL scripts, which allow for the script to make decisions.&lt;br&gt;&#xA;For example, I have a script that will check the name of the FortiGate it is running on, then based on the hostname, it will assign different values to the device.  I needed to write this script so I could roll out ADVPN to multiple sites, for a client.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Optimization</title>
       <link>https://www.clintmcguire.com/blog/optimization/</link>
       <pubDate>Sun, 05 Apr 2020 23:42:24 -0700</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/optimization/</guid>
-      <description>Problems My site was not available over HTTPS. My site was slow to load. Investigation - HTTPS This site is hosted on GitHub, so going through their documentation it looked like I should have been able to use a CDN and still have GitHub generate a cert for the site. However, it was not.
-Solution - HTTPS As an experiment I disabled the CDN, to see if GitHub would be able to generate the certificate - this worked pretty quickly and in the end was pretty simple.</description>
+      <description>&lt;h2 id=&#34;problems&#34;&gt;Problems&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;My site was not available over HTTPS.&lt;/li&gt;&#xA;&lt;li&gt;My site was slow to load.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;investigation---https&#34;&gt;Investigation - HTTPS&lt;/h2&gt;&#xA;&lt;p&gt;This site is hosted on GitHub, so going through their documentation it looked like I should have been able to use a CDN and still have GitHub generate a cert for the site. However, it was not.&lt;/p&gt;&#xA;&lt;h2 id=&#34;solution---https&#34;&gt;Solution - HTTPS&lt;/h2&gt;&#xA;&lt;p&gt;As an experiment I disabled the CDN, to see if GitHub would be able to generate the certificate - this worked pretty quickly and in the end was pretty simple. I was trying to do something fancy and ended up in a situation where the CDN wasn&amp;rsquo;t really doing everything it could, and neither was GitHub.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Home Lab</title>
       <link>https://www.clintmcguire.com/blog/homelab/</link>
       <pubDate>Sat, 04 Apr 2020 22:43:54 -0700</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/homelab/</guid>
-      <description>Home Lab Build This seems like good time to dust off the home lab gear. So I&amp;rsquo;ve pulled the hardware out and made sure everything has downloaded all the updates.
-My lab is pretty simple.
-The network is a FortiGate, FortiSwitch and FortiAP.
-The compute and storage is a desktop that I&amp;rsquo;ve jammed as many SSDs into as I can.
-I&amp;rsquo;m running Hyper-V on Windows 10, because it is simple and provides the features I need.</description>
+      <description>&lt;h2 id=&#34;home-lab-build&#34;&gt;Home Lab Build&lt;/h2&gt;&#xA;&lt;p&gt;This seems like good time to dust off the home lab gear.  So I&amp;rsquo;ve pulled the hardware out and made sure everything has downloaded all the updates.&lt;/p&gt;&#xA;&lt;p&gt;My lab is pretty simple.&lt;br&gt;&#xA;The network is a FortiGate, FortiSwitch and FortiAP.&lt;br&gt;&#xA;The compute and storage is a desktop that I&amp;rsquo;ve jammed as many SSDs into as I can.&lt;br&gt;&#xA;I&amp;rsquo;m running Hyper-V on Windows 10, because it is simple and provides the features I need.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>FortiGate SD-WAN Setup</title>
       <link>https://www.clintmcguire.com/blog/fortigate-sdwan-setup/</link>
       <pubDate>Wed, 01 Apr 2020 21:35:39 -0700</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/fortigate-sdwan-setup/</guid>
-      <description>Minimal Requirements Here are the quick and dirty steps to get SD-WAN up and running on a FortiGate.
-I&amp;rsquo;m running FortiOS 6.2.3 on 60E.
-SD-WAN Interface Under Network -&amp;gt; SD-WAN:
-Set the Status to Enabled Add at least one available port to the SD-WAN Interface Members Hit Apply Perfomance Metrics Under Network -&amp;gt; Performance SLA:
-Create a new SLA Give it a Name For Protocol pick Ping Add two IPs for servers to run ping tests against - I&amp;rsquo;d recommend 1.</description>
+      <description>&lt;h2 id=&#34;minimal-requirements&#34;&gt;Minimal Requirements&lt;/h2&gt;&#xA;&lt;p&gt;Here are the quick and dirty steps to get SD-WAN up and running on a FortiGate.&lt;br&gt;&#xA;I&amp;rsquo;m running FortiOS 6.2.3 on 60E.&lt;/p&gt;&#xA;&lt;h3 id=&#34;sd-wan-interface&#34;&gt;SD-WAN Interface&lt;/h3&gt;&#xA;&lt;p&gt;Under Network -&amp;gt; SD-WAN:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Set the Status to Enabled&lt;/li&gt;&#xA;&lt;li&gt;Add at least one available port to the SD-WAN Interface Members&lt;/li&gt;&#xA;&lt;li&gt;Hit Apply&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;perfomance-metrics&#34;&gt;Perfomance Metrics&lt;/h3&gt;&#xA;&lt;p&gt;Under Network -&amp;gt; Performance SLA:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Create a new SLA&lt;/li&gt;&#xA;&lt;li&gt;Give it a Name&lt;/li&gt;&#xA;&lt;li&gt;For Protocol pick Ping&lt;/li&gt;&#xA;&lt;li&gt;Add two IPs for servers to run ping tests against - I&amp;rsquo;d recommend 1.1.1.1 and 8.8.8.8, since they are Anycast and globaly respond quickly, but you might want to add one of your ISP&amp;rsquo;s upstream routers. You need to put two addresses in here. (Can be FQDNs)&lt;/li&gt;&#xA;&lt;li&gt;Add the Interface(s) [WAN1 or WAN2, etc.] you want to use this test to the Participants box&lt;/li&gt;&#xA;&lt;li&gt;Make sure &amp;ldquo;Enable probe packets&amp;rdquo; is selected - should be by defualt&lt;/li&gt;&#xA;&lt;li&gt;Hit Ok&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;route&#34;&gt;Route&lt;/h3&gt;&#xA;&lt;p&gt;Under Network -&amp;gt; Static Routes:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>4 Segment Network</title>
       <link>https://www.clintmcguire.com/blog/4-segment-network/</link>
       <pubDate>Wed, 01 Apr 2020 21:00:55 -0700</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/4-segment-network/</guid>
-      <description>Purpose How do you design a well-organized, well managed network for small/medium business?
-Let&amp;rsquo;s layout some assumptions:
-There are server in the office The servers are in either in a well-organized closet or in a server room (they are not in a Colo - but access is restricted) There may be some amount of Cloud/SaaS applications This is not a VDI environment (we could sketch that out in a different post) Security is a concern - but not security at any cost Let&amp;rsquo;s start with what I generally see As a consultant, I&amp;rsquo;ve been engaged by dozens of small/medium size businesses and many large businesses.</description>
+      <description>&lt;h2 id=&#34;purpose&#34;&gt;Purpose&lt;/h2&gt;&#xA;&lt;p&gt;How do you design a well-organized, well managed network for small/medium business?&lt;/p&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s layout some assumptions:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;There are server in the office&lt;/li&gt;&#xA;&lt;li&gt;The servers are in either in a well-organized closet or in a server room (they are not in a Colo - but access is restricted)&lt;/li&gt;&#xA;&lt;li&gt;There may be some amount of Cloud/SaaS applications&lt;/li&gt;&#xA;&lt;li&gt;This is not a VDI environment (we could sketch that out in a different post)&lt;/li&gt;&#xA;&lt;li&gt;Security is a concern - but not security at any cost&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;lets-start-with-what-i-generally-see&#34;&gt;Let&amp;rsquo;s start with what I generally see&lt;/h2&gt;&#xA;&lt;p&gt;As a consultant, I&amp;rsquo;ve been engaged by dozens of small/medium size businesses and many large businesses. What I tend to see in the small/medium group is a flat network using a single subnet - a /24 or less common a /16. There is only one VLAN and all the Servers, Switches, Hypervisors and Desktops are in the broadcast domain.&lt;br&gt;&#xA;If I was an attacker, this would be a &amp;ldquo;Target Rich Environment&amp;rdquo;&amp;hellip;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Hashing</title>
       <link>https://www.clintmcguire.com/blog/hashing/</link>
       <pubDate>Mon, 30 Mar 2020 21:22:11 -0700</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/hashing/</guid>
-      <description>What is Hashing Very simplified: Hashing is a mathmatical operation used to take an Input and turn it into a different Output.
-More specifically: the hasning function will take an input of variable size and produce an output of a fixed size. The mathmatical process should not be reversible, the same input should always yield a constant output, a small change to the input should have a large change on the output, and two different inputs should never generate the same output.</description>
+      <description>&lt;h2 id=&#34;what-is-hashing&#34;&gt;What is Hashing&lt;/h2&gt;&#xA;&lt;p&gt;Very simplified: Hashing is a mathmatical operation used to take an Input and turn it into a different Output.&lt;/p&gt;&#xA;&lt;p&gt;More specifically: the hasning function will take an input of variable size and produce an output of a fixed size. The mathmatical process should not be reversible, the same input should always yield a constant output, a small change to the input should have a large change on the output, and two different inputs should never generate the same output.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Crypto Cipher Suite Comparison</title>
       <link>https://www.clintmcguire.com/blog/crypto-cipher-suite-comparison/</link>
       <pubDate>Sun, 29 Mar 2020 11:26:57 -0700</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/crypto-cipher-suite-comparison/</guid>
-      <description>Components As detailed in my post on Cryptographic Cipher Suites each of the suites has a Protocol, a Key Exchange algorithm, a Signature Authentication algorithm, an Encryption algorithm, and a Message Authentication algorithm.
-Here we are going to compare these different components and highlight the cipher suites currently considered strong*.
-* currently only means at the time of this writting - a flaw could be found in the algorithm or in the implementation of the algorithm at any time, so do additional research to confirm the current strength of the cipher suite.</description>
+      <description>&lt;h2 id=&#34;components&#34;&gt;Components&lt;/h2&gt;&#xA;&lt;p&gt;As detailed in my post on &lt;a href=&#34;https://www.clintmcguire.com/blog/cryptographic-cipher-suites/&#34;&gt;Cryptographic Cipher Suites&lt;/a&gt; each of the suites has a Protocol, a Key Exchange algorithm, a Signature Authentication algorithm, an Encryption algorithm, and a Message Authentication algorithm.&lt;br&gt;&#xA;Here we are going to compare these different components and highlight the cipher suites currently considered strong*.&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;*&lt;/code&gt; currently only means at the time of this writting - a flaw could be found in the algorithm or in the implementation of the algorithm at any time, so do additional research to confirm the current strength of the cipher suite. You&amp;rsquo;ve been warned&amp;hellip;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Cryptographic Cipher Suites</title>
       <link>https://www.clintmcguire.com/blog/cryptographic-cipher-suites/</link>
       <pubDate>Sat, 28 Mar 2020 10:54:00 -0700</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/cryptographic-cipher-suites/</guid>
-      <description>What are Cryptographic Cipher Suites Cipher suites are a combination of different algorithms the system will use to encrypt the communication. Each operating system/application will have a set of suites it is capable of supporting.
-Let&amp;rsquo;s take a few examples - using the IANA names:
-TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 TLS_RSA_WITH_AES_256_CBC_SHA TLS_RSA_WITH_NULL_SHA Each of these suites has a Protocol, a Key Exchange algorithm, a Signature Authentication algorithm, an Encryption algorithm, and a Message Authentication algorithm.</description>
+      <description>&lt;h2 id=&#34;what-are-cryptographic-cipher-suites&#34;&gt;What are Cryptographic Cipher Suites&lt;/h2&gt;&#xA;&lt;p&gt;Cipher suites are a combination of different algorithms the system will use to encrypt the communication.&#xA;Each operating system/application will have a set of suites it is capable of supporting.&lt;/p&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s take a few examples - using the IANA names:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;code&gt;TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;TLS_RSA_WITH_AES_256_CBC_SHA&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;TLS_RSA_WITH_NULL_SHA&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Each of these suites has a Protocol, a Key Exchange algorithm, a Signature Authentication algorithm, an Encryption algorithm, and a Message Authentication algorithm.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>DNS Tools</title>
       <link>https://www.clintmcguire.com/blog/dns-tools/</link>
       <pubDate>Fri, 18 Oct 2019 19:29:34 -0700</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/dns-tools/</guid>
-      <description>General Tools nslookup - standard tool, comes with most OSes http://MXToolbox.com - Very useful site for doing DNS things, generally focused on email related checks - as the name implies - but still includes more general DNS lookup options Test-Connection - in PowerShell 6, this is really more of a super charged ping - but throw -ResolveDestination at it and it will do a lookup for you dnssec-analyzer - for testing DNSSEC Whois Lookup - mxtoolbox&amp;rsquo;s whois lookup hasn&amp;rsquo;t worked for me the last number of times I&amp;rsquo;ve used it, this one does&amp;hellip; I&amp;rsquo;m pretty sure I&amp;rsquo;m forgetting 1 or 2, so I will come back and add them when I remember&amp;hellip;</description>
+      <description>&lt;h2 id=&#34;general-tools&#34;&gt;General Tools&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;nslookup - standard tool, comes with most OSes&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://MXToolbox.com&#34;&gt;http://MXToolbox.com&lt;/a&gt; - Very useful site for doing DNS things, generally focused on email related checks - as the name implies - but still includes more general DNS lookup options&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;Test-Connection&lt;/code&gt; - in PowerShell 6, this is really more of a super charged ping - but throw &lt;code&gt;-ResolveDestination&lt;/code&gt; at it and it will do a lookup for you&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://dnssec-analyzer.verisignlabs.com&#34;&gt;dnssec-analyzer&lt;/a&gt; - for testing DNSSEC&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://whois.domaintools.com&#34;&gt;Whois Lookup&lt;/a&gt; - mxtoolbox&amp;rsquo;s whois lookup hasn&amp;rsquo;t worked for me the last number of times I&amp;rsquo;ve used it, this one does&amp;hellip;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;I&amp;rsquo;m pretty sure I&amp;rsquo;m forgetting 1 or 2, so I will come back and add them when I remember&amp;hellip;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>DNSSEC</title>
       <link>https://www.clintmcguire.com/blog/dnssec/</link>
       <pubDate>Thu, 17 Oct 2019 19:24:10 -0700</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/dnssec/</guid>
-      <description>How it works with Cloudflare Cloudflare hosts my DNS. It provides me a simple interface for management, 2FA for login and acts as a CDN. So it was an easy choice years ago to move DNS there.
-Since I&amp;rsquo;ve been thinking about DNS a lot lately I decided to see if I could setup DNSSEC for my own domain.
-It took my about 5 minutes.
-In Cloudflare - under DNS, hit the button to Setup DNSSEC.</description>
+      <description>&lt;h2 id=&#34;how-it-works-with-cloudflare&#34;&gt;How it works with Cloudflare&lt;/h2&gt;&#xA;&lt;p&gt;Cloudflare hosts my DNS. It provides me a simple interface for management, 2FA for login and acts as a CDN. So it was an easy choice years ago to move DNS there.&lt;/p&gt;&#xA;&lt;p&gt;Since I&amp;rsquo;ve been thinking about DNS &lt;a href=&#34;http://www.clintmcguire.com/blog/how-dns-works/&#34;&gt;a lot&lt;/a&gt; &lt;a href=&#34;http://www.clintmcguire.com/blog/how-dns-really-works/&#34;&gt;lately&lt;/a&gt; I decided to see if I could setup DNSSEC for my own domain.&lt;/p&gt;&#xA;&lt;p&gt;It took my about 5 minutes.&lt;/p&gt;&#xA;&lt;p&gt;In Cloudflare - under DNS, hit the button to Setup DNSSEC.&#xA;It will generate the required details to add to your Domain Registrar.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>How DNS Really Works</title>
       <link>https://www.clintmcguire.com/blog/how-dns-really-works/</link>
       <pubDate>Wed, 16 Oct 2019 19:01:53 -0700</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/how-dns-really-works/</guid>
-      <description>View from the client A client system - phone, dekstop, laptop, server - looking to find an IP address for a name, lets use www.clintmcguire.com as an example, sends a DNS request to its configured name resolvers.
-Name resolvers are either statically assigned by a network administrator or handed out by DHCP.
-The client sends a request - typically via UDP - on port 53, to the name resolver. This is a question, asking for the Resource Record (RR) details that match a name/domain name.</description>
+      <description>&lt;h2 id=&#34;view-from-the-client&#34;&gt;View from the client&lt;/h2&gt;&#xA;&lt;p&gt;A client system - phone, dekstop, laptop, server - looking to find an IP address for a name, lets use &lt;a href=&#34;https://www.clintmcguire.com&#34;&gt;www.clintmcguire.com&lt;/a&gt; as an example, sends a DNS request to its configured name resolvers.&lt;br&gt;&#xA;Name resolvers are either statically assigned by a network administrator or handed out by DHCP.&lt;/p&gt;&#xA;&lt;p&gt;The client sends a request - typically via UDP - on port 53, to the name resolver. This is a question, asking for the Resource Record (RR) details that match a name/domain name.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>How DNS Works</title>
       <link>https://www.clintmcguire.com/blog/how-dns-works/</link>
       <pubDate>Tue, 15 Oct 2019 21:32:04 -0700</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/how-dns-works/</guid>
-      <description>DNS Analogy The analogy typically used to explain what DNS does is to compare it to a Phone Book. Which isn&amp;rsquo;t a great analogy, when you look at how DNS works.
-I think I have a better analogy. The downside of my proposed analogy, is that it requires some additional explaining - although I suspect people coming out of school today aren&amp;rsquo;t very familiar with phone books anymore either&amp;hellip;
-Here is my suggestion for a better analogy&amp;hellip;</description>
+      <description>&lt;h2 id=&#34;dns-analogy&#34;&gt;DNS Analogy&lt;/h2&gt;&#xA;&lt;p&gt;The analogy typically used to explain what DNS does is to compare it to a Phone Book.&#xA;Which isn&amp;rsquo;t a great analogy, when you look at how DNS works.&lt;/p&gt;&#xA;&lt;p&gt;I think I have a better analogy. The downside of my proposed analogy, is that it requires some additional explaining - although I suspect people coming out of school today aren&amp;rsquo;t very familiar with phone books anymore either&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;Here is my suggestion for a better analogy&amp;hellip;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>NTP</title>
       <link>https://www.clintmcguire.com/blog/ntp/</link>
       <pubDate>Sat, 07 Sep 2019 10:27:41 -0700</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/ntp/</guid>
-      <description>Time in Windows - for Domains In a Windows Domain, the default config is for the PDC to get time from an external time source, the other DCs to get time from the PDC and the domain members to get time for a DC in their Site.
-So only the PDC should need to be modified.
-The commands to configure the PDC to get time from the NTP Pool servers:</description>
+      <description>&lt;h2 id=&#34;time-in-windows---for-domains&#34;&gt;Time in Windows - for Domains&lt;/h2&gt;&#xA;&lt;p&gt;In a Windows Domain, the default config is for the PDC to get time from an external time source, the other DCs to get time from the PDC and the domain members to get time for a DC in their Site.&lt;/p&gt;&#xA;&lt;p&gt;So only the PDC should need to be modified.&lt;/p&gt;&#xA;&lt;p&gt;The commands to configure the PDC to get time from the NTP Pool servers:&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Find Azure Market Place Image Offers from PowerShell</title>
       <link>https://www.clintmcguire.com/blog/find-az-offers/</link>
       <pubDate>Sat, 23 Feb 2019 17:56:25 -0800</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/find-az-offers/</guid>
-      <description>Following up on my post about finding Azure Images by Publisher, here is how to get all the SKUs for the specific Offers.
-Get-AzVMImageSKu is the command to run.
-It requires Location, Publisher, and Offer.
-For example: Get-AzVMImageSku -Location &amp;rsquo;eastus&amp;rsquo; -publisher &amp;lsquo;fortinet&amp;rsquo; -Offer &amp;lsquo;fortinet_fortigate-vm_v5&amp;rsquo;
-This will return the two SKUs - &amp;ldquo;fortinet_fg-vm&amp;rdquo; and &amp;ldquo;fortinet_fg-vm_payg&amp;rdquo;
-You can take the SKUs and use those to deploy new VMs.</description>
+      <description>&lt;p&gt;Following up on my post about &lt;a href=&#34;http://www.clintmcguire.com/blog/find-az-images-by-publisher/&#34;&gt;finding Azure Images by Publisher&lt;/a&gt;, here is how to get all the SKUs for the specific Offers.&lt;/p&gt;&#xA;&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Get-AzVMImageSKu&lt;!-- raw HTML omitted --&gt; is the command to run.&lt;/p&gt;&#xA;&lt;p&gt;It requires Location, Publisher, and Offer.&lt;/p&gt;&#xA;&lt;p&gt;For example:&#xA;&lt;!-- raw HTML omitted --&gt;Get-AzVMImageSku -Location &amp;rsquo;eastus&amp;rsquo; -publisher &amp;lsquo;fortinet&amp;rsquo; -Offer &amp;lsquo;fortinet_fortigate-vm_v5&amp;rsquo;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;p&gt;This will return the two SKUs - &amp;ldquo;fortinet_fg-vm&amp;rdquo; and &amp;ldquo;fortinet_fg-vm_payg&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;You can take the SKUs and use those to deploy new VMs.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Find Azure Images by Publisher</title>
       <link>https://www.clintmcguire.com/blog/find-az-images-by-publisher/</link>
       <pubDate>Sun, 17 Feb 2019 14:18:16 -0800</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/find-az-images-by-publisher/</guid>
-      <description>First install the PowerShell Az Module.
-On Windows, open an elevated PowerShell window and run: Install-Module -Name Az -AllowClobber
-On MacOS, use sudo to open pwsh, then run: Install-Module -Name Az -AllowClobber
-Once the Az module is installed, exit the elevated/sudo PowerShell session and open a regular PowerShell session.
-Connect to your Azure account - Connect-AzAccount and use the device login URL and Code to sign in.
-If you don&amp;rsquo;t know the exact Publisher Name, you can find it by looking at all the Publishers.</description>
+      <description>&lt;p&gt;First install the PowerShell Az Module.&lt;/p&gt;&#xA;&lt;p&gt;On Windows, open an elevated PowerShell window and run: &lt;!-- raw HTML omitted --&gt;Install-Module -Name Az -AllowClobber&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;p&gt;On MacOS, use &lt;!-- raw HTML omitted --&gt;sudo&lt;!-- raw HTML omitted --&gt; to open &lt;!-- raw HTML omitted --&gt;pwsh&lt;!-- raw HTML omitted --&gt;, then run: &lt;!-- raw HTML omitted --&gt;Install-Module -Name Az -AllowClobber&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;p&gt;Once the Az module is installed, exit the elevated/sudo PowerShell session and open a regular PowerShell session.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Compare file hash with PowerShell</title>
       <link>https://www.clintmcguire.com/blog/compare_file_hash_with_powershell/</link>
       <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/compare_file_hash_with_powershell/</guid>
-      <description>Once you&amp;rsquo;ve downloaded the file use Get-FileHash to calculate the SHA256 hash.
-$hash = (Get-FileHash .\filename.exe).hash
-Copy the hash value from the website and assign it to a variable to compare.
-$webhash = &amp;quot;3...f&#39;
-[Paste the full SHA256 hash in the quotes]
-Then use PowerShell to compare this to the published hash.
-if ($hash -eq $webhash){$true}
-This will return either &amp;ldquo;True&amp;rdquo; or nothing, if &amp;ldquo;True&amp;rdquo; then the hashes match.
-Or if you want to do it in one line:</description>
+      <description>&lt;p&gt;Once you&amp;rsquo;ve downloaded the file use &lt;code&gt;Get-FileHash&lt;/code&gt; to calculate the SHA256 hash.&lt;br&gt;&#xA;&lt;code&gt;$hash = (Get-FileHash .\filename.exe).hash&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Copy the hash value from the website and assign it to a variable to compare.&lt;br&gt;&#xA;&lt;code&gt;$webhash = &amp;quot;3...f&#39;&lt;/code&gt;&lt;br&gt;&#xA;[Paste the full SHA256 hash in the quotes]&lt;/p&gt;&#xA;&lt;p&gt;Then use PowerShell to compare this to the published hash.&lt;br&gt;&#xA;&lt;code&gt;if ($hash -eq $webhash){$true}&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;This will return either &amp;ldquo;True&amp;rdquo; or nothing, if &amp;ldquo;True&amp;rdquo; then the hashes match.&lt;/p&gt;&#xA;&lt;p&gt;Or if you want to do it in one line:&lt;br&gt;&#xA;&lt;code&gt;If ((Get-FileHash .\filename.exe).hash -eq &amp;quot;3..f&amp;quot;){$True}&lt;/code&gt;&lt;br&gt;&#xA;[Published SHA256 goes in the quotes.]&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Resolve all Remote Hosts that you are Connected</title>
       <link>https://www.clintmcguire.com/blog/resolve_all_remote_hosts_that_you_are_connected/</link>
       <pubDate>Tue, 29 Aug 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/resolve_all_remote_hosts_that_you_are_connected/</guid>
-      <description>I was looking into an certificate issue a client was having with their web proxy and in testing I thought it might be helpful to resolve the DNS names for all the open connections on ports 80 and 443.
-A quick netstat -anop tcp shows too many connections to bother doing manually and scraping the output with PowerShell would be possible, but isn&amp;rsquo;t my first choice.
-Thankfully Get-NetTCPConnections will show very similar details to the netstat above, so I started there.</description>
+      <description>&lt;p&gt;I was looking into an certificate issue a client was having with their web proxy and in testing I thought it might be helpful to resolve the DNS names for all the open connections on ports 80 and 443.&lt;/p&gt;&#xA;&lt;p&gt;A quick netstat -anop tcp shows too many connections to bother doing manually and scraping the output with PowerShell would be possible, but isn&amp;rsquo;t my first choice.&lt;/p&gt;&#xA;&lt;p&gt;Thankfully Get-NetTCPConnections will show very similar details to the netstat above, so I started there.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Stop all processes with the same name</title>
       <link>https://www.clintmcguire.com/blog/stop_all_processes_with_the_same_name/</link>
       <pubDate>Tue, 22 Aug 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/stop_all_processes_with_the_same_name/</guid>
-      <description>I have a utility server that I connect to frequently and for some reason or other, that I haven&amp;rsquo;t had time to investigate yet, a certain Citrix related process launches and re-launches. Over the course of weeks there can be 30+ instances of this process running under my user account.
-The specific process doesn&amp;rsquo;t take up much CPU or RAM, but it is annoying and if I someone else is using the server for real work, then those resources could be better allocated.</description>
+      <description>&lt;p&gt;I have a utility server that I connect to frequently and for some reason or other, that I haven&amp;rsquo;t had time to investigate yet, a certain Citrix related process launches and re-launches.&#xA;Over the course of weeks there can be 30+ instances of this process running under my user account.&lt;/p&gt;&#xA;&lt;p&gt;The specific process doesn&amp;rsquo;t take up much CPU or RAM, but it is annoying and if I someone else is using the server for real work, then those resources could be better allocated.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Red Hat Enterprise Linux Training - Notes</title>
       <link>https://www.clintmcguire.com/blog/redhat_enterprise_linux_training_notes/</link>
       <pubDate>Wed, 05 Jul 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/redhat_enterprise_linux_training_notes/</guid>
-      <description>Notes from RHEL 7 Partner Training&amp;hellip;
-You can access Red Hat Support via the CLI tool redhat-support-tool The tool gives you access to the KB, which you can search from the CLI and you can work with support tickets.
-Running sosreport will create an archive file with logs and other info that can be attached to a ticket.
-redhat-support-tool has options for attaching files, it will look for an sosreport when you first open the ticket.</description>
+      <description>&lt;p&gt;Notes from RHEL 7 Partner Training&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;You can access Red Hat Support via the CLI tool&lt;!-- raw HTML omitted --&gt; redhat-support-tool&lt;!-- raw HTML omitted --&gt;&#xA;The tool gives you access to the KB, which you can search from the CLI and you can work with support tickets.&lt;/p&gt;&#xA;&lt;p&gt;Running &lt;!-- raw HTML omitted --&gt;sosreport&lt;!-- raw HTML omitted --&gt; will create an archive file with logs and other info that can be attached to a ticket.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Use PowerShell to test connection to a port</title>
       <link>https://www.clintmcguire.com/blog/use_powershell_to_test_connection_to_a_port/</link>
       <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/use_powershell_to_test_connection_to_a_port/</guid>
-      <description>To quickly test if you can communicate with a server on a specific port use this command: Test-NetConnection (hostname/ip) -Port (tcp port number) You are looking for TcpTestSucceeded : True in the output.
-Example: PS C:\Users\Clint&amp;gt; Test-NetConnection www.google.com -port 80
-ComputerName : www.google.com RemoteAddress : 74.125.28.103 RemotePort : 80 InterfaceAlias : vEthernet (LAN) 2 SourceAddress : 192.168.0.5 TcpTestSucceeded : True
-This command is quite flexible, you can also have it test with ICMP like PING and Trace Route.</description>
+      <description>&lt;p&gt;To quickly test if you can communicate with a server on a specific port use this command:&#xA;&lt;!-- raw HTML omitted --&gt;Test-NetConnection (hostname/ip) -Port (tcp port number)&lt;!-- raw HTML omitted --&gt;&#xA;You are looking for TcpTestSucceeded : True in the output.&lt;/p&gt;&#xA;&lt;p&gt;Example:&#xA;&lt;!-- raw HTML omitted --&gt;PS C:\Users\Clint&amp;gt; Test-NetConnection &lt;a href=&#34;https://www.google.com&#34;&gt;www.google.com&lt;/a&gt; -port 80&lt;/p&gt;&#xA;&lt;p&gt;ComputerName : &lt;a href=&#34;https://www.google.com&#34;&gt;www.google.com&lt;/a&gt;&#xA;RemoteAddress : 74.125.28.103&#xA;RemotePort : 80&#xA;InterfaceAlias : vEthernet (LAN) 2&#xA;SourceAddress : 192.168.0.5&#xA;TcpTestSucceeded : True&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Powershell script to get all computers last logon time</title>
       <link>https://www.clintmcguire.com/blog/powershell_script_to_get_all_computers_last_logon_time/</link>
       <pubDate>Sun, 29 May 2011 00:00:00 +0000</pubDate>
-      
       <guid>https://www.clintmcguire.com/blog/powershell_script_to_get_all_computers_last_logon_time/</guid>
-      <description>Update I&amp;rsquo;ve posted an updated version of this script in a new section of my blog. Because all the comments below relate to the original version of the script I&amp;rsquo;m going to leave that version posted here. You can find the new version of the script here.
-I wrote a script to get the last time each computer logged into the domain.
-This script is very similar to my script that gets user last logon times, which you can find here.</description>
+      <description>&lt;h1 id=&#34;update&#34;&gt;Update&lt;/h1&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve posted an updated version of this script in a new section of my blog. Because all the comments below relate to the original version of the script I&amp;rsquo;m going to leave that version posted here. You can find the new version of the script &lt;!-- raw HTML omitted --&gt;here&lt;!-- raw HTML omitted --&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I wrote a script to get the last time each computer logged into the domain.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
