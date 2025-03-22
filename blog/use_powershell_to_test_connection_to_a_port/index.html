@@ -224,40 +224,36 @@
   
   
   <div class="post">
-    <p>To quickly test if you can communicate with a server on a specific port use this command:
-<!-- raw HTML omitted -->Test-NetConnection (hostname/ip) -Port (tcp port number)<!-- raw HTML omitted -->
-You are looking for TcpTestSucceeded : True in the output.</p>
-<p>Example:
-<!-- raw HTML omitted -->PS C:\Users\Clint&gt; Test-NetConnection <a href="https://www.google.com">www.google.com</a> -port 80</p>
-<p>ComputerName : <a href="https://www.google.com">www.google.com</a>
+    <p>To quickly test if you can communicate with a server on a specific port use this command:</p>
+<pre tabindex="0"><code>Test-NetConnection (hostname/ip) -Port (tcp port number)
+</code></pre><p>You are looking for TcpTestSucceeded : True in the output.</p>
+<p>Example:</p>
+<pre tabindex="0"><code>PS C:\Users\Clint&gt; Test-NetConnection www.google.com -port 80
+
+ComputerName : www.google.com
 RemoteAddress : 74.125.28.103
 RemotePort : 80
 InterfaceAlias : vEthernet (LAN) 2
 SourceAddress : 192.168.0.5
-TcpTestSucceeded : True<!-- raw HTML omitted --></p>
-<p>This command is quite flexible, you can also have it test with ICMP like PING and Trace Route.</p>
+TcpTestSucceeded : True
+</code></pre><p>This command is quite flexible, you can also have it test with ICMP like PING and Trace Route.</p>
 <p>For a simple ping test: Test-NetConnection <a href="https://www.google.com">www.google.com</a>
 For a trace route test: Test-NetConnection <a href="https://www.google.com">www.google.com</a> -TraceRoute</p>
 <p>Does not appear to support UDP test, in PowerShell 5&hellip;</p>
 <h2 id="update">Update:</h2>
-<p>This command doesn&rsquo;t appear to be in PowerShell Core/PowerShell 6. However, <!-- raw HTML omitted -->Test-Connection<!-- raw HTML omitted --> is.
-It has some different options, I haven&rsquo;t read all of them, but it appears to be more flexible, however, to get the same result as above run:
-<!-- raw HTML omitted -->Test-Connection <a href="https://www.googgle.com">www.googgle.com</a> -TCPPort 80<!-- raw HTML omitted --></p>
-<p>When you check a specific port, it will return a True or False - in my testing it performs this check quickly</p>
+<p>This command doesn&rsquo;t appear to be in PowerShell Core/PowerShell 6. However, <code>Test-Connection</code> is.
+It has some different options, I haven&rsquo;t read all of them, but it appears to be more flexible, however, to get the same result as above run:</p>
+<pre tabindex="0"><code>Test-Connection www.googgle.com -TCPPort 80
+</code></pre><p>When you check a specific port, it will return a True or False - in my testing it performs this check quickly</p>
 
   </div>
   
 
 <div class="navigation navigation-single">
     
-    <a href="/blog/powershell_script_to_get_all_computers_last_logon_time/" class="navigation-prev">
-      <i aria-hidden="true" class="fa fa-chevron-left"></i>
-      <span class="navigation-tittle">Powershell script to get all computers last logon time</span>
-    </a>
     
-    
-    <a href="/blog/redhat_enterprise_linux_training_notes/" class="navigation-next">
-      <span class="navigation-tittle">Red Hat Enterprise Linux Training - Notes</span>
+    <a href="/blog/stop_all_processes_with_the_same_name/" class="navigation-next">
+      <span class="navigation-tittle">Stop all processes with the same name</span>
       <i aria-hidden="true" class="fa fa-chevron-right"></i>
     </a>
     

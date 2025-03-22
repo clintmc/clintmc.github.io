@@ -228,12 +228,12 @@
 Over the course of weeks there can be 30+ instances of this process running under my user account.</p>
 <p>The specific process doesn&rsquo;t take up much CPU or RAM, but it is annoying and if I someone else is using the server for real work, then those resources could be better allocated.</p>
 <p>Task Manager takes too much clicking around to clean them all up, so I do a quick kick with PowerShell.
-In an Elevated PowerShell session:
-<!-- raw HTML omitted -->Get-Process | Where {$_.ProcessName -like &ldquo;SelfServicePlugin&rdquo;} | Stop-Process<!-- raw HTML omitted --></p>
-<p>You can change out SelfServicePlugin for anything else you need.
-I suggest testing before you run this somewhere important. A simple test is:
-<!-- raw HTML omitted -->Get-Process | Where {$_.ProcessName -like &ldquo;SelfServicePlugin&rdquo;} | Stop-Process -WhatIf<!-- raw HTML omitted -->
-Then you can quickly compare the PIDs with Task Manager.</p>
+In an Elevated PowerShell session:</p>
+<pre tabindex="0"><code>Get-Process | Where {$_.ProcessName -like &#34;SelfServicePlugin&#34;} | Stop-Process
+</code></pre><p>You can change out SelfServicePlugin for anything else you need.
+I suggest testing before you run this somewhere important. A simple test is:</p>
+<pre tabindex="0"><code>Get-Process | Where {$_.ProcessName -like &#34;SelfServicePlugin&#34;} | Stop-Process -WhatIf
+</code></pre><p>Then you can quickly compare the PIDs with Task Manager.</p>
 <p>Caveat Emptor: This will stop all process that match the name you provide. If another user has the same process running for them, it will get stopped too.
 You can use the Property SessionID to filter for processes running under a certain login, but I will leave figuring that out as an activity for the curious.</p>
 
@@ -242,9 +242,9 @@ You can use the Property SessionID to filter for processes running under a certa
 
 <div class="navigation navigation-single">
     
-    <a href="/blog/redhat_enterprise_linux_training_notes/" class="navigation-prev">
+    <a href="/blog/use_powershell_to_test_connection_to_a_port/" class="navigation-prev">
       <i aria-hidden="true" class="fa fa-chevron-left"></i>
-      <span class="navigation-tittle">Red Hat Enterprise Linux Training - Notes</span>
+      <span class="navigation-tittle">Use PowerShell to test connection to a port</span>
     </a>
     
     

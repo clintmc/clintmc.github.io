@@ -227,11 +227,11 @@
     <p>I was looking into an certificate issue a client was having with their web proxy and in testing I thought it might be helpful to resolve the DNS names for all the open connections on ports 80 and 443.</p>
 <p>A quick netstat -anop tcp shows too many connections to bother doing manually and scraping the output with PowerShell would be possible, but isn&rsquo;t my first choice.</p>
 <p>Thankfully Get-NetTCPConnections will show very similar details to the netstat above, so I started there.</p>
-<p>Lets start by getting all the connections that are using TLS:
-<!-- raw HTML omitted -->$443 = Get-NetTCPConnection | where remotePort -eq 443 <!-- raw HTML omitted -->
-Then we pass $443 to Resolve-DNS like so:
-<!-- raw HTML omitted -->foreach ($socket in $443){Resolve-DnsName -name $socket.remoteaddress}<!-- raw HTML omitted -->
-This will use reverse DNS look up to resolve the names and will display them neatly.</p>
+<p>Lets start by getting all the connections that are using TLS:</p>
+<pre tabindex="0"><code>$443 = Get-NetTCPConnection | where remotePort -eq 443
+</code></pre><p>Then we pass $443 to Resolve-DNS like so:</p>
+<pre tabindex="0"><code>foreach ($socket in $443){Resolve-DnsName -name $socket.remoteaddress}
+</code></pre><p>This will use reverse DNS look up to resolve the names and will display them neatly.</p>
 <p>To do this with HTTP, simply change all occurrences of 443, above, with 80.</p>
 <p>This wasn&rsquo;t as helpful as I was hoping, since all the entries resolved to AWS, but it was something I thought I might end up using again&hellip;</p>
 

@@ -226,20 +226,6 @@
       <description>&lt;h2 id=&#34;time-in-windows---for-domains&#34;&gt;Time in Windows - for Domains&lt;/h2&gt;&#xA;&lt;p&gt;In a Windows Domain, the default config is for the PDC to get time from an external time source, the other DCs to get time from the PDC and the domain members to get time for a DC in their Site.&lt;/p&gt;&#xA;&lt;p&gt;So only the PDC should need to be modified.&lt;/p&gt;&#xA;&lt;p&gt;The commands to configure the PDC to get time from the NTP Pool servers:&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Find Azure Market Place Image Offers from PowerShell</title>
-      <link>https://www.clintmcguire.com/blog/find-az-offers/</link>
-      <pubDate>Sat, 23 Feb 2019 17:56:25 -0800</pubDate>
-      <guid>https://www.clintmcguire.com/blog/find-az-offers/</guid>
-      <description>&lt;p&gt;Following up on my post about &lt;a href=&#34;http://www.clintmcguire.com/blog/find-az-images-by-publisher/&#34;&gt;finding Azure Images by Publisher&lt;/a&gt;, here is how to get all the SKUs for the specific Offers.&lt;/p&gt;&#xA;&lt;p&gt;&lt;!-- raw HTML omitted --&gt;Get-AzVMImageSKu&lt;!-- raw HTML omitted --&gt; is the command to run.&lt;/p&gt;&#xA;&lt;p&gt;It requires Location, Publisher, and Offer.&lt;/p&gt;&#xA;&lt;p&gt;For example:&#xA;&lt;!-- raw HTML omitted --&gt;Get-AzVMImageSku -Location &amp;rsquo;eastus&amp;rsquo; -publisher &amp;lsquo;fortinet&amp;rsquo; -Offer &amp;lsquo;fortinet_fortigate-vm_v5&amp;rsquo;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;p&gt;This will return the two SKUs - &amp;ldquo;fortinet_fg-vm&amp;rdquo; and &amp;ldquo;fortinet_fg-vm_payg&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;You can take the SKUs and use those to deploy new VMs.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Find Azure Images by Publisher</title>
-      <link>https://www.clintmcguire.com/blog/find-az-images-by-publisher/</link>
-      <pubDate>Sun, 17 Feb 2019 14:18:16 -0800</pubDate>
-      <guid>https://www.clintmcguire.com/blog/find-az-images-by-publisher/</guid>
-      <description>&lt;p&gt;First install the PowerShell Az Module.&lt;/p&gt;&#xA;&lt;p&gt;On Windows, open an elevated PowerShell window and run: &lt;!-- raw HTML omitted --&gt;Install-Module -Name Az -AllowClobber&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;p&gt;On MacOS, use &lt;!-- raw HTML omitted --&gt;sudo&lt;!-- raw HTML omitted --&gt; to open &lt;!-- raw HTML omitted --&gt;pwsh&lt;!-- raw HTML omitted --&gt;, then run: &lt;!-- raw HTML omitted --&gt;Install-Module -Name Az -AllowClobber&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;p&gt;Once the Az module is installed, exit the elevated/sudo PowerShell session and open a regular PowerShell session.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Compare file hash with PowerShell</title>
       <link>https://www.clintmcguire.com/blog/compare_file_hash_with_powershell/</link>
       <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
@@ -261,25 +247,11 @@
       <description>&lt;p&gt;I have a utility server that I connect to frequently and for some reason or other, that I haven&amp;rsquo;t had time to investigate yet, a certain Citrix related process launches and re-launches.&#xA;Over the course of weeks there can be 30+ instances of this process running under my user account.&lt;/p&gt;&#xA;&lt;p&gt;The specific process doesn&amp;rsquo;t take up much CPU or RAM, but it is annoying and if I someone else is using the server for real work, then those resources could be better allocated.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Red Hat Enterprise Linux Training - Notes</title>
-      <link>https://www.clintmcguire.com/blog/redhat_enterprise_linux_training_notes/</link>
-      <pubDate>Wed, 05 Jul 2017 00:00:00 +0000</pubDate>
-      <guid>https://www.clintmcguire.com/blog/redhat_enterprise_linux_training_notes/</guid>
-      <description>&lt;p&gt;Notes from RHEL 7 Partner Training&amp;hellip;&lt;/p&gt;&#xA;&lt;p&gt;You can access Red Hat Support via the CLI tool&lt;!-- raw HTML omitted --&gt; redhat-support-tool&lt;!-- raw HTML omitted --&gt;&#xA;The tool gives you access to the KB, which you can search from the CLI and you can work with support tickets.&lt;/p&gt;&#xA;&lt;p&gt;Running &lt;!-- raw HTML omitted --&gt;sosreport&lt;!-- raw HTML omitted --&gt; will create an archive file with logs and other info that can be attached to a ticket.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Use PowerShell to test connection to a port</title>
       <link>https://www.clintmcguire.com/blog/use_powershell_to_test_connection_to_a_port/</link>
       <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
       <guid>https://www.clintmcguire.com/blog/use_powershell_to_test_connection_to_a_port/</guid>
-      <description>&lt;p&gt;To quickly test if you can communicate with a server on a specific port use this command:&#xA;&lt;!-- raw HTML omitted --&gt;Test-NetConnection (hostname/ip) -Port (tcp port number)&lt;!-- raw HTML omitted --&gt;&#xA;You are looking for TcpTestSucceeded : True in the output.&lt;/p&gt;&#xA;&lt;p&gt;Example:&#xA;&lt;!-- raw HTML omitted --&gt;PS C:\Users\Clint&amp;gt; Test-NetConnection &lt;a href=&#34;https://www.google.com&#34;&gt;www.google.com&lt;/a&gt; -port 80&lt;/p&gt;&#xA;&lt;p&gt;ComputerName : &lt;a href=&#34;https://www.google.com&#34;&gt;www.google.com&lt;/a&gt;&#xA;RemoteAddress : 74.125.28.103&#xA;RemotePort : 80&#xA;InterfaceAlias : vEthernet (LAN) 2&#xA;SourceAddress : 192.168.0.5&#xA;TcpTestSucceeded : True&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Powershell script to get all computers last logon time</title>
-      <link>https://www.clintmcguire.com/blog/powershell_script_to_get_all_computers_last_logon_time/</link>
-      <pubDate>Sun, 29 May 2011 00:00:00 +0000</pubDate>
-      <guid>https://www.clintmcguire.com/blog/powershell_script_to_get_all_computers_last_logon_time/</guid>
-      <description>&lt;h1 id=&#34;update&#34;&gt;Update&lt;/h1&gt;&#xA;&lt;p&gt;I&amp;rsquo;ve posted an updated version of this script in a new section of my blog. Because all the comments below relate to the original version of the script I&amp;rsquo;m going to leave that version posted here. You can find the new version of the script &lt;!-- raw HTML omitted --&gt;here&lt;!-- raw HTML omitted --&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I wrote a script to get the last time each computer logged into the domain.&lt;/p&gt;</description>
+      <description>&lt;p&gt;To quickly test if you can communicate with a server on a specific port use this command:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Test-NetConnection (hostname/ip) -Port (tcp port number)&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You are looking for TcpTestSucceeded : True in the output.&lt;/p&gt;&#xA;&lt;p&gt;Example:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;PS C:\Users\Clint&amp;gt; Test-NetConnection www.google.com -port 80&#xD;&#xA;&#xD;&#xA;ComputerName : www.google.com&#xD;&#xA;RemoteAddress : 74.125.28.103&#xD;&#xA;RemotePort : 80&#xD;&#xA;InterfaceAlias : vEthernet (LAN) 2&#xD;&#xA;SourceAddress : 192.168.0.5&#xD;&#xA;TcpTestSucceeded : True&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This command is quite flexible, you can also have it test with ICMP like PING and Trace Route.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

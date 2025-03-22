@@ -232,8 +232,8 @@
 Net Stop &#34;Windows Time&#34;
 Net Start &#34;Windows Time&#34;
 w32tm /resync
-</code></pre><p>Note on the manualpeerlist - after each server name we are adding <code>,0x09</code> because we want to combine the options <code>0x01</code> and <code>0x08</code> - you can look those values up here: <a href="https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc773263(v=ws.10)#registry-path-25">https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc773263(v=ws.10)#registry-path-25</a></p>
-<p>If you want to use different servers for peers go to the <!-- raw HTML omitted -->NTP Pool Project <!-- raw HTML omitted -->website and select the servers that match your needs.
+</code></pre><p>Note on the manualpeerlist - after each server name we are adding <code>,0x09</code> because we want to combine the options <code>0x01</code> and <code>0x08</code> - you can look those values up here: <a href="https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc773263(v=ws.10)#registry-path-25">Microsoft Learn</a></p>
+<p>If you want to use different servers for peers go to the <a href="http://www.pool.ntp.org/">NTP Pool Project</a>website and select the servers that match your needs.
 (Don&rsquo;t forget to put double quotes around your server list and spaces between server names!)</p>
 <p>You can run the above commands on a non-domain joined computer and get the same result.</p>
 <p>If you have a domain joined computer that needs to have the NTP settings reset - so it will check with a DC - use the following commands:</p>
@@ -241,19 +241,15 @@ w32tm /resync
 Net Stop w32tm
 Net Start w32tm
 </code></pre><p>One last thing about w32tm - it is not designed to provide highly accurate time, for time sensitive apps. If you have time sensitive apps you will need to find an alternate time server.</p>
-<p><!-- raw HTML omitted -->Reference:<!-- raw HTML omitted --><br>
-<!-- raw HTML omitted -->This article is a good refernce on w32tm: <a href="https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc773013(v=ws.10)">https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc773013(v=ws.10)</a><!-- raw HTML omitted --><br>
-<!-- raw HTML omitted -->Configure w32tm on PDC: <!-- raw HTML omitted -->Microsoft Technet<!-- raw HTML omitted --><!-- raw HTML omitted --><br>
-<!-- raw HTML omitted -->Configure w32tm on computers: <!-- raw HTML omitted -->Microsoft Technet<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 
   </div>
   
 
 <div class="navigation navigation-single">
     
-    <a href="/blog/find-az-offers/" class="navigation-prev">
+    <a href="/blog/compare_file_hash_with_powershell/" class="navigation-prev">
       <i aria-hidden="true" class="fa fa-chevron-left"></i>
-      <span class="navigation-tittle">Find Azure Market Place Image Offers from PowerShell</span>
+      <span class="navigation-tittle">Compare file hash with PowerShell</span>
     </a>
     
     
