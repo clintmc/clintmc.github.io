@@ -6,8 +6,15 @@
     <description>Recent content in Home on Clint McGuire</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 04 May 2025 07:45:56 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 25 May 2025 13:02:11 -0700</lastBuildDate>
     <atom:link href="https://www.clintmcguire.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Agent Risk CIA Triad</title>
+      <link>https://www.clintmcguire.com/blog/ai-agent-risk-cia-triad/</link>
+      <pubDate>Sun, 25 May 2025 13:02:11 -0700</pubDate>
+      <guid>https://www.clintmcguire.com/blog/ai-agent-risk-cia-triad/</guid>
+      <description>&lt;h1 id=&#34;ai-agent-security-key-insights-from-the-cia-triad-analysis&#34;&gt;AI Agent Security: Key Insights from the CIA Triad Analysis&lt;/h1&gt;&#xA;&lt;p&gt;As AI agents become increasingly prevalent in enterprise environments, understanding their unique security challenges is critical. Our comprehensive analysis of 24 distinct AI agent security risks reveals patterns that demand consideration from security professionals and organizational leaders. We cannot charge blindly ahead, there are risks that need to be evaluated and addressed.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-confidentiality-crisis-ais-data-access-dilemma&#34;&gt;The Confidentiality Crisis: AI&amp;rsquo;s Data Access Dilemma&lt;/h2&gt;&#xA;&lt;p&gt;The most striking finding from our analysis is that &lt;strong&gt;confidentiality emerges as the most frequently compromised security principle&lt;/strong&gt;, appearing in 14 of the 24 identified challenges. This isn&amp;rsquo;t coincidental—it reflects a fundamental tension in AI agent design.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Sixth Element: AI Agents as a New Security Paradigm</title>
       <link>https://www.clintmcguire.com/blog/securing-ai-agents/</link>
