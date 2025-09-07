@@ -6,8 +6,15 @@
     <description>Recent content in Home on Clint McGuire</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 31 Aug 2025 17:57:01 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 06 Sep 2025 07:36:03 -0700</lastBuildDate>
     <atom:link href="https://www.clintmcguire.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>M365 Token Protection</title>
+      <link>https://www.clintmcguire.com/blog/m365-token-protection/</link>
+      <pubDate>Sat, 06 Sep 2025 07:36:03 -0700</pubDate>
+      <guid>https://www.clintmcguire.com/blog/m365-token-protection/</guid>
+      <description>&lt;p&gt;Your organization deployed multi-factor authentication. Password attacks dropped to zero. Credential stuffing became irrelevant. You won the authentication war.&lt;/p&gt;&#xA;&lt;p&gt;Then the attackers adapted.&lt;/p&gt;&#xA;&lt;p&gt;Cybercriminals realized they don&amp;rsquo;t need to break down your front door when they can steal your house key after you&amp;rsquo;ve already unlocked it and walked inside. This approach bypasses MFA entirely because the authentication already happened—legitimately.&lt;/p&gt;&#xA;&lt;p&gt;You&amp;rsquo;ll see it in your logs as successful sign-ins from legitimate user accounts. No failed password attempts. No MFA bypass alerts. Just normal-looking authentication events that aren&amp;rsquo;t normal at all.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>When Hackers Get Through Your Municipal Risk Management Reality</title>
       <link>https://www.clintmcguire.com/blog/when-hackers-get-through-your-municipal-risk-management-reality/</link>
