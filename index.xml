@@ -6,8 +6,15 @@
     <description>Recent content in Home on Clint McGuire</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 06 Sep 2025 07:36:03 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 12 Sep 2025 22:47:16 -0700</lastBuildDate>
     <atom:link href="https://www.clintmcguire.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ASR Rules - Hidden Security Controls</title>
+      <link>https://www.clintmcguire.com/blog/asr-rules-hidden-security-controls/</link>
+      <pubDate>Fri, 12 Sep 2025 22:47:16 -0700</pubDate>
+      <guid>https://www.clintmcguire.com/blog/asr-rules-hidden-security-controls/</guid>
+      <description>&lt;h1 id=&#34;the-hidden-security-controls-that-could-have-prevented-canadas-biggest-ransomware-attacks&#34;&gt;The Hidden Security Controls That Could Have Prevented Canada&amp;rsquo;s Biggest Ransomware Attacks&lt;/h1&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;In 2024, Canadian organizations paid ransom demands 79% of the time when attacked—meaning cybercriminals are successfully monetizing their operations four out of five attempts. For context, that&amp;rsquo;s a higher success rate than most legitimate businesses achieve with their core products.&lt;/p&gt;&#xA;&lt;p&gt;In February of that same year, the City of Hamilton faced every IT leader&amp;rsquo;s nightmare. Despite actively working to improve their cybersecurity posture—including an ongoing multi-factor authentication rollout—attackers found gaps in their defenses and exploited them before the security improvements could be completed. The outcome: $18.3 million in immediate response costs, denied insurance coverage, and budget impacts that will affect taxpayers through 2027.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>M365 Token Protection</title>
       <link>https://www.clintmcguire.com/blog/m365-token-protection/</link>
