@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cipher-Suites on Clint McGuire</title>
+    <link>https://www.clintmcguire.com/tags/cipher-suites/</link>
+    <description>Recent content in Cipher-Suites on Clint McGuire</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 28 Mar 2020 10:54:00 -0700</lastBuildDate>
+    <atom:link href="https://www.clintmcguire.com/tags/cipher-suites/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cryptographic Cipher Suites</title>
+      <link>https://www.clintmcguire.com/blog/cryptographic-cipher-suites/</link>
+      <pubDate>Sat, 28 Mar 2020 10:54:00 -0700</pubDate>
+      <guid>https://www.clintmcguire.com/blog/cryptographic-cipher-suites/</guid>
+      <description>&lt;h2 id=&#34;what-are-cryptographic-cipher-suites&#34;&gt;What are Cryptographic Cipher Suites&lt;/h2&gt;&#xA;&lt;p&gt;Cipher suites are a combination of different algorithms the system will use to encrypt the communication.&#xA;Each operating system/application will have a set of suites it is capable of supporting.&lt;/p&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s take a few examples - using the IANA names:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;code&gt;TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;TLS_RSA_WITH_AES_256_CBC_SHA&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;TLS_RSA_WITH_NULL_SHA&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Each of these suites has a Protocol, a Key Exchange algorithm, a Signature Authentication algorithm, an Encryption algorithm, and a Message Authentication algorithm.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

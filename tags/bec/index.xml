@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bec on Clint McGuire</title>
+    <link>https://www.clintmcguire.com/tags/bec/</link>
+    <description>Recent content in Bec on Clint McGuire</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 04 Feb 2022 07:44:38 -0800</lastBuildDate>
+    <atom:link href="https://www.clintmcguire.com/tags/bec/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BEC</title>
+      <link>https://www.clintmcguire.com/blog/bec/</link>
+      <pubDate>Fri, 04 Feb 2022 07:44:38 -0800</pubDate>
+      <guid>https://www.clintmcguire.com/blog/bec/</guid>
+      <description>&lt;h2 id=&#34;what-is-the-risk&#34;&gt;What is the Risk?&lt;/h2&gt;&#xA;&lt;p&gt;The risk is high.&lt;br&gt;&#xA;The &lt;a href=&#34;https://verizon.com/dbir/&#34;&gt;Verizon 2021 Data Breach Investigations Report&lt;/a&gt; lays out the statistics quite clearly. Comparing the three types of attacks - Business Email Compromise (BEC), Computer Data Breach (CDB) &amp;ldquo;Hacking&amp;rdquo; and Ransomware - there were 7 times the number of incidents of BEC. [BEC = 19,000; CDB = 2,780; Ransomware = 2,480]&lt;br&gt;&#xA;While not all incidents ended with the victim losing money, BEC came in number one here again - having the most incidents leading to a loss.&lt;br&gt;&#xA;The median loss to a BEC incident, reported by Verizon in 2021, was $30,000 USD. The FBI Internet Crime Complain Center (IC3.gov) reported over $1,800,000,000 USD in losses in 2020.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

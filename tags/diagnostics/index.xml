@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Diagnostics on Clint McGuire</title>
+    <link>https://www.clintmcguire.com/tags/diagnostics/</link>
+    <description>Recent content in Diagnostics on Clint McGuire</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 18 Oct 2019 19:29:34 -0700</lastBuildDate>
+    <atom:link href="https://www.clintmcguire.com/tags/diagnostics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DNS Tools</title>
+      <link>https://www.clintmcguire.com/blog/dns-tools/</link>
+      <pubDate>Fri, 18 Oct 2019 19:29:34 -0700</pubDate>
+      <guid>https://www.clintmcguire.com/blog/dns-tools/</guid>
+      <description>&lt;h2 id=&#34;general-tools&#34;&gt;General Tools&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;nslookup - standard tool, comes with most OSes&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://MXToolbox.com&#34;&gt;http://MXToolbox.com&lt;/a&gt; - Very useful site for doing DNS things, generally focused on email related checks - as the name implies - but still includes more general DNS lookup options&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;Test-Connection&lt;/code&gt; - in PowerShell 6, this is really more of a super charged ping - but throw &lt;code&gt;-ResolveDestination&lt;/code&gt; at it and it will do a lookup for you&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://dnssec-analyzer.verisignlabs.com&#34;&gt;dnssec-analyzer&lt;/a&gt; - for testing DNSSEC&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://whois.domaintools.com&#34;&gt;Whois Lookup&lt;/a&gt; - mxtoolbox&amp;rsquo;s whois lookup hasn&amp;rsquo;t worked for me the last number of times I&amp;rsquo;ve used it, this one does&amp;hellip;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;I&amp;rsquo;m pretty sure I&amp;rsquo;m forgetting 1 or 2, so I will come back and add them when I remember&amp;hellip;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

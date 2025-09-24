@@ -6,8 +6,15 @@
     <description>Recent content in Home on Clint McGuire</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 22 Sep 2025 07:40:16 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 24 Sep 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.clintmcguire.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shared Responsibility and FOIPPA: What Municipal IT Teams Need to Know</title>
+      <link>https://www.clintmcguire.com/blog/shared-responsibility-and-foippa-what-municipal-it-teams-need-to-know/</link>
+      <pubDate>Wed, 24 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.clintmcguire.com/blog/shared-responsibility-and-foippa-what-municipal-it-teams-need-to-know/</guid>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;When municipalities move to Microsoft 365, they often assume that Microsoft&amp;rsquo;s compliance certifications mean automatic FOIPPA compliance. This assumption can be costly. The shared responsibility model means that while Microsoft secures the infrastructure, municipalities remain responsible for their data governance, access controls, and compliance obligations.&lt;/p&gt;&#xA;&lt;p&gt;Understanding where Microsoft&amp;rsquo;s responsibilities end and yours begin is critical for maintaining FOIPPA compliance in the cloud.&lt;/p&gt;&#xA;&lt;h3 id=&#34;the-shared-responsibility-model-explained&#34;&gt;The Shared Responsibility Model Explained&lt;/h3&gt;&#xA;&lt;p&gt;In the shared responsibility model:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The FOIPPA Compliance Gap Hiding in Your M365 Environment</title>
       <link>https://www.clintmcguire.com/blog/foippa-compliance-gap-hiding-in-m365/</link>
@@ -294,6 +301,20 @@
       <pubDate>Tue, 13 Jun 2017 00:00:00 +0000</pubDate>
       <guid>https://www.clintmcguire.com/blog/use_powershell_to_test_connection_to_a_port/</guid>
       <description>&lt;p&gt;To quickly test if you can communicate with a server on a specific port use this command:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Test-NetConnection (hostname/ip) -Port (tcp port number)&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You are looking for TcpTestSucceeded : True in the output.&lt;/p&gt;&#xA;&lt;p&gt;Example:&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;PS C:\Users\Clint&amp;gt; Test-NetConnection www.google.com -port 80&#xD;&#xA;&#xD;&#xA;ComputerName : www.google.com&#xD;&#xA;RemoteAddress : 74.125.28.103&#xD;&#xA;RemotePort : 80&#xD;&#xA;InterfaceAlias : vEthernet (LAN) 2&#xD;&#xA;SourceAddress : 192.168.0.5&#xD;&#xA;TcpTestSucceeded : True&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This command is quite flexible, you can also have it test with ICMP like PING and Trace Route.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About Clint McGuire</title>
+      <link>https://www.clintmcguire.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.clintmcguire.com/about/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Principal Consultant Cybersecurity | CISSP&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Clint is a cybersecurity advisor helping organizations put security issues into perspective, prioritizing critical remediation efforts and addressing them strategically. Whether dealing with external security audits, vulnerability disclosures, or internal security reviews, Clint helps organizations navigate complex security landscapes with practical, business-focused solutions.&lt;/p&gt;&#xA;&lt;h2 id=&#34;expertise&#34;&gt;Expertise&lt;/h2&gt;&#xA;&lt;h3 id=&#34;municipal--government-cybersecurity&#34;&gt;Municipal &amp;amp; Government Cybersecurity&lt;/h3&gt;&#xA;&lt;p&gt;Specializing in the unique challenges facing municipal governments: budget constraints, legacy systems, compliance requirements, and the critical need to maintain public services during security incidents.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>https://www.clintmcguire.com/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://www.clintmcguire.com/contact/</guid>
+      <description>&lt;p&gt;If you would like to contact Clint about this site, a professional matter, or consulting opportunity - please email him at the address below.&lt;/p&gt;&#xA;&lt;p&gt;clint[@]clintmcguire[.]com&lt;/p&gt;&#xA;&lt;p&gt;Career details can also be found on &lt;a href=&#34;https://ca.linkedin.com/in/clintmcguire&#34;&gt;LinkedIn&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

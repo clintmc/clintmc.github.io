@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Municipal Cybersecurity on Clint McGuire</title>
+    <link>https://www.clintmcguire.com/categories/municipal-cybersecurity/</link>
+    <description>Recent content in Municipal Cybersecurity on Clint McGuire</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 24 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.clintmcguire.com/categories/municipal-cybersecurity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Shared Responsibility and FOIPPA: What Municipal IT Teams Need to Know</title>
+      <link>https://www.clintmcguire.com/blog/shared-responsibility-and-foippa-what-municipal-it-teams-need-to-know/</link>
+      <pubDate>Wed, 24 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.clintmcguire.com/blog/shared-responsibility-and-foippa-what-municipal-it-teams-need-to-know/</guid>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;When municipalities move to Microsoft 365, they often assume that Microsoft&amp;rsquo;s compliance certifications mean automatic FOIPPA compliance. This assumption can be costly. The shared responsibility model means that while Microsoft secures the infrastructure, municipalities remain responsible for their data governance, access controls, and compliance obligations.&lt;/p&gt;&#xA;&lt;p&gt;Understanding where Microsoft&amp;rsquo;s responsibilities end and yours begin is critical for maintaining FOIPPA compliance in the cloud.&lt;/p&gt;&#xA;&lt;h3 id=&#34;the-shared-responsibility-model-explained&#34;&gt;The Shared Responsibility Model Explained&lt;/h3&gt;&#xA;&lt;p&gt;In the shared responsibility model:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The FOIPPA Compliance Gap Hiding in Your M365 Environment</title>
+      <link>https://www.clintmcguire.com/blog/foippa-compliance-gap-hiding-in-m365/</link>
+      <pubDate>Mon, 22 Sep 2025 07:40:16 -0700</pubDate>
+      <guid>https://www.clintmcguire.com/blog/foippa-compliance-gap-hiding-in-m365/</guid>
+      <description>&lt;p&gt;FOI requires 1 year retention. M365 defaults: Deleted emails gone forever after 30 days. Your compliance gap: 335 days.&lt;/p&gt;&#xA;&lt;p&gt;The city&amp;rsquo;s legal counsel calls your office. The development company&amp;rsquo;s lawyer is demanding to know why key emails about the rezoning decision are missing from the FOI response. &amp;ldquo;This looks like deliberate destruction of evidence,&amp;rdquo; they&amp;rsquo;re saying.&lt;/p&gt;&#xA;&lt;p&gt;Your FOI coordinator explains that staff deleted routine emails months ago, and your IT systems automatically purged them after 30 days. The lawyer isn&amp;rsquo;t buying it. &amp;ldquo;Government records disappearing during a controversial decision? We&amp;rsquo;ll see you in court.&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI Agent Risk CIA Triad</title>
+      <link>https://www.clintmcguire.com/blog/ai-agent-risk-cia-triad/</link>
+      <pubDate>Sun, 25 May 2025 13:02:11 -0700</pubDate>
+      <guid>https://www.clintmcguire.com/blog/ai-agent-risk-cia-triad/</guid>
+      <description>&lt;h1 id=&#34;ai-agent-security-key-insights-from-the-cia-triad-analysis&#34;&gt;AI Agent Security: Key Insights from the CIA Triad Analysis&lt;/h1&gt;&#xA;&lt;p&gt;As AI agents become increasingly prevalent in enterprise environments, understanding their unique security challenges is critical. Our comprehensive analysis of 24 distinct AI agent security risks reveals patterns that demand consideration from security professionals and organizational leaders. We cannot charge blindly ahead, there are risks that need to be evaluated and addressed.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-confidentiality-crisis-ais-data-access-dilemma&#34;&gt;The Confidentiality Crisis: AI&amp;rsquo;s Data Access Dilemma&lt;/h2&gt;&#xA;&lt;p&gt;The most striking finding from our analysis is that &lt;strong&gt;confidentiality emerges as the most frequently compromised security principle&lt;/strong&gt;, appearing in 14 of the 24 identified challenges. This isn&amp;rsquo;t coincidental—it reflects a fundamental tension in AI agent design.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Five Tips to Secure M365 Business Standard</title>
+      <link>https://www.clintmcguire.com/blog/five-tips-to-secure-m365-business-standard/</link>
+      <pubDate>Mon, 21 Feb 2022 21:10:28 -0800</pubDate>
+      <guid>https://www.clintmcguire.com/blog/five-tips-to-secure-m365-business-standard/</guid>
+      <description>&lt;h2 id=&#34;how-to-improve-security-in-m365&#34;&gt;How to improve security in M365&lt;/h2&gt;&#xA;&lt;p&gt;Microsoft has added a lot of security features to the M365 platform, but not all of them are available to all license levels.&#xA;If you are licensed for M365 Business Standard you won&amp;rsquo;t have access to all the security features in the platform, so let&amp;rsquo;s focus on what&#xA;is available to your tenant and review the Top 5.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Setup multi-factor authentication for all users&lt;/li&gt;&#xA;&lt;li&gt;Create dedicated admin accounts&lt;/li&gt;&#xA;&lt;li&gt;Filter out commonly malicious attachments from email&lt;/li&gt;&#xA;&lt;li&gt;Use mail flow rules to warn users about potentially dangerous attachments&lt;/li&gt;&#xA;&lt;li&gt;Use mail flow rules to prevent auto-forwarding of email&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;how-do-these-improve-security&#34;&gt;How do these improve security?&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-multi-factor-authentication&#34;&gt;1. Multi-factor Authentication&lt;/h3&gt;&#xA;&lt;p&gt;Enabling multi-factor authentication (MFA) for all users adds an additional layer of security when your users login. Since all M365 is hosted in the cloud,&#xA;the only way to verify access is by username and password - unless you also have MFA enabled. Before organizations moved to M365, they would often have a&#xA;server in their office, with a firewall protecting the office network from the outside. Limiting who was able to talk to the server. Since M365 is on the&#xA;internet, everyone has access. If an attacker can guess your users&amp;rsquo; usernames and passwords then they can get in.&lt;br&gt;&#xA;Enabling MFA greatly complicates things for an attacker.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>BEC</title>
+      <link>https://www.clintmcguire.com/blog/bec/</link>
+      <pubDate>Fri, 04 Feb 2022 07:44:38 -0800</pubDate>
+      <guid>https://www.clintmcguire.com/blog/bec/</guid>
+      <description>&lt;h2 id=&#34;what-is-the-risk&#34;&gt;What is the Risk?&lt;/h2&gt;&#xA;&lt;p&gt;The risk is high.&lt;br&gt;&#xA;The &lt;a href=&#34;https://verizon.com/dbir/&#34;&gt;Verizon 2021 Data Breach Investigations Report&lt;/a&gt; lays out the statistics quite clearly. Comparing the three types of attacks - Business Email Compromise (BEC), Computer Data Breach (CDB) &amp;ldquo;Hacking&amp;rdquo; and Ransomware - there were 7 times the number of incidents of BEC. [BEC = 19,000; CDB = 2,780; Ransomware = 2,480]&lt;br&gt;&#xA;While not all incidents ended with the victim losing money, BEC came in number one here again - having the most incidents leading to a loss.&lt;br&gt;&#xA;The median loss to a BEC incident, reported by Verizon in 2021, was $30,000 USD. The FBI Internet Crime Complain Center (IC3.gov) reported over $1,800,000,000 USD in losses in 2020.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Existential Cash Flow Crisis of Ransomware</title>
+      <link>https://www.clintmcguire.com/blog/existential-cash-flow-crisis-of-ransomware/</link>
+      <pubDate>Mon, 06 Dec 2021 08:03:00 -0800</pubDate>
+      <guid>https://www.clintmcguire.com/blog/existential-cash-flow-crisis-of-ransomware/</guid>
+      <description>&lt;p&gt;Ransomware has evolved into a model known as Double Extortion. Before encrypting your data and holding it ransom, the criminals copy the data off your computers to their own, where they keep it as a hostage. If you choose to not pay the ransom they will expose the hostage copy of your data publicly on the internet. They use reputation risk and confidentiality requirements (either regulation or contractual) as a way to force the payment. Further, while they have a copy of your data, they are able to read your financials and insurance contracts so that they can set the maximum ransom. While there is a negotiation to determine the ransom, it is very one-sided.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>4 Segment Network</title>
+      <link>https://www.clintmcguire.com/blog/4-segment-network/</link>
+      <pubDate>Wed, 01 Apr 2020 21:00:55 -0700</pubDate>
+      <guid>https://www.clintmcguire.com/blog/4-segment-network/</guid>
+      <description>&lt;h2 id=&#34;purpose&#34;&gt;Purpose&lt;/h2&gt;&#xA;&lt;p&gt;How do you design a well-organized, well managed network for small/medium business?&lt;/p&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s layout some assumptions:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;There are server in the office&lt;/li&gt;&#xA;&lt;li&gt;The servers are in either in a well-organized closet or in a server room (they are not in a Colo - but access is restricted)&lt;/li&gt;&#xA;&lt;li&gt;There may be some amount of Cloud/SaaS applications&lt;/li&gt;&#xA;&lt;li&gt;This is not a VDI environment (we could sketch that out in a different post)&lt;/li&gt;&#xA;&lt;li&gt;Security is a concern - but not security at any cost&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;lets-start-with-what-i-generally-see&#34;&gt;Let&amp;rsquo;s start with what I generally see&lt;/h2&gt;&#xA;&lt;p&gt;As a consultant, I&amp;rsquo;ve been engaged by dozens of small/medium size businesses and many large businesses. What I tend to see in the small/medium group is a flat network using a single subnet - a /24 or less common a /16. There is only one VLAN and all the Servers, Switches, Hypervisors and Desktops are in the broadcast domain.&lt;br&gt;&#xA;If I was an attacker, this would be a &amp;ldquo;Target Rich Environment&amp;rdquo;&amp;hellip;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

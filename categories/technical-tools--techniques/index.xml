@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Technical Tools &amp; Techniques on Clint McGuire</title>
+    <link>https://www.clintmcguire.com/categories/technical-tools--techniques/</link>
+    <description>Recent content in Technical Tools &amp; Techniques on Clint McGuire</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 29 May 2020 10:15:14 -0700</lastBuildDate>
+    <atom:link href="https://www.clintmcguire.com/categories/technical-tools--techniques/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ADVPN Overview</title>
+      <link>https://www.clintmcguire.com/blog/advpn-overview/</link>
+      <pubDate>Fri, 29 May 2020 10:15:14 -0700</pubDate>
+      <guid>https://www.clintmcguire.com/blog/advpn-overview/</guid>
+      <description>&lt;h2 id=&#34;high-level-overview&#34;&gt;High Level Overview&lt;/h2&gt;&#xA;&lt;p&gt;To explain ADVPN it is useful to contrast it with the two main alternatives - Hub &amp;amp; Spoke and Full Mesh.&lt;/p&gt;&#xA;&lt;p&gt;In a Hub &amp;amp; Spoke network one site is deemed the Hub, with all other sites - Spokes - connecting directly to the Hub.&#xA;In a Full Mesh all sites connect to all other sites.&lt;/p&gt;&#xA;&lt;p&gt;ADVPN starts as Hub &amp;amp; Spoke, with one site deemed the Hub - but all Spokes can directly connect by getting connection details from the Hub.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cryptographic Cipher Suites</title>
+      <link>https://www.clintmcguire.com/blog/cryptographic-cipher-suites/</link>
+      <pubDate>Sat, 28 Mar 2020 10:54:00 -0700</pubDate>
+      <guid>https://www.clintmcguire.com/blog/cryptographic-cipher-suites/</guid>
+      <description>&lt;h2 id=&#34;what-are-cryptographic-cipher-suites&#34;&gt;What are Cryptographic Cipher Suites&lt;/h2&gt;&#xA;&lt;p&gt;Cipher suites are a combination of different algorithms the system will use to encrypt the communication.&#xA;Each operating system/application will have a set of suites it is capable of supporting.&lt;/p&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s take a few examples - using the IANA names:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;code&gt;TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;TLS_RSA_WITH_AES_256_CBC_SHA&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;TLS_RSA_WITH_NULL_SHA&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Each of these suites has a Protocol, a Key Exchange algorithm, a Signature Authentication algorithm, an Encryption algorithm, and a Message Authentication algorithm.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>DNS Tools</title>
+      <link>https://www.clintmcguire.com/blog/dns-tools/</link>
+      <pubDate>Fri, 18 Oct 2019 19:29:34 -0700</pubDate>
+      <guid>https://www.clintmcguire.com/blog/dns-tools/</guid>
+      <description>&lt;h2 id=&#34;general-tools&#34;&gt;General Tools&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;nslookup - standard tool, comes with most OSes&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://MXToolbox.com&#34;&gt;http://MXToolbox.com&lt;/a&gt; - Very useful site for doing DNS things, generally focused on email related checks - as the name implies - but still includes more general DNS lookup options&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;Test-Connection&lt;/code&gt; - in PowerShell 6, this is really more of a super charged ping - but throw &lt;code&gt;-ResolveDestination&lt;/code&gt; at it and it will do a lookup for you&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://dnssec-analyzer.verisignlabs.com&#34;&gt;dnssec-analyzer&lt;/a&gt; - for testing DNSSEC&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://whois.domaintools.com&#34;&gt;Whois Lookup&lt;/a&gt; - mxtoolbox&amp;rsquo;s whois lookup hasn&amp;rsquo;t worked for me the last number of times I&amp;rsquo;ve used it, this one does&amp;hellip;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;I&amp;rsquo;m pretty sure I&amp;rsquo;m forgetting 1 or 2, so I will come back and add them when I remember&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>DNSSEC</title>
+      <link>https://www.clintmcguire.com/blog/dnssec/</link>
+      <pubDate>Thu, 17 Oct 2019 19:24:10 -0700</pubDate>
+      <guid>https://www.clintmcguire.com/blog/dnssec/</guid>
+      <description>&lt;h2 id=&#34;how-it-works-with-cloudflare&#34;&gt;How it works with Cloudflare&lt;/h2&gt;&#xA;&lt;p&gt;Cloudflare hosts my DNS. It provides me a simple interface for management, 2FA for login and acts as a CDN. So it was an easy choice years ago to move DNS there.&lt;/p&gt;&#xA;&lt;p&gt;Since I&amp;rsquo;ve been thinking about DNS &lt;a href=&#34;http://www.clintmcguire.com/blog/how-dns-works/&#34;&gt;a lot&lt;/a&gt; &lt;a href=&#34;http://www.clintmcguire.com/blog/how-dns-really-works/&#34;&gt;lately&lt;/a&gt; I decided to see if I could setup DNSSEC for my own domain.&lt;/p&gt;&#xA;&lt;p&gt;It took my about 5 minutes.&lt;/p&gt;&#xA;&lt;p&gt;In Cloudflare - under DNS, hit the button to Setup DNSSEC.&#xA;It will generate the required details to add to your Domain Registrar.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Compare file hash with PowerShell</title>
+      <link>https://www.clintmcguire.com/blog/compare_file_hash_with_powershell/</link>
+      <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>https://www.clintmcguire.com/blog/compare_file_hash_with_powershell/</guid>
+      <description>&lt;p&gt;Once you&amp;rsquo;ve downloaded the file use &lt;code&gt;Get-FileHash&lt;/code&gt; to calculate the SHA256 hash.&lt;br&gt;&#xA;&lt;code&gt;$hash = (Get-FileHash .\filename.exe).hash&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Copy the hash value from the website and assign it to a variable to compare.&lt;br&gt;&#xA;&lt;code&gt;$webhash = &amp;quot;3...f&#39;&lt;/code&gt;&lt;br&gt;&#xA;[Paste the full SHA256 hash in the quotes]&lt;/p&gt;&#xA;&lt;p&gt;Then use PowerShell to compare this to the published hash.&lt;br&gt;&#xA;&lt;code&gt;if ($hash -eq $webhash){$true}&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;This will return either &amp;ldquo;True&amp;rdquo; or nothing, if &amp;ldquo;True&amp;rdquo; then the hashes match.&lt;/p&gt;&#xA;&lt;p&gt;Or if you want to do it in one line:&lt;br&gt;&#xA;&lt;code&gt;If ((Get-FileHash .\filename.exe).hash -eq &amp;quot;3..f&amp;quot;){$True}&lt;/code&gt;&lt;br&gt;&#xA;[Published SHA256 goes in the quotes.]&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
