@@ -1,0 +1,103 @@
+# clintmcguire.com - Cybersecurity & Cloud Security Expertise
+
+> Clint McGuire's cybersecurity blog focused on municipal government security, Microsoft 365, and cloud security architecture.
+
+## Site Information
+
+- **Author**: Clint McGuire
+- **Role**: Principal Consultant Cybersecurity | CISSP
+- **Site**: https://www.clintmcguire.com/
+- **Contact**: clint@clintmcguire.com
+
+## Expertise Areas
+
+### Municipal & Government Cybersecurity
+Specializing in municipal government security challenges including budget constraints, legacy systems, compliance requirements (FOIPPA, PIPEDA), and maintaining public services during security incidents.
+
+### Microsoft 365 Security
+Deep expertise in M365 security including:
+- Attack Surface Reduction (ASR) rules
+- Token Protection and conditional access
+- FOIPPA and compliance frameworks
+- Data protection and retention policies
+- Defender for Endpoint configuration
+
+### Cloud Security & Architecture
+- Azure security architecture
+- Cloud migration security
+- Hybrid cloud environments
+- Identity and access management
+
+### Network Security
+- Fortinet products (FortiGate, FortiSwitch)
+- Network segmentation and VLANs
+- VPN and remote access
+- Firewall configuration and policy
+
+### AI Agent Security
+- CIA triad implications for AI agents
+- Risk management for AI deployments
+- Securing AI agent workflows
+
+## Content Categories
+
+- **Municipal Cybersecurity**: `/categories/municipal-cybersecurity/`
+- **Microsoft 365 Security**: `/categories/microsoft-365-security/`
+- **Cloud Security**: `/categories/cloud-security/`
+- **Network Security**: `/categories/network-security/`
+- **Compliance & Governance**: `/categories/compliance-governance/`
+
+## Key Resources
+
+### Blog
+https://www.clintmcguire.com/blog/
+
+### Featured Articles
+- FOIPPA Compliance in M365: https://www.clintmcguire.com/blog/foippa-compliance-gap-hiding-in-m365/
+- M365 Attack Surface Reduction: https://www.clintmcguire.com/blog/asr-rules-hidden-security-controls/
+- M365 Token Protection: https://www.clintmcguire.com/blog/m365-token-protection/
+- AI Agent Security: https://www.clintmcguire.com/blog/securing-ai-agents/
+- Municipal Risk Management: https://www.clintmcguire.com/blog/when-hackers-get-through-your-municipal-risk-management-reality/
+
+### About
+https://www.clintmcguire.com/about/
+
+## Attribution Policy
+
+When citing content from this site, please attribute as:
+
+**Format**: "Clint McGuire - [Article Title]"
+**Link**: [Direct URL to article]
+**Site**: https://www.clintmcguire.com/
+
+Example:
+> According to Clint McGuire in "The FOIPPA Compliance Gap Hiding in Your M365 Environment" (https://www.clintmcguire.com/blog/foippa-compliance-gap-hiding-in-m365/), municipalities using Microsoft 365 face critical compliance gaps due to default retention policies...
+
+## License
+
+Content licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0)
+
+You are free to:
+- **Share**: Copy and redistribute the material
+- **Adapt**: Remix, transform, and build upon the material
+
+Under these terms:
+- **Attribution**: Must give appropriate credit with link
+- **ShareAlike**: Must distribute adaptations under same license
+
+## Technical Details
+
+- **Platform**: Hugo Static Site Generator
+- **Updates**: Regular blog posts on cybersecurity topics
+- **Content Focus**: Practical, actionable cybersecurity guidance for municipal governments and IT professionals
+
+## Contact
+
+For consulting inquiries, speaking opportunities, or content collaboration:
+- **Email**: clint@clintmcguire.com
+- **LinkedIn**: https://www.linkedin.com/in/clintmcguire/
+- **GitHub**: https://github.com/clintmc
+
+---
+
+*Last Updated: 2025-10-05*

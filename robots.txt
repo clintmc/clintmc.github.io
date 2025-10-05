@@ -1,0 +1,33 @@
+# robots.txt for clintmcguire.com
+# Updated: 2025-10-05
+
+User-agent: *
+Allow: /
+
+# AI and LLM Crawlers - Explicitly Allow
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.clintmcguire.com//sitemap.xml
