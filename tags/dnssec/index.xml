@@ -1,19 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Dnssec on Clint McGuire</title>
-    <link>https://www.clintmcguire.com/tags/dnssec/</link>
-    <description>Recent content in Dnssec on Clint McGuire</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <lastBuildDate>Thu, 17 Oct 2019 19:24:10 -0700</lastBuildDate>
-    <atom:link href="https://www.clintmcguire.com/tags/dnssec/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>DNSSEC</title>
-      <link>https://www.clintmcguire.com/blog/dnssec/</link>
-      <pubDate>Thu, 17 Oct 2019 19:24:10 -0700</pubDate>
-      <guid>https://www.clintmcguire.com/blog/dnssec/</guid>
-      <description>&lt;h2 id=&#34;how-it-works-with-cloudflare&#34;&gt;How it works with Cloudflare&lt;/h2&gt;&#xA;&lt;p&gt;Cloudflare hosts my DNS. It provides me a simple interface for management, 2FA for login and acts as a CDN. So it was an easy choice years ago to move DNS there.&lt;/p&gt;&#xA;&lt;p&gt;Since I&amp;rsquo;ve been thinking about DNS &lt;a href=&#34;http://www.clintmcguire.com/blog/how-dns-works/&#34;&gt;a lot&lt;/a&gt; &lt;a href=&#34;http://www.clintmcguire.com/blog/how-dns-really-works/&#34;&gt;lately&lt;/a&gt; I decided to see if I could setup DNSSEC for my own domain.&lt;/p&gt;&#xA;&lt;p&gt;It took my about 5 minutes.&lt;/p&gt;&#xA;&lt;p&gt;In Cloudflare - under DNS, hit the button to Setup DNSSEC.&#xA;It will generate the required details to add to your Domain Registrar.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Dnssec on Clint McGuire</title><link>https://www.clintmcguire.com/tags/dnssec/</link><description>Recent content in Dnssec on Clint McGuire</description><generator>Hugo</generator><language>en</language><lastBuildDate>Thu, 17 Oct 2019 19:24:10 -0700</lastBuildDate><atom:link href="https://www.clintmcguire.com/tags/dnssec/index.xml" rel="self" type="application/rss+xml"/><item><title>DNSSEC</title><link>https://www.clintmcguire.com/blog/dnssec/</link><pubDate>Thu, 17 Oct 2019 19:24:10 -0700</pubDate><guid>https://www.clintmcguire.com/blog/dnssec/</guid><description>&lt;h2 id="how-it-works-with-cloudflare"&gt;How it works with Cloudflare&lt;/h2&gt;
+&lt;p&gt;Cloudflare hosts my DNS. It provides me a simple interface for management, 2FA for login and acts as a CDN. So it was an easy choice years ago to move DNS there.&lt;/p&gt;
+&lt;p&gt;Since I&amp;rsquo;ve been thinking about DNS &lt;a href="http://www.clintmcguire.com/blog/how-dns-works/"&gt;a lot&lt;/a&gt; &lt;a href="http://www.clintmcguire.com/blog/how-dns-really-works/"&gt;lately&lt;/a&gt; I decided to see if I could setup DNSSEC for my own domain.&lt;/p&gt;
+&lt;p&gt;It took my about 5 minutes.&lt;/p&gt;
+&lt;p&gt;In Cloudflare - under DNS, hit the button to Setup DNSSEC.
+It will generate the required details to add to your Domain Registrar.&lt;/p&gt;</description></item></channel></rss>
