@@ -1,35 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cybersecurity on Clint McGuire</title><link>https://www.clintmcguire.com/tags/cybersecurity/</link><description>Recent content in Cybersecurity on Clint McGuire</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 25 May 2025 13:02:11 -0700</lastBuildDate><atom:link href="https://www.clintmcguire.com/tags/cybersecurity/index.xml" rel="self" type="application/rss+xml"/><item><title>AI Agent Risk CIA Triad</title><link>https://www.clintmcguire.com/blog/ai-agent-risk-cia-triad/</link><pubDate>Sun, 25 May 2025 13:02:11 -0700</pubDate><guid>https://www.clintmcguire.com/blog/ai-agent-risk-cia-triad/</guid><description>&lt;h1 id="ai-agent-security-key-insights-from-the-cia-triad-analysis"&gt;AI Agent Security: Key Insights from the CIA Triad Analysis&lt;/h1&gt;
-&lt;p&gt;As AI agents become increasingly prevalent in enterprise environments, understanding their unique security challenges is critical. Our comprehensive analysis of 24 distinct AI agent security risks reveals patterns that demand consideration from security professionals and organizational leaders. We cannot charge blindly ahead, there are risks that need to be evaluated and addressed.&lt;/p&gt;
-&lt;h2 id="the-confidentiality-crisis-ais-data-access-dilemma"&gt;The Confidentiality Crisis: AI&amp;rsquo;s Data Access Dilemma&lt;/h2&gt;
-&lt;p&gt;The most striking finding from our analysis is that &lt;strong&gt;confidentiality emerges as the most frequently compromised security principle&lt;/strong&gt;, appearing in 14 of the 24 identified challenges. This isn&amp;rsquo;t coincidental—it reflects a fundamental tension in AI agent design.&lt;/p&gt;</description></item><item><title>CISSP</title><link>https://www.clintmcguire.com/blog/cissp/</link><pubDate>Sun, 16 Apr 2023 07:55:07 -0700</pubDate><guid>https://www.clintmcguire.com/blog/cissp/</guid><description>&lt;p&gt;After many months of study and preparation, I can happily say that I&amp;rsquo;ve been awarded the CISSP designation.&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://www.credly.com/badges/f31a048f-61fa-4e40-8575-7a763b535227/public_url"&gt;https://www.credly.com/badges/f31a048f-61fa-4e40-8575-7a763b535227/public_url&lt;/a&gt;&lt;br&gt;
-&lt;img src="https://www.clintmcguire.com/cissp.png" alt="Certificate"&gt;&lt;/p&gt;</description></item><item><title>Five Tips to Secure M365 Business Standard</title><link>https://www.clintmcguire.com/blog/five-tips-to-secure-m365-business-standard/</link><pubDate>Mon, 21 Feb 2022 21:10:28 -0800</pubDate><guid>https://www.clintmcguire.com/blog/five-tips-to-secure-m365-business-standard/</guid><description>&lt;h2 id="how-to-improve-security-in-m365"&gt;How to improve security in M365&lt;/h2&gt;
-&lt;p&gt;Microsoft has added a lot of security features to the M365 platform, but not all of them are available to all license levels.
-If you are licensed for M365 Business Standard you won&amp;rsquo;t have access to all the security features in the platform, so let&amp;rsquo;s focus on what
-is available to your tenant and review the Top 5.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Setup multi-factor authentication for all users&lt;/li&gt;
-&lt;li&gt;Create dedicated admin accounts&lt;/li&gt;
-&lt;li&gt;Filter out commonly malicious attachments from email&lt;/li&gt;
-&lt;li&gt;Use mail flow rules to warn users about potentially dangerous attachments&lt;/li&gt;
-&lt;li&gt;Use mail flow rules to prevent auto-forwarding of email&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="how-do-these-improve-security"&gt;How do these improve security?&lt;/h2&gt;
-&lt;h3 id="1-multi-factor-authentication"&gt;1. Multi-factor Authentication&lt;/h3&gt;
-&lt;p&gt;Enabling multi-factor authentication (MFA) for all users adds an additional layer of security when your users login. Since all M365 is hosted in the cloud,
-the only way to verify access is by username and password - unless you also have MFA enabled. Before organizations moved to M365, they would often have a
-server in their office, with a firewall protecting the office network from the outside. Limiting who was able to talk to the server. Since M365 is on the
-internet, everyone has access. If an attacker can guess your users&amp;rsquo; usernames and passwords then they can get in.&lt;br&gt;
-Enabling MFA greatly complicates things for an attacker.&lt;/p&gt;</description></item><item><title>4 Segment Network</title><link>https://www.clintmcguire.com/blog/4-segment-network/</link><pubDate>Wed, 01 Apr 2020 21:00:55 -0700</pubDate><guid>https://www.clintmcguire.com/blog/4-segment-network/</guid><description>&lt;h2 id="purpose"&gt;Purpose&lt;/h2&gt;
-&lt;p&gt;How do you design a well-organized, well managed network for small/medium business?&lt;/p&gt;
-&lt;p&gt;Let&amp;rsquo;s layout some assumptions:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;There are server in the office&lt;/li&gt;
-&lt;li&gt;The servers are in either in a well-organized closet or in a server room (they are not in a Colo - but access is restricted)&lt;/li&gt;
-&lt;li&gt;There may be some amount of Cloud/SaaS applications&lt;/li&gt;
-&lt;li&gt;This is not a VDI environment (we could sketch that out in a different post)&lt;/li&gt;
-&lt;li&gt;Security is a concern - but not security at any cost&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id="lets-start-with-what-i-generally-see"&gt;Let&amp;rsquo;s start with what I generally see&lt;/h2&gt;
-&lt;p&gt;As a consultant, I&amp;rsquo;ve been engaged by dozens of small/medium size businesses and many large businesses. What I tend to see in the small/medium group is a flat network using a single subnet - a /24 or less common a /16. There is only one VLAN and all the Servers, Switches, Hypervisors and Desktops are in the broadcast domain.&lt;br&gt;
-If I was an attacker, this would be a &amp;ldquo;Target Rich Environment&amp;rdquo;&amp;hellip;&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cybersecurity on Clint McGuire</title>
+    <link>https://www.clintmcguire.com/tags/cybersecurity/</link>
+    <description>Recent content in Cybersecurity on Clint McGuire</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 25 May 2025 13:02:11 -0700</lastBuildDate>
+    <atom:link href="https://www.clintmcguire.com/tags/cybersecurity/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI Agent Risk CIA Triad</title>
+      <link>https://www.clintmcguire.com/blog/ai-agent-risk-cia-triad/</link>
+      <pubDate>Sun, 25 May 2025 13:02:11 -0700</pubDate>
+      <guid>https://www.clintmcguire.com/blog/ai-agent-risk-cia-triad/</guid>
+      <description>&lt;h1 id=&#34;ai-agent-security-key-insights-from-the-cia-triad-analysis&#34;&gt;AI Agent Security: Key Insights from the CIA Triad Analysis&lt;/h1&gt;&#xA;&lt;p&gt;As AI agents become increasingly prevalent in enterprise environments, understanding their unique security challenges is critical. Our comprehensive analysis of 24 distinct AI agent security risks reveals patterns that demand consideration from security professionals and organizational leaders. We cannot charge blindly ahead, there are risks that need to be evaluated and addressed.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-confidentiality-crisis-ais-data-access-dilemma&#34;&gt;The Confidentiality Crisis: AI&amp;rsquo;s Data Access Dilemma&lt;/h2&gt;&#xA;&lt;p&gt;The most striking finding from our analysis is that &lt;strong&gt;confidentiality emerges as the most frequently compromised security principle&lt;/strong&gt;, appearing in 14 of the 24 identified challenges. This isn&amp;rsquo;t coincidental—it reflects a fundamental tension in AI agent design.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>CISSP</title>
+      <link>https://www.clintmcguire.com/blog/cissp/</link>
+      <pubDate>Sun, 16 Apr 2023 07:55:07 -0700</pubDate>
+      <guid>https://www.clintmcguire.com/blog/cissp/</guid>
+      <description>&lt;p&gt;After many months of study and preparation, I can happily say that I&amp;rsquo;ve been awarded the CISSP designation.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.credly.com/badges/f31a048f-61fa-4e40-8575-7a763b535227/public_url&#34;&gt;https://www.credly.com/badges/f31a048f-61fa-4e40-8575-7a763b535227/public_url&lt;/a&gt;&lt;br&gt;&#xA;&lt;img src=&#34;https://www.clintmcguire.com/cissp.png&#34; alt=&#34;Certificate&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Five Tips to Secure M365 Business Standard</title>
+      <link>https://www.clintmcguire.com/blog/five-tips-to-secure-m365-business-standard/</link>
+      <pubDate>Mon, 21 Feb 2022 21:10:28 -0800</pubDate>
+      <guid>https://www.clintmcguire.com/blog/five-tips-to-secure-m365-business-standard/</guid>
+      <description>&lt;h2 id=&#34;how-to-improve-security-in-m365&#34;&gt;How to improve security in M365&lt;/h2&gt;&#xA;&lt;p&gt;Microsoft has added a lot of security features to the M365 platform, but not all of them are available to all license levels.&#xA;If you are licensed for M365 Business Standard you won&amp;rsquo;t have access to all the security features in the platform, so let&amp;rsquo;s focus on what&#xA;is available to your tenant and review the Top 5.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Setup multi-factor authentication for all users&lt;/li&gt;&#xA;&lt;li&gt;Create dedicated admin accounts&lt;/li&gt;&#xA;&lt;li&gt;Filter out commonly malicious attachments from email&lt;/li&gt;&#xA;&lt;li&gt;Use mail flow rules to warn users about potentially dangerous attachments&lt;/li&gt;&#xA;&lt;li&gt;Use mail flow rules to prevent auto-forwarding of email&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;how-do-these-improve-security&#34;&gt;How do these improve security?&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-multi-factor-authentication&#34;&gt;1. Multi-factor Authentication&lt;/h3&gt;&#xA;&lt;p&gt;Enabling multi-factor authentication (MFA) for all users adds an additional layer of security when your users login. Since all M365 is hosted in the cloud,&#xA;the only way to verify access is by username and password - unless you also have MFA enabled. Before organizations moved to M365, they would often have a&#xA;server in their office, with a firewall protecting the office network from the outside. Limiting who was able to talk to the server. Since M365 is on the&#xA;internet, everyone has access. If an attacker can guess your users&amp;rsquo; usernames and passwords then they can get in.&lt;br&gt;&#xA;Enabling MFA greatly complicates things for an attacker.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>4 Segment Network</title>
+      <link>https://www.clintmcguire.com/blog/4-segment-network/</link>
+      <pubDate>Wed, 01 Apr 2020 21:00:55 -0700</pubDate>
+      <guid>https://www.clintmcguire.com/blog/4-segment-network/</guid>
+      <description>&lt;h2 id=&#34;purpose&#34;&gt;Purpose&lt;/h2&gt;&#xA;&lt;p&gt;How do you design a well-organized, well managed network for small/medium business?&lt;/p&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s layout some assumptions:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;There are server in the office&lt;/li&gt;&#xA;&lt;li&gt;The servers are in either in a well-organized closet or in a server room (they are not in a Colo - but access is restricted)&lt;/li&gt;&#xA;&lt;li&gt;There may be some amount of Cloud/SaaS applications&lt;/li&gt;&#xA;&lt;li&gt;This is not a VDI environment (we could sketch that out in a different post)&lt;/li&gt;&#xA;&lt;li&gt;Security is a concern - but not security at any cost&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;lets-start-with-what-i-generally-see&#34;&gt;Let&amp;rsquo;s start with what I generally see&lt;/h2&gt;&#xA;&lt;p&gt;As a consultant, I&amp;rsquo;ve been engaged by dozens of small/medium size businesses and many large businesses. What I tend to see in the small/medium group is a flat network using a single subnet - a /24 or less common a /16. There is only one VLAN and all the Servers, Switches, Hypervisors and Desktops are in the broadcast domain.&lt;br&gt;&#xA;If I was an attacker, this would be a &amp;ldquo;Target Rich Environment&amp;rdquo;&amp;hellip;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

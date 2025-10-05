@@ -1,11 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>File-Hash on Clint McGuire</title><link>https://www.clintmcguire.com/tags/file-hash/</link><description>Recent content in File-Hash on Clint McGuire</description><generator>Hugo</generator><language>en</language><lastBuildDate>Tue, 05 Sep 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://www.clintmcguire.com/tags/file-hash/index.xml" rel="self" type="application/rss+xml"/><item><title>Compare file hash with PowerShell</title><link>https://www.clintmcguire.com/blog/compare_file_hash_with_powershell/</link><pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate><guid>https://www.clintmcguire.com/blog/compare_file_hash_with_powershell/</guid><description>&lt;p&gt;Once you&amp;rsquo;ve downloaded the file use &lt;code&gt;Get-FileHash&lt;/code&gt; to calculate the SHA256 hash.&lt;br&gt;
-&lt;code&gt;$hash = (Get-FileHash .\filename.exe).hash&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Copy the hash value from the website and assign it to a variable to compare.&lt;br&gt;
-&lt;code&gt;$webhash = &amp;quot;3...f'&lt;/code&gt;&lt;br&gt;
-[Paste the full SHA256 hash in the quotes]&lt;/p&gt;
-&lt;p&gt;Then use PowerShell to compare this to the published hash.&lt;br&gt;
-&lt;code&gt;if ($hash -eq $webhash){$true}&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;This will return either &amp;ldquo;True&amp;rdquo; or nothing, if &amp;ldquo;True&amp;rdquo; then the hashes match.&lt;/p&gt;
-&lt;p&gt;Or if you want to do it in one line:&lt;br&gt;
-&lt;code&gt;If ((Get-FileHash .\filename.exe).hash -eq &amp;quot;3..f&amp;quot;){$True}&lt;/code&gt;&lt;br&gt;
-[Published SHA256 goes in the quotes.]&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>File-Hash on Clint McGuire</title>
+    <link>https://www.clintmcguire.com/tags/file-hash/</link>
+    <description>Recent content in File-Hash on Clint McGuire</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 05 Sep 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.clintmcguire.com/tags/file-hash/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Compare file hash with PowerShell</title>
+      <link>https://www.clintmcguire.com/blog/compare_file_hash_with_powershell/</link>
+      <pubDate>Tue, 05 Sep 2017 00:00:00 +0000</pubDate>
+      <guid>https://www.clintmcguire.com/blog/compare_file_hash_with_powershell/</guid>
+      <description>&lt;p&gt;Once you&amp;rsquo;ve downloaded the file use &lt;code&gt;Get-FileHash&lt;/code&gt; to calculate the SHA256 hash.&lt;br&gt;&#xA;&lt;code&gt;$hash = (Get-FileHash .\filename.exe).hash&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;Copy the hash value from the website and assign it to a variable to compare.&lt;br&gt;&#xA;&lt;code&gt;$webhash = &amp;quot;3...f&#39;&lt;/code&gt;&lt;br&gt;&#xA;[Paste the full SHA256 hash in the quotes]&lt;/p&gt;&#xA;&lt;p&gt;Then use PowerShell to compare this to the published hash.&lt;br&gt;&#xA;&lt;code&gt;if ($hash -eq $webhash){$true}&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;This will return either &amp;ldquo;True&amp;rdquo; or nothing, if &amp;ldquo;True&amp;rdquo; then the hashes match.&lt;/p&gt;&#xA;&lt;p&gt;Or if you want to do it in one line:&lt;br&gt;&#xA;&lt;code&gt;If ((Get-FileHash .\filename.exe).hash -eq &amp;quot;3..f&amp;quot;){$True}&lt;/code&gt;&lt;br&gt;&#xA;[Published SHA256 goes in the quotes.]&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

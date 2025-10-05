@@ -1,5 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Fortigate on Clint McGuire</title><link>https://www.clintmcguire.com/tags/fortigate/</link><description>Recent content in Fortigate on Clint McGuire</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 29 May 2020 10:15:14 -0700</lastBuildDate><atom:link href="https://www.clintmcguire.com/tags/fortigate/index.xml" rel="self" type="application/rss+xml"/><item><title>ADVPN Overview</title><link>https://www.clintmcguire.com/blog/advpn-overview/</link><pubDate>Fri, 29 May 2020 10:15:14 -0700</pubDate><guid>https://www.clintmcguire.com/blog/advpn-overview/</guid><description>&lt;h2 id="high-level-overview"&gt;High Level Overview&lt;/h2&gt;
-&lt;p&gt;To explain ADVPN it is useful to contrast it with the two main alternatives - Hub &amp;amp; Spoke and Full Mesh.&lt;/p&gt;
-&lt;p&gt;In a Hub &amp;amp; Spoke network one site is deemed the Hub, with all other sites - Spokes - connecting directly to the Hub.
-In a Full Mesh all sites connect to all other sites.&lt;/p&gt;
-&lt;p&gt;ADVPN starts as Hub &amp;amp; Spoke, with one site deemed the Hub - but all Spokes can directly connect by getting connection details from the Hub.&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Fortigate on Clint McGuire</title>
+    <link>https://www.clintmcguire.com/tags/fortigate/</link>
+    <description>Recent content in Fortigate on Clint McGuire</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 29 May 2020 10:15:14 -0700</lastBuildDate>
+    <atom:link href="https://www.clintmcguire.com/tags/fortigate/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ADVPN Overview</title>
+      <link>https://www.clintmcguire.com/blog/advpn-overview/</link>
+      <pubDate>Fri, 29 May 2020 10:15:14 -0700</pubDate>
+      <guid>https://www.clintmcguire.com/blog/advpn-overview/</guid>
+      <description>&lt;h2 id=&#34;high-level-overview&#34;&gt;High Level Overview&lt;/h2&gt;&#xA;&lt;p&gt;To explain ADVPN it is useful to contrast it with the two main alternatives - Hub &amp;amp; Spoke and Full Mesh.&lt;/p&gt;&#xA;&lt;p&gt;In a Hub &amp;amp; Spoke network one site is deemed the Hub, with all other sites - Spokes - connecting directly to the Hub.&#xA;In a Full Mesh all sites connect to all other sites.&lt;/p&gt;&#xA;&lt;p&gt;ADVPN starts as Hub &amp;amp; Spoke, with one site deemed the Hub - but all Spokes can directly connect by getting connection details from the Hub.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

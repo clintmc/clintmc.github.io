@@ -1,3 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Records-Management on Clint McGuire</title><link>https://www.clintmcguire.com/tags/records-management/</link><description>Recent content in Records-Management on Clint McGuire</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 22 Sep 2025 07:40:16 -0700</lastBuildDate><atom:link href="https://www.clintmcguire.com/tags/records-management/index.xml" rel="self" type="application/rss+xml"/><item><title>The FOIPPA Compliance Gap Hiding in Your M365 Environment</title><link>https://www.clintmcguire.com/blog/foippa-compliance-gap-hiding-in-m365/</link><pubDate>Mon, 22 Sep 2025 07:40:16 -0700</pubDate><guid>https://www.clintmcguire.com/blog/foippa-compliance-gap-hiding-in-m365/</guid><description>&lt;p&gt;FOI requires 1 year retention. M365 defaults: Deleted emails gone forever after 30 days. Your compliance gap: 335 days.&lt;/p&gt;
-&lt;p&gt;The city&amp;rsquo;s legal counsel calls your office. The development company&amp;rsquo;s lawyer is demanding to know why key emails about the rezoning decision are missing from the FOI response. &amp;ldquo;This looks like deliberate destruction of evidence,&amp;rdquo; they&amp;rsquo;re saying.&lt;/p&gt;
-&lt;p&gt;Your FOI coordinator explains that staff deleted routine emails months ago, and your IT systems automatically purged them after 30 days. The lawyer isn&amp;rsquo;t buying it. &amp;ldquo;Government records disappearing during a controversial decision? We&amp;rsquo;ll see you in court.&amp;rdquo;&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Records-Management on Clint McGuire</title>
+    <link>https://www.clintmcguire.com/tags/records-management/</link>
+    <description>Recent content in Records-Management on Clint McGuire</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 22 Sep 2025 07:40:16 -0700</lastBuildDate>
+    <atom:link href="https://www.clintmcguire.com/tags/records-management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The FOIPPA Compliance Gap Hiding in Your M365 Environment</title>
+      <link>https://www.clintmcguire.com/blog/foippa-compliance-gap-hiding-in-m365/</link>
+      <pubDate>Mon, 22 Sep 2025 07:40:16 -0700</pubDate>
+      <guid>https://www.clintmcguire.com/blog/foippa-compliance-gap-hiding-in-m365/</guid>
+      <description>&lt;p&gt;FOI requires 1 year retention. M365 defaults: Deleted emails gone forever after 30 days. Your compliance gap: 335 days.&lt;/p&gt;&#xA;&lt;p&gt;The city&amp;rsquo;s legal counsel calls your office. The development company&amp;rsquo;s lawyer is demanding to know why key emails about the rezoning decision are missing from the FOI response. &amp;ldquo;This looks like deliberate destruction of evidence,&amp;rdquo; they&amp;rsquo;re saying.&lt;/p&gt;&#xA;&lt;p&gt;Your FOI coordinator explains that staff deleted routine emails months ago, and your IT systems automatically purged them after 30 days. The lawyer isn&amp;rsquo;t buying it. &amp;ldquo;Government records disappearing during a controversial decision? We&amp;rsquo;ll see you in court.&amp;rdquo;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
