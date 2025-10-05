@@ -18,7 +18,10 @@
     
     
 
-<title>NTP • Clint McGuire</title><meta name="description" content="How to setup NTP for Windows"><meta name="keywords" content="cybersecurity, municipal security, M365, cloud security, Azure, FOIPPA, compliance, CISSP"><meta name="author" content="Clint McGuire">
+<title>NTP • Clint McGuire</title><meta name="description" content="How to setup NTP for Windows"><meta name="keywords" content="cybersecurity, municipal security, M365, cloud security, Azure, FOIPPA, compliance, CISSP"><meta name="author" content="Clint McGuire"><meta property="og:image" content="https://www.clintmcguire.com/img/hero.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta name="twitter:image" content="https://www.clintmcguire.com/img/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="NTP">
   <meta name="twitter:description" content="How to setup NTP for Windows">
@@ -34,11 +37,6 @@
     <meta property="article:modified_time" content="2019-09-07T10:27:41-07:00">
 
     
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github.min.css">
-
-
 
 
 
@@ -339,19 +337,19 @@
 <p>In a Windows Domain, the default config is for the PDC to get time from an external time source, the other DCs to get time from the PDC and the domain members to get time for a DC in their Site.</p>
 <p>So only the PDC should need to be modified.</p>
 <p>The commands to configure the PDC to get time from the NTP Pool servers:</p>
-<pre tabindex="0"><code>w32tm /config /manualpeerlist:&#34;0.north-america.pool.ntp.org,0x09 1.north-america.pool.ntp.org,0x09 2.north-america.pool.ntp.org,0x09 3.north-america.pool.ntp.org,0x09&#34; /syncfromflags:manual /reliable:yes /update
-Net Stop &#34;Windows Time&#34;
-Net Start &#34;Windows Time&#34;
-w32tm /resync
-</code></pre><p>Note on the manualpeerlist - after each server name we are adding <code>,0x09</code> because we want to combine the options <code>0x01</code> and <code>0x08</code> - you can look those values up here: <a href="https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc773263(v=ws.10)#registry-path-25">Microsoft Learn</a></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>w32tm /config /manualpeerlist:&#34;0.north-america.pool.ntp.org,0x09 1.north-america.pool.ntp.org,0x09 2.north-america.pool.ntp.org,0x09 3.north-america.pool.ntp.org,0x09&#34; /syncfromflags:manual /reliable:yes /update
+</span></span><span style="display:flex;"><span>Net Stop &#34;Windows Time&#34;
+</span></span><span style="display:flex;"><span>Net Start &#34;Windows Time&#34;
+</span></span><span style="display:flex;"><span>w32tm /resync
+</span></span></code></pre></div><p>Note on the manualpeerlist - after each server name we are adding <code>,0x09</code> because we want to combine the options <code>0x01</code> and <code>0x08</code> - you can look those values up here: <a href="https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc773263(v=ws.10)#registry-path-25">Microsoft Learn</a></p>
 <p>If you want to use different servers for peers go to the <a href="http://www.pool.ntp.org/">NTP Pool Project</a>website and select the servers that match your needs.
 (Don&rsquo;t forget to put double quotes around your server list and spaces between server names!)</p>
 <p>You can run the above commands on a non-domain joined computer and get the same result.</p>
 <p>If you have a domain joined computer that needs to have the NTP settings reset - so it will check with a DC - use the following commands:</p>
-<pre tabindex="0"><code>w32tm /config /syncfromflags:domhier /update
-Net Stop w32tm
-Net Start w32tm
-</code></pre><p>One last thing about w32tm - it is not designed to provide highly accurate time, for time sensitive apps. If you have time sensitive apps you will need to find an alternate time server.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>w32tm /config /syncfromflags:domhier /update
+</span></span><span style="display:flex;"><span>Net Stop w32tm
+</span></span><span style="display:flex;"><span>Net Start w32tm
+</span></span></code></pre></div><p>One last thing about w32tm - it is not designed to provide highly accurate time, for time sensitive apps. If you have time sensitive apps you will need to find an alternate time server.</p>
 
   </div>
   
@@ -377,32 +375,68 @@ Net Start w32tm
   
     
         <div id="disqus_thread"></div>
-<script type="text/javascript">
-    
+<div id="disqus-loader" style="text-align: center; padding: 2rem;">
+  <button onclick="loadDisqusComments()" style="padding: 0.75rem 1.5rem; cursor: pointer; background: #2c5282; color: white; border: none; border-radius: 4px; font-size: 1rem;">
+    Load Comments
+  </button>
+  <p style="margin-top: 0.5rem; color: #666; font-size: 0.9rem;">Click to load Disqus comments</p>
+</div>
 
-    (function () {
+<script type="text/javascript">
+  
+
+
+  var disqusLoaded = false;
+
+  function loadDisqusComments() {
+    if (disqusLoaded) return;
+
+    
     if (location.hostname === "localhost" ||
-      location.hostname === "127.0.0.1" ||
-      location.hostname === "") {
+        location.hostname === "127.0.0.1" ||
+        location.hostname === "") {
+      document.getElementById('disqus-loader').innerHTML = '<p style="color: #666;">Disqus is disabled on localhost</p>';
       return;
     }
+
+    
+    document.getElementById('disqus-loader').style.display = 'none';
+
+    
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
     var disqus_shortname = 'clintmcguire-com';
     dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || 
-      document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
+    (document.getElementsByTagName('head')[0] ||
+     document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+    disqusLoaded = true;
+  }
+
+  
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting && !disqusLoaded) {
+        loadDisqusComments();
+        observer.disconnect();
+      }
+    });
+  }, {
+    rootMargin: '200px' 
+  });
+
+  
+  var disqusThread = document.getElementById('disqus_thread');
+  if (disqusThread) {
+    observer.observe(disqusThread);
+  }
 </script>
 
 <noscript>
   Please enable JavaScript to view the
   <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
 </noscript>
-<a href="http://disqus.com/" class="dsq-brlink">comments powered by
-  <span class="logo-disqus">Disqus</span>
-</a>
 
     
 
@@ -431,15 +465,6 @@ Net Start w32tm
         }
       </script>
 
-
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
-        
-    <script type="text/javascript">
-        
-        hljs.initHighlightingOnLoad();
-    </script>
-    
 
 
 

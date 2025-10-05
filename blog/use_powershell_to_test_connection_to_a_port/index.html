@@ -18,7 +18,10 @@
     
     
 
-<title>Use PowerShell to test connection to a port • Clint McGuire</title><meta name="description" content="Use PowerShell to test connection to a port"><meta name="keywords" content="cybersecurity, municipal security, M365, cloud security, Azure, FOIPPA, compliance, CISSP"><meta name="author" content="Clint McGuire">
+<title>Use PowerShell to test connection to a port • Clint McGuire</title><meta name="description" content="Use PowerShell to test connection to a port"><meta name="keywords" content="cybersecurity, municipal security, M365, cloud security, Azure, FOIPPA, compliance, CISSP"><meta name="author" content="Clint McGuire"><meta property="og:image" content="https://www.clintmcguire.com/img/hero.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta name="twitter:image" content="https://www.clintmcguire.com/img/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Use PowerShell to test connection to a port">
   <meta name="twitter:description" content="Use PowerShell to test connection to a port">
@@ -34,11 +37,6 @@
     <meta property="article:modified_time" content="2017-06-13T00:00:00+00:00">
 
     
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github.min.css">
-
-
 
 
 
@@ -336,26 +334,26 @@
   
   <div class="post">
     <p>To quickly test if you can communicate with a server on a specific port use this command:</p>
-<pre tabindex="0"><code>Test-NetConnection (hostname/ip) -Port (tcp port number)
-</code></pre><p>You are looking for TcpTestSucceeded : True in the output.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Test-NetConnection (hostname/ip) -Port (tcp port number)
+</span></span></code></pre></div><p>You are looking for TcpTestSucceeded : True in the output.</p>
 <p>Example:</p>
-<pre tabindex="0"><code>PS C:\Users\Clint&gt; Test-NetConnection www.google.com -port 80
-
-ComputerName : www.google.com
-RemoteAddress : 74.125.28.103
-RemotePort : 80
-InterfaceAlias : vEthernet (LAN) 2
-SourceAddress : 192.168.0.5
-TcpTestSucceeded : True
-</code></pre><p>This command is quite flexible, you can also have it test with ICMP like PING and Trace Route.</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>PS C:\Users\Clint&gt; Test-NetConnection www.google.com -port 80
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ComputerName : www.google.com
+</span></span><span style="display:flex;"><span>RemoteAddress : 74.125.28.103
+</span></span><span style="display:flex;"><span>RemotePort : 80
+</span></span><span style="display:flex;"><span>InterfaceAlias : vEthernet (LAN) 2
+</span></span><span style="display:flex;"><span>SourceAddress : 192.168.0.5
+</span></span><span style="display:flex;"><span>TcpTestSucceeded : True
+</span></span></code></pre></div><p>This command is quite flexible, you can also have it test with ICMP like PING and Trace Route.</p>
 <p>For a simple ping test: Test-NetConnection <a href="https://www.google.com">www.google.com</a>
 For a trace route test: Test-NetConnection <a href="https://www.google.com">www.google.com</a> -TraceRoute</p>
 <p>Does not appear to support UDP test, in PowerShell 5&hellip;</p>
 <h2 id="update">Update:</h2>
 <p>This command doesn&rsquo;t appear to be in PowerShell Core/PowerShell 6. However, <code>Test-Connection</code> is.
 It has some different options, I haven&rsquo;t read all of them, but it appears to be more flexible, however, to get the same result as above run:</p>
-<pre tabindex="0"><code>Test-Connection www.googgle.com -TCPPort 80
-</code></pre><p>When you check a specific port, it will return a True or False - in my testing it performs this check quickly</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Test-Connection www.googgle.com -TCPPort 80
+</span></span></code></pre></div><p>When you check a specific port, it will return a True or False - in my testing it performs this check quickly</p>
 
   </div>
   
@@ -376,32 +374,68 @@ It has some different options, I haven&rsquo;t read all of them, but it appears 
   
     
         <div id="disqus_thread"></div>
-<script type="text/javascript">
-    
+<div id="disqus-loader" style="text-align: center; padding: 2rem;">
+  <button onclick="loadDisqusComments()" style="padding: 0.75rem 1.5rem; cursor: pointer; background: #2c5282; color: white; border: none; border-radius: 4px; font-size: 1rem;">
+    Load Comments
+  </button>
+  <p style="margin-top: 0.5rem; color: #666; font-size: 0.9rem;">Click to load Disqus comments</p>
+</div>
 
-    (function () {
+<script type="text/javascript">
+  
+
+
+  var disqusLoaded = false;
+
+  function loadDisqusComments() {
+    if (disqusLoaded) return;
+
+    
     if (location.hostname === "localhost" ||
-      location.hostname === "127.0.0.1" ||
-      location.hostname === "") {
+        location.hostname === "127.0.0.1" ||
+        location.hostname === "") {
+      document.getElementById('disqus-loader').innerHTML = '<p style="color: #666;">Disqus is disabled on localhost</p>';
       return;
     }
+
+    
+    document.getElementById('disqus-loader').style.display = 'none';
+
+    
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
     var disqus_shortname = 'clintmcguire-com';
     dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || 
-      document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
+    (document.getElementsByTagName('head')[0] ||
+     document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+    disqusLoaded = true;
+  }
+
+  
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting && !disqusLoaded) {
+        loadDisqusComments();
+        observer.disconnect();
+      }
+    });
+  }, {
+    rootMargin: '200px' 
+  });
+
+  
+  var disqusThread = document.getElementById('disqus_thread');
+  if (disqusThread) {
+    observer.observe(disqusThread);
+  }
 </script>
 
 <noscript>
   Please enable JavaScript to view the
   <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
 </noscript>
-<a href="http://disqus.com/" class="dsq-brlink">comments powered by
-  <span class="logo-disqus">Disqus</span>
-</a>
 
     
 
@@ -430,15 +464,6 @@ It has some different options, I haven&rsquo;t read all of them, but it appears 
         }
       </script>
 
-
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
-        
-    <script type="text/javascript">
-        
-        hljs.initHighlightingOnLoad();
-    </script>
-    
 
 
 

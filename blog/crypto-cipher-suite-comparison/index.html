@@ -18,7 +18,10 @@
     
     
 
-<title>Crypto Cipher Suite Comparison • Clint McGuire</title><meta name="description" content="Comparison of the different components of the Cryptographic Cipher Suites"><meta name="keywords" content="cybersecurity, municipal security, M365, cloud security, Azure, FOIPPA, compliance, CISSP"><meta name="author" content="Clint McGuire">
+<title>Crypto Cipher Suite Comparison • Clint McGuire</title><meta name="description" content="Comparison of the different components of the Cryptographic Cipher Suites"><meta name="keywords" content="cybersecurity, municipal security, M365, cloud security, Azure, FOIPPA, compliance, CISSP"><meta name="author" content="Clint McGuire"><meta property="og:image" content="https://www.clintmcguire.com/img/hero.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta name="twitter:image" content="https://www.clintmcguire.com/img/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Crypto Cipher Suite Comparison">
   <meta name="twitter:description" content="Comparison of the different components of the Cryptographic Cipher Suites">
@@ -34,11 +37,6 @@
     <meta property="article:modified_time" content="2020-03-29T11:26:57-07:00">
 
     
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github.min.css">
-
-
 
 
 
@@ -341,61 +339,61 @@ Here we are going to compare these different components and highlight the cipher
 <p><code>*</code> currently only means at the time of this writting - a flaw could be found in the algorithm or in the implementation of the algorithm at any time, so do additional research to confirm the current strength of the cipher suite. You&rsquo;ve been warned&hellip;</p>
 <p>One last point - I am going to restrict the list of suites to those supported by Windows 10/Windows Server v1903 - because it is the most recent one that they have published a list for (I believe the same list applies to v1909, but I haven&rsquo;t confirmed this), and because it is the area of computers where I spend the most time working with ciphers.</p>
 <h2 id="the-list">The List</h2>
-<pre tabindex="0"><code>TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
-TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
-TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
-TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
-TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
-TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384
-TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256
-TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
-TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
-TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
-TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
-TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
-TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
-TLS_RSA_WITH_AES_256_GCM_SHA384
-TLS_RSA_WITH_AES_128_GCM_SHA256
-TLS_RSA_WITH_AES_256_CBC_SHA256
-TLS_RSA_WITH_AES_128_CBC_SHA256
-TLS_RSA_WITH_AES_256_CBC_SHA
-TLS_RSA_WITH_AES_128_CBC_SHA
-TLS_RSA_WITH_3DES_EDE_CBC_SHA
-TLS_RSA_WITH_NULL_SHA256
-TLS_RSA_WITH_NULL_SHA
-TLS_DHE_RSA_WITH_AES_256_CBC_SHA
-TLS_DHE_RSA_WITH_AES_128_CBC_SHA
-TLS_DHE_DSS_WITH_AES_256_CBC_SHA256
-TLS_DHE_DSS_WITH_AES_128_CBC_SHA256
-TLS_DHE_DSS_WITH_AES_256_CBC_SHA
-TLS_DHE_DSS_WITH_AES_128_CBC_SHA
-TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA
-TLS_RSA_WITH_RC4_128_SHA
-TLS_RSA_WITH_RC4_128_MD5
-TLS_RSA_WITH_DES_CBC_SHA
-TLS_DHE_DSS_WITH_DES_CBC_SHA
-TLS_DHE_DSS_EXPORT1024_WITH_DES_CBC_SHA No TLS 1.2, TLS 1.1, TLS 1.0, SSL 3.0
-TLS_RSA_WITH_NULL_MD5
-TLS_RSA_EXPORT1024_WITH_RC4_56_SHA
-TLS_RSA_EXPORT_WITH_RC4_40_MD5
-TLS_RSA_EXPORT1024_WITH_DES_CBC_SHA
-TLS_PSK_WITH_AES_256_GCM_SHA384
-TLS_PSK_WITH_AES_128_GCM_SHA256
-TLS_PSK_WITH_AES_256_CBC_SHA384
-TLS_PSK_WITH_AES_128_CBC_SHA256
-TLS_PSK_WITH_NULL_SHA384
-TLS_PSK_WITH_NULL_SHA256
-</code></pre><p><a href="https://docs.microsoft.com/en-us/windows/win32/secauthn/tls-cipher-suites-in-windows-10-v1903">Source</a></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+</span></span><span style="display:flex;"><span>TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256
+</span></span><span style="display:flex;"><span>TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+</span></span><span style="display:flex;"><span>TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+</span></span><span style="display:flex;"><span>TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+</span></span><span style="display:flex;"><span>TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+</span></span><span style="display:flex;"><span>TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384
+</span></span><span style="display:flex;"><span>TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256
+</span></span><span style="display:flex;"><span>TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+</span></span><span style="display:flex;"><span>TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+</span></span><span style="display:flex;"><span>TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA
+</span></span><span style="display:flex;"><span>TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA
+</span></span><span style="display:flex;"><span>TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+</span></span><span style="display:flex;"><span>TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+</span></span><span style="display:flex;"><span>TLS_RSA_WITH_AES_256_GCM_SHA384
+</span></span><span style="display:flex;"><span>TLS_RSA_WITH_AES_128_GCM_SHA256
+</span></span><span style="display:flex;"><span>TLS_RSA_WITH_AES_256_CBC_SHA256
+</span></span><span style="display:flex;"><span>TLS_RSA_WITH_AES_128_CBC_SHA256
+</span></span><span style="display:flex;"><span>TLS_RSA_WITH_AES_256_CBC_SHA
+</span></span><span style="display:flex;"><span>TLS_RSA_WITH_AES_128_CBC_SHA
+</span></span><span style="display:flex;"><span>TLS_RSA_WITH_3DES_EDE_CBC_SHA
+</span></span><span style="display:flex;"><span>TLS_RSA_WITH_NULL_SHA256
+</span></span><span style="display:flex;"><span>TLS_RSA_WITH_NULL_SHA
+</span></span><span style="display:flex;"><span>TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+</span></span><span style="display:flex;"><span>TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+</span></span><span style="display:flex;"><span>TLS_DHE_DSS_WITH_AES_256_CBC_SHA256
+</span></span><span style="display:flex;"><span>TLS_DHE_DSS_WITH_AES_128_CBC_SHA256
+</span></span><span style="display:flex;"><span>TLS_DHE_DSS_WITH_AES_256_CBC_SHA
+</span></span><span style="display:flex;"><span>TLS_DHE_DSS_WITH_AES_128_CBC_SHA
+</span></span><span style="display:flex;"><span>TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA
+</span></span><span style="display:flex;"><span>TLS_RSA_WITH_RC4_128_SHA
+</span></span><span style="display:flex;"><span>TLS_RSA_WITH_RC4_128_MD5
+</span></span><span style="display:flex;"><span>TLS_RSA_WITH_DES_CBC_SHA
+</span></span><span style="display:flex;"><span>TLS_DHE_DSS_WITH_DES_CBC_SHA
+</span></span><span style="display:flex;"><span>TLS_DHE_DSS_EXPORT1024_WITH_DES_CBC_SHA No TLS 1.2, TLS 1.1, TLS 1.0, SSL 3.0
+</span></span><span style="display:flex;"><span>TLS_RSA_WITH_NULL_MD5
+</span></span><span style="display:flex;"><span>TLS_RSA_EXPORT1024_WITH_RC4_56_SHA
+</span></span><span style="display:flex;"><span>TLS_RSA_EXPORT_WITH_RC4_40_MD5
+</span></span><span style="display:flex;"><span>TLS_RSA_EXPORT1024_WITH_DES_CBC_SHA
+</span></span><span style="display:flex;"><span>TLS_PSK_WITH_AES_256_GCM_SHA384
+</span></span><span style="display:flex;"><span>TLS_PSK_WITH_AES_128_GCM_SHA256
+</span></span><span style="display:flex;"><span>TLS_PSK_WITH_AES_256_CBC_SHA384
+</span></span><span style="display:flex;"><span>TLS_PSK_WITH_AES_128_CBC_SHA256
+</span></span><span style="display:flex;"><span>TLS_PSK_WITH_NULL_SHA384
+</span></span><span style="display:flex;"><span>TLS_PSK_WITH_NULL_SHA256
+</span></span></code></pre></div><p><a href="https://docs.microsoft.com/en-us/windows/win32/secauthn/tls-cipher-suites-in-windows-10-v1903">Source</a></p>
 <h2 id="protocol">Protocol</h2>
 <p>This one is simple, they all start with TLS, there is no alternate listed. So, nothing to see here, move along, move along.</p>
 <h2 id="key-exchange">Key Exchange</h2>
 <p>There are 4 Key Exchange options:</p>
-<pre tabindex="0"><code>ECHDE
-DHE
-RSA
-PSK
-</code></pre><p>These are short for:<br>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ECHDE
+</span></span><span style="display:flex;"><span>DHE
+</span></span><span style="display:flex;"><span>RSA
+</span></span><span style="display:flex;"><span>PSK
+</span></span></code></pre></div><p>These are short for:<br>
 ECHDE - Elliptic Curve Diffie-Hellman Ephemeral - Diffie-Hellman algorithm with Elliptical Curves and an Ephemeral key<br>
 DHE - Diffie-Hellman Ephemeral - Diffie-Hellman algorithm with Ephermeral key<br>
 RSA - Rivest Shamir Adleman - RSA algorithm<br>
@@ -406,10 +404,10 @@ PSK - Pre-Shared Key - a pre-shared key</p>
 <p>PSK is only available for applications on Windows to use - so this won&rsquo;t be used by IIS or a web browser on the computer (generally); I&rsquo;ve included it here for completeness.</p>
 <h2 id="signature-authentication">Signature Authentication</h2>
 <p>There are 3 Signature Authentication algoriths:</p>
-<pre tabindex="0"><code>ECDSA
-RSA
-DSS
-</code></pre><p>ECDSA - Elliptic Curve Digital Signature Algorith - The Digital Signature Algorithm, part of the NIST FIPS, using an Elliptic Curve<br>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>ECDSA
+</span></span><span style="display:flex;"><span>RSA
+</span></span><span style="display:flex;"><span>DSS
+</span></span></code></pre></div><p>ECDSA - Elliptic Curve Digital Signature Algorith - The Digital Signature Algorithm, part of the NIST FIPS, using an Elliptic Curve<br>
 RSA - Rivest Shamir Adleman - RSA algorimth, as above<br>
 DSS - Digital Signature Standard - Defined by NIST as part of FIPS</p>
 <p>DSA and DSS are part of the NIST FIPS suite of algorithms.<br>
@@ -417,11 +415,11 @@ RSA is the other option.
 There are technically two &ldquo;export&rdquo; options on this list, but they intentially weak, so let&rsquo;s just pretend they aren&rsquo;t there, and never use them&hellip;</p>
 <h2 id="encryption">Encryption</h2>
 <p>There are 4 different Encryption algorithms available - in order of strength they are:</p>
-<pre tabindex="0"><code>AES  
-3DES  
-RC4  
-DES
-</code></pre><p>There is also NULL - but that would be no encryption - so it should not be used.<br>
+<div class="highlight"><pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>AES  
+</span></span><span style="display:flex;"><span>3DES  
+</span></span><span style="display:flex;"><span>RC4  
+</span></span><span style="display:flex;"><span>DES
+</span></span></code></pre></div><p>There is also NULL - but that would be no encryption - so it should not be used.<br>
 DES, 3DES and RC4 are legacy and should be avoided.<br>
 Leaving only AES.</p>
 <p>There are 4 different options for AES.<br>
@@ -473,32 +471,68 @@ TLS_DHE_RSA_WITH_AES_128_GCM_SHA256</p>
   
     
         <div id="disqus_thread"></div>
-<script type="text/javascript">
-    
+<div id="disqus-loader" style="text-align: center; padding: 2rem;">
+  <button onclick="loadDisqusComments()" style="padding: 0.75rem 1.5rem; cursor: pointer; background: #2c5282; color: white; border: none; border-radius: 4px; font-size: 1rem;">
+    Load Comments
+  </button>
+  <p style="margin-top: 0.5rem; color: #666; font-size: 0.9rem;">Click to load Disqus comments</p>
+</div>
 
-    (function () {
+<script type="text/javascript">
+  
+
+
+  var disqusLoaded = false;
+
+  function loadDisqusComments() {
+    if (disqusLoaded) return;
+
+    
     if (location.hostname === "localhost" ||
-      location.hostname === "127.0.0.1" ||
-      location.hostname === "") {
+        location.hostname === "127.0.0.1" ||
+        location.hostname === "") {
+      document.getElementById('disqus-loader').innerHTML = '<p style="color: #666;">Disqus is disabled on localhost</p>';
       return;
     }
+
+    
+    document.getElementById('disqus-loader').style.display = 'none';
+
+    
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
     var disqus_shortname = 'clintmcguire-com';
     dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || 
-      document.getElementsByTagName('body')[0]).appendChild(dsq);
-  })();
+    (document.getElementsByTagName('head')[0] ||
+     document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+    disqusLoaded = true;
+  }
+
+  
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting && !disqusLoaded) {
+        loadDisqusComments();
+        observer.disconnect();
+      }
+    });
+  }, {
+    rootMargin: '200px' 
+  });
+
+  
+  var disqusThread = document.getElementById('disqus_thread');
+  if (disqusThread) {
+    observer.observe(disqusThread);
+  }
 </script>
 
 <noscript>
   Please enable JavaScript to view the
   <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
 </noscript>
-<a href="http://disqus.com/" class="dsq-brlink">comments powered by
-  <span class="logo-disqus">Disqus</span>
-</a>
 
     
 
@@ -527,15 +561,6 @@ TLS_DHE_RSA_WITH_AES_128_GCM_SHA256</p>
         }
       </script>
 
-
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
-        
-    <script type="text/javascript">
-        
-        hljs.initHighlightingOnLoad();
-    </script>
-    
 
 
 
