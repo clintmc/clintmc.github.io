@@ -1,5 +1,5 @@
 # robots.txt for clintmcguire.com
-# Updated: 2025-10-05
+# Updated: 2025-10-08
 
 User-agent: *
 Allow: /
