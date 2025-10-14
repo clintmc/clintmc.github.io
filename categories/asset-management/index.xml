@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Asset Management on Clint McGuire</title>
+    <link>https://www.clintmcguire.com/categories/asset-management/</link>
+    <description>Recent content in Asset Management on Clint McGuire</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 14 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://www.clintmcguire.com/categories/asset-management/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Real-Time Device Monitoring: Moving Beyond Quarterly IT Audits</title>
+      <link>https://www.clintmcguire.com/blog/real-time-device-monitoring-moving-beyond-quarterly-it-audits/</link>
+      <pubDate>Tue, 14 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.clintmcguire.com/blog/real-time-device-monitoring-moving-beyond-quarterly-it-audits/</guid>
+      <description>&lt;h2 id=&#34;the-90-day-blind-spot-problem&#34;&gt;The 90-Day Blind Spot Problem&lt;/h2&gt;&#xA;&lt;p&gt;Quarterly audits made sense when networks were static. You&amp;rsquo;d count computers, check configurations, and document findings. Things stayed stable until next quarter.&lt;/p&gt;&#xA;&lt;p&gt;That assumption no longer holds.&lt;/p&gt;&#xA;&lt;p&gt;Between quarterly audits, employees connect personal tablets. Contractors add temporary laptops for projects. Department heads adopt cloud services without IT approval. Staff leave but their devices remain on the network. Each change creates security exposure. You won&amp;rsquo;t discover it for 30, 60, or 90 days.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
