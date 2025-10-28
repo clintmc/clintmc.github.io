@@ -6,8 +6,15 @@
     <description>Recent content in Municipal-It on Clint McGuire</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 26 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Oct 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.clintmcguire.com/tags/municipal-it/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SPF, DKIM, DMARC: The Email Authentication Trinity</title>
+      <link>https://www.clintmcguire.com/blog/spf-dkim-dmarc-the-email-authentication-trinity/</link>
+      <pubDate>Tue, 28 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.clintmcguire.com/blog/spf-dkim-dmarc-the-email-authentication-trinity/</guid>
+      <description>&lt;h1 id=&#34;spf-dkim-dmarc-the-email-authentication-trinity&#34;&gt;SPF, DKIM, DMARC: The Email Authentication Trinity&lt;/h1&gt;&#xA;&lt;h2 id=&#34;research-summary&#34;&gt;Research Summary&lt;/h2&gt;&#xA;&lt;p&gt;Email authentication protocols (SPF, DKIM, and DMARC) represent the foundational security layer that municipal IT teams must implement before advanced M365 security features can reach maximum effectiveness. Current research reveals a critical vulnerability: 93.3% of government domains that suffered email spoofing attacks had not enabled email authentication even in monitoring mode, despite these protocols being free to implement and requiring only DNS configuration changes.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>The Email Security Crisis Hiding in Plain Sight</title>
       <link>https://www.clintmcguire.com/blog/the-email-security-crisis-hiding-in-plain-sight/</link>
