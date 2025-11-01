@@ -3,27 +3,30 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.clintmcguire.com/blog/</loc>
-    <lastmod>2025-10-28T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.clintmcguire.com/tags/cybersecurity/</loc>
-    <lastmod>2025-10-28T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.clintmcguire.com/</loc>
-    <lastmod>2025-10-28T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.clintmcguire.com/categories/microsoft-365-security/</loc>
-    <lastmod>2025-10-28T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.clintmcguire.com/blog/microsoft-defender-for-office-365-advanced-threat-protection-beyond-basic-email-filtering/</loc>
+    <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.clintmcguire.com/tags/municipal-it/</loc>
-    <lastmod>2025-10-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://www.clintmcguire.com/blog/spf-dkim-dmarc-the-email-authentication-trinity/</loc>
-    <lastmod>2025-10-28T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.clintmcguire.com/tags/</loc>
-    <lastmod>2025-10-28T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.clintmcguire.com/categories/</loc>
+    <lastmod>2025-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.clintmcguire.com/blog/spf-dkim-dmarc-the-email-authentication-trinity/</loc>
     <lastmod>2025-10-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://www.clintmcguire.com/blog/the-email-security-crisis-hiding-in-plain-sight/</loc>

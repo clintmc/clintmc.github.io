@@ -6,12 +6,12 @@
     <description>Recent content in Topic Categories on Clint McGuire</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 28 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.clintmcguire.com/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Microsoft 365 Security</title>
       <link>https://www.clintmcguire.com/categories/microsoft-365-security/</link>
-      <pubDate>Tue, 28 Oct 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
       <guid>https://www.clintmcguire.com/categories/microsoft-365-security/</guid>
       <description>&lt;h1 id=&#34;microsoft-365-security&#34;&gt;Microsoft 365 Security&lt;/h1&gt;&#xA;&lt;p&gt;Microsoft 365 is ubiquitous in organizations, but its security complexity often catches IT professionals off-guard. This section covers everything from basic security hygiene to advanced threat protection, with particular focus on compliance requirements and real-world implementation challenges.&lt;/p&gt;&#xA;&lt;h2 id=&#34;core-topics&#34;&gt;Core Topics&lt;/h2&gt;&#xA;&lt;h3 id=&#34;identity--access-management&#34;&gt;Identity &amp;amp; Access Management&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Azure AD security configurations&lt;/li&gt;&#xA;&lt;li&gt;Conditional access policies&lt;/li&gt;&#xA;&lt;li&gt;Multi-factor authentication implementation&lt;/li&gt;&#xA;&lt;li&gt;Privileged identity management&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;data-protection--compliance&#34;&gt;Data Protection &amp;amp; Compliance&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Information protection policies&lt;/li&gt;&#xA;&lt;li&gt;Data loss prevention (DLP)&lt;/li&gt;&#xA;&lt;li&gt;Retention policies and eDiscovery&lt;/li&gt;&#xA;&lt;li&gt;Compliance manager implementation&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;threat-protection&#34;&gt;Threat Protection&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Microsoft Defender suite&lt;/li&gt;&#xA;&lt;li&gt;Advanced threat analytics&lt;/li&gt;&#xA;&lt;li&gt;Email security and anti-phishing&lt;/li&gt;&#xA;&lt;li&gt;Endpoint detection and response&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;configuration--governance&#34;&gt;Configuration &amp;amp; Governance&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Security baselines&lt;/li&gt;&#xA;&lt;li&gt;Tenant security assessments&lt;/li&gt;&#xA;&lt;li&gt;PowerShell automation for security&lt;/li&gt;&#xA;&lt;li&gt;Monitoring and alerting&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;em&gt;M365 security isn&amp;rsquo;t just about turning on features—it&amp;rsquo;s about understanding the interconnected nature of Microsoft&amp;rsquo;s security ecosystem and implementing layered defenses that work for your specific environment.&lt;/em&gt;&lt;/p&gt;</description>
     </item>

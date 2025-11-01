@@ -6,8 +6,15 @@
     <description>Recent content in Home on Clint McGuire</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 28 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 01 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.clintmcguire.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Microsoft Defender for Office 365: Advanced Threat Protection Beyond Basic Email Filtering</title>
+      <link>https://www.clintmcguire.com/blog/microsoft-defender-for-office-365-advanced-threat-protection-beyond-basic-email-filtering/</link>
+      <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>https://www.clintmcguire.com/blog/microsoft-defender-for-office-365-advanced-threat-protection-beyond-basic-email-filtering/</guid>
+      <description>&lt;h1 id=&#34;microsoft-defender-for-office-365-advanced-threat-protection-beyond-basic-email-filtering&#34;&gt;Microsoft Defender for Office 365: Advanced Threat Protection Beyond Basic Email Filtering&lt;/h1&gt;&#xA;&lt;h2 id=&#34;research-summary---november-1-2025&#34;&gt;Research Summary - November 1, 2025&lt;/h2&gt;&#xA;&lt;p&gt;&lt;strong&gt;Validation Status&lt;/strong&gt;: Draft content is 85-90% accurate with critical licensing clarifications needed.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Key Findings&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Safe Attachments sandboxing, Safe Links time-of-click protection, anti-phishing capabilities all confirmed accurate&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;CRITICAL&lt;/strong&gt;: Attack Simulation Training requires Plan 2 (NOT included in Business Premium) - draft needs correction&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;CRITICAL&lt;/strong&gt;: Business Premium includes Real-Time Detections, not Threat Explorer (Plan 2 feature) - draft needs correction&lt;/li&gt;&#xA;&lt;li&gt;BEC statistics validated: 73% of cyber incidents by count, average loss $137K, 35% of orgs experienced BEC in 2024&lt;/li&gt;&#xA;&lt;li&gt;Municipal targeting well-supported: public information exposure, vendor complexity, resource constraints&lt;/li&gt;&#xA;&lt;li&gt;2024-2025 updates: Safe Attachments &amp;ldquo;Monitor&amp;rdquo; mode retiring Feb-May 2025, Safe Links API-only option new in late 2024&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Technical Validation&lt;/strong&gt;:&#xA;✅ Safe Attachments cloud-based sandboxing - CONFIRMED&#xA;✅ Safe Links real-time URL analysis - CONFIRMED&#xA;✅ Anti-phishing capabilities (mailbox intelligence, domain/user impersonation, spoof intelligence) - CONFIRMED&#xA;✅ Conditional Access integration - CONFIRMED&#xA;⚠️ Attack Simulation Training - REQUIRES PLAN 2 (not in Business Premium)&#xA;⚠️ Threat Explorer - REQUIRES PLAN 2 (Business Premium only has Real-Time Detections)&#xA;⚠️ Safe Documents integration claim - NOT CONFIRMED in documentation&lt;/p&gt;</description>
+    </item>
     <item>
       <title>SPF, DKIM, DMARC: The Email Authentication Trinity</title>
       <link>https://www.clintmcguire.com/blog/spf-dkim-dmarc-the-email-authentication-trinity/</link>
